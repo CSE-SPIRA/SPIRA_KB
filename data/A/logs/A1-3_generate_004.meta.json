@@ -1,0 +1,32 @@
+{
+ "job_id": "A1-3_generate_004",
+ "scope": "A",
+ "batch": "A1-3",
+ "role": "generate",
+ "company": "claude",
+ "person": "J",
+ "prompt_version": "generate_bundle@v1",
+ "model_config": "claude-sonnet-5-5",
+ "models_seen": [
+  "claude-sonnet-5-5"
+ ],
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 35483,
+  "cache_read_input_tokens": 126681,
+  "output_tokens": 10734,
+  "total_cost_usd": 0.26196410000000003
+ },
+ "total_tokens": 172910,
+ "quota": null,
+ "attempts": 2,
+ "ok": true,
+ "errors": [
+  "[1회] goal_id가 작업과 맞지 않음 (빠짐 {'A1-3_g0358'}, 남음 set())"
+ ],
+ "started_at": "2026-11-15T23:06:54+09:00",
+ "finished_at": "2026-11-15T23:08:14+09:00",
+ "seconds": 80,
+ "local_date": "2026-11-15",
+ "fake": false
+}
