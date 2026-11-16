@@ -1,0 +1,29 @@
+{
+ "job_id": "A1-2_generate_011",
+ "scope": "A",
+ "batch": "A1-2",
+ "role": "generate",
+ "company": "codex",
+ "person": "S",
+ "prompt_version": "generate_bundle@v1",
+ "model_config": null,
+ "models_seen": [],
+ "usage": {},
+ "total_tokens": null,
+ "quota": {
+  "weekly_left_after": 91.0,
+  "weekly_used_pct": 0.0,
+  "five_h_used_pct": 0.0
+ },
+ "attempts": 2,
+ "ok": false,
+ "errors": [
+  "[1회] 에이전트 실행 실패: Error loading config.toml: invalid transport\nin `mcp_servers.code-review`\n\n",
+  "[2회] 에이전트 실행 실패: Error loading config.toml: invalid transport\nin `mcp_servers.code-review`\n\n"
+ ],
+ "started_at": "2026-11-16T13:04:23+09:00",
+ "finished_at": "2026-11-16T13:04:23+09:00",
+ "seconds": 0,
+ "local_date": "2026-11-16",
+ "fake": false
+}
