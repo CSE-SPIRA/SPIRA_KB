@@ -10,16 +10,20 @@
  "models_seen": [],
  "usage": {},
  "total_tokens": null,
- "quota": null,
+ "quota": {
+  "weekly_left_after": 91.0,
+  "weekly_used_pct": 0.0,
+  "five_h_used_pct": 0.0
+ },
  "attempts": 2,
  "ok": false,
  "errors": [
-  "[1회] 에이전트 실행 실패: Reading additional input from stdin...\n2026-11-16T00:01:30.215622Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest(\"http/request failed: error sending request for url (http://127.0.0.1:64342/stream)\")))\n2026-11-16T00:01:30.467270Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest(\"http/request failed: error sending request for url (http://127.0.0.1:64342/stream)\")))\n2026-11-16T00:01:30.593597Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when AuthRequired(AuthRequiredError { www_authenticate_header: \"Bearer realm=\\\"OAuth\\\", resource_metadata=\\\"https://mcp.notion.com/.well-known/oauth-protected-resource/mcp\\\", scope=\\\"default\\\"\" })\n2026-11-16T00:01:31.085006Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when AuthRequired(AuthRequiredError { www_authenticate_header: \"Bearer resource_metadata=\\\"https://mcp.context7.com/.well-known/oauth-protected-resource/mcp\\\"\" })\n2026-11-16T00:01:31.133706Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when AuthRequired(AuthRequiredError { www_authenticate_header: \"Bearer error=\\\"invalid_request\\\", error_description=\\\"No access token was provided in this request\\\", resource_metadata=\\\"https://api.githubcopilot.com/.well-known/oauth-protected-resource/mcp/\\\"\" })\n2026-11-16T00:01:31.469380Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest(\"http/request failed: error sending request for url (http://127.0.0.1:64342/stream)\")))\n",
-  "[2회] 에이전트 실행 실패: Reading additional input from stdin...\n2026-11-16T00:01:34.673943Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest(\"http/request failed: error sending request for url (http://127.0.0.1:64342/stream)\")))\n2026-11-16T00:01:34.927569Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest(\"http/request failed: error sending request for url (http://127.0.0.1:64342/stream)\")))\n2026-11-16T00:01:35.020270Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when AuthRequired(AuthRequiredError { www_authenticate_header: \"Bearer realm=\\\"OAuth\\\", resource_metadata=\\\"https://mcp.notion.com/.well-known/oauth-protected-resource/mcp\\\", scope=\\\"default\\\"\" })\n2026-11-16T00:01:35.511815Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when AuthRequired(AuthRequiredError { www_authenticate_header: \"Bearer resource_metadata=\\\"https://mcp.context7.com/.well-known/oauth-protected-resource/mcp\\\"\" })\n2026-11-16T00:01:35.566099Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when AuthRequired(AuthRequiredError { www_authenticate_header: \"Bearer error=\\\"invalid_request\\\", error_description=\\\"No access token was provided in this request\\\", resource_metadata=\\\"https://api.githubcopilot.com/.well-known/oauth-protected-resource/mcp/\\\"\" })\n2026-11-16T00:01:35.928596Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest(\"http/request failed: error sending request for url (http://127.0.0.1:64342/stream)\")))\n"
+  "[1회] 에이전트 실행 실패: Error loading config.toml: invalid transport\nin `mcp_servers.code-review`\n\n",
+  "[2회] 에이전트 실행 실패: Error loading config.toml: invalid transport\nin `mcp_servers.code-review`\n\n"
  ],
- "started_at": "2026-11-16T09:01:29+09:00",
- "finished_at": "2026-11-16T09:01:38+09:00",
- "seconds": 8,
+ "started_at": "2026-11-16T13:04:04+09:00",
+ "finished_at": "2026-11-16T13:04:04+09:00",
+ "seconds": 0,
  "local_date": "2026-11-16",
  "fake": false
 }
