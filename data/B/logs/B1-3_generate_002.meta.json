@@ -1,0 +1,32 @@
+{
+ "job_id": "B1-3_generate_002",
+ "scope": "B",
+ "batch": "B1-3",
+ "role": "generate",
+ "company": "claude",
+ "person": "S",
+ "prompt_version": "generate_bundle@v1",
+ "model_config": "claude-sonnet-5-5",
+ "models_seen": [
+  "claude-sonnet-5-5"
+ ],
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 43703,
+  "cache_read_input_tokens": 196146,
+  "output_tokens": 10190,
+  "total_cost_usd": 0.29635059999999996
+ },
+ "total_tokens": 250051,
+ "quota": null,
+ "attempts": 2,
+ "ok": true,
+ "errors": [
+  "[1회] goal_id가 작업과 맞지 않음 (빠짐 {'B1-3_g0130'}, 남음 set())"
+ ],
+ "started_at": "2026-11-17T00:27:56+09:00",
+ "finished_at": "2026-11-17T00:29:19+09:00",
+ "seconds": 83,
+ "local_date": "2026-11-17",
+ "fake": false
+}
