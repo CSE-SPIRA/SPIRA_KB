@@ -1,0 +1,34 @@
+{
+ "job_id": "B1-2_label_2_013",
+ "scope": "B",
+ "batch": "B1-2",
+ "role": "label_2",
+ "company": "gemini",
+ "person": "U",
+ "prompt_version": "label@v1",
+ "model_config": "gemini-3.8-flash-high",
+ "models_seen": [],
+ "usage": {
+  "input_tokens": 180990,
+  "output_tokens": 161263,
+  "thinking_tokens": 144071,
+  "cache_read_tokens": 520596,
+  "total_tokens": 342253
+ },
+ "total_tokens": 342253,
+ "quota": {
+  "weekly_left_after": 93.403,
+  "weekly_used_pct": 1.657,
+  "five_h_used_pct": 3.131
+ },
+ "attempts": 2,
+ "ok": true,
+ "errors": [
+  "[1회] 에이전트 실행 실패: Your previous response was cut off because it exceeded the output token limit\nPlease continue from where you left off, keeping your response shorter\nRetries remaining: 3"
+ ],
+ "started_at": "2026-11-17T00:37:48+09:00",
+ "finished_at": "2026-11-17T00:55:28+09:00",
+ "seconds": 1061,
+ "local_date": "2026-11-17",
+ "fake": false
+}
