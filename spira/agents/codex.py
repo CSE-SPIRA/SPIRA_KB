@@ -16,9 +16,42 @@ from spira.agents.base import AgentResult
 
 def build_command(instruction: str, model: str | None, workdir: Path) -> list[str]:
     cmd = ["codex", "exec", "--json", "--sandbox", "workspace-write", "--skip-git-repo-check"]
+    for name in _mcp_servers():   # 노트북에 연결된 MCP 서버는 이 작업에서만 끈다 (로그인이 풀리면 실행이 실패함)
+        cmd += ["-c", f"mcp_servers.{name}.enabled=false"]
     if model:
         cmd += ["--model", model]
     return cmd + [instruction]
+
+
+_MCP_CACHE: list[str] | None = None
+
+
+def _mcp_servers() -> list[str]:
+    """이 노트북 Codex에 등록된 MCP 서버 이름. `codex mcp list --json`으로 읽고, 안 되면 config.toml에서 읽는다."""
+    global _MCP_CACHE
+    if _MCP_CACHE is not None:
+        return _MCP_CACHE
+    import os
+    import shutil
+    import subprocess
+    names: list[str] = []
+    exe = shutil.which("codex")
+    if exe:
+        try:
+            out = subprocess.run([exe, "mcp", "list", "--json"], capture_output=True, text=True, encoding="utf-8",
+                                 errors="replace", timeout=60, stdin=subprocess.DEVNULL).stdout
+            names = [s["name"] for s in json.loads(out) if isinstance(s, dict) and s.get("name")]
+        except (OSError, subprocess.SubprocessError, ValueError, TypeError):
+            names = []
+    if not names:
+        try:
+            import tomllib
+            home = Path(os.environ.get("CODEX_HOME") or Path.home() / ".codex")
+            names = list((tomllib.loads((home / "config.toml").read_text(encoding="utf-8")).get("mcp_servers") or {}))
+        except (OSError, ValueError):
+            names = []
+    _MCP_CACHE = names
+    return names
 
 
 def parse_output(stdout: str, returncode: int) -> AgentResult:
