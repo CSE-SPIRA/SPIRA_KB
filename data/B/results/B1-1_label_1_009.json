@@ -1,0 +1,817 @@
+{
+ "job_id": "B1-1_label_1_009",
+ "labels": [
+  {
+   "case_ref": "bc5abb98",
+   "intents": [
+    {
+     "intent_id": "school_start",
+     "intent_text": "도착 10일 뒤 월요일 입학·개학에 맞춰 백팩과 필기구, 실내화를 준비한다.",
+     "bundle_items": [
+      "백팩",
+      "형광펜",
+      "노트",
+      "실내화",
+      "필통"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "입학·개학",
+    "guests": null,
+    "activity": "새 학기 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "30ab6457",
+   "intents": [
+    {
+     "intent_id": "kid_birthday_party",
+     "intent_text": "영유아 자녀의 생일을 케이크와 생일초, 풍선과 답례품으로 축하한다.",
+     "bundle_items": [
+      "어린이집 답례품",
+      "케이크",
+      "멜로디 생일초",
+      "헬륨 풍선",
+      "생일 머리띠"
+     ]
+    },
+    {
+     "intent_id": "kimjang",
+     "intent_text": "절임배추와 고춧가루를 준비하고 김장 매트와 김치통을 사용해 김장한다.",
+     "bundle_items": [
+      "김장 장갑",
+      "고춧가루",
+      "절임배추",
+      "김치통",
+      "김장 매트"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "생일 축하와 김장",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "ee582753",
+   "intents": [
+    {
+     "intent_id": "school_start",
+     "intent_text": "도착 2일 뒤 일요일 입학·개학에 맞춰 아이의 책가방과 필기구, 실내화를 준비한다.",
+     "bundle_items": [
+      "필통",
+      "실내화",
+      "연필 세트",
+      "지우개",
+      "어린이 책가방"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "입학·개학",
+    "guests": null,
+    "activity": "새 학기 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a3556bb8",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "65923275",
+   "intents": [
+    {
+     "intent_id": "watch_party",
+     "intent_text": "응원봉과 캔맥주, 간식을 준비해 경기를 응원하며 관람한다.",
+     "bundle_items": [
+      "캔맥주",
+      "응원봉",
+      "잉글리시 머핀"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "경기 응원과 관람",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "edcc3468",
+   "intents": [
+    {
+     "intent_id": "christmas_party",
+     "intent_text": "크리스마스 트리와 스노우볼로 장식하고 칠면조 구이와 치즈 퐁듀를 준비해 크리스마스 파티를 연다.",
+     "bundle_items": [
+      "크리스마스 트리",
+      "칠면조 구이",
+      "치즈 퐁듀",
+      "스노우볼",
+      "파티 와인잔"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "크리스마스",
+    "guests": null,
+    "activity": "파티",
+    "theme": "크리스마스"
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "778cad40",
+   "intents": [
+    {
+     "intent_id": "moving_in",
+     "intent_text": "수납함과 분리수거함, 전기포트와 멀티탭 등 기본 살림을 마련하고 청소해 새 공간을 정리한다.",
+     "bundle_items": [
+      "멀티탭",
+      "분리수거함",
+      "전기포트",
+      "다목적 세제",
+      "수납함",
+      "바닥 세정제",
+      "바닥 물걸레포",
+      "다목적 세정제"
+     ]
+    },
+    {
+     "intent_id": "deep_cleaning",
+     "intent_text": "다목적 세제와 바닥 세정제, 물걸레포를 준비해 집을 대청소한다.",
+     "bundle_items": [
+      "다목적 세제",
+      "바닥 세정제",
+      "바닥 물걸레포",
+      "다목적 세정제"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "살림 정리와 청소",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "af3a851e",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "66e1e2a1",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e79c4abc",
+   "intents": [
+    {
+     "intent_id": "winter_dry_cold",
+     "intent_text": "문풍지와 미니 가습기를 마련해 겨울 추위와 건조에 대비한다.",
+     "bundle_items": [
+      "문풍지",
+      "미니 가습기"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "추위와 건조 대비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "bdc0ce51",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "91989276",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "12fc953f",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "7c4bead0",
+   "intents": [
+    {
+     "intent_id": "rainy_season",
+     "intent_text": "제습제와 제습기 필터, 곰팡이 제거제를 준비해 습기와 곰팡이에 대비한다.",
+     "bundle_items": [
+      "제습제",
+      "곰팡이 제거제",
+      "제습기 필터"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "습기 대비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5a1d60b2",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "cc9ad5a9",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e90789d1",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "c4e88485",
+   "intents": [
+    {
+     "intent_id": "kid_birthday_party",
+     "intent_text": "도착 8일 뒤 목요일 생일 일정에 맞춰 캐릭터 케이크와 숫자 초, 파티 장식과 구디백으로 아이 생일을 축하한다.",
+     "bundle_items": [
+      "파티 가랜드",
+      "고깔모자",
+      "구디백",
+      "캐릭터 케이크",
+      "숫자 초"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "아이 생일 파티",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "49f453ac",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a741997d",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "554b0508",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "f54951a7",
+   "intents": [
+    {
+     "intent_id": "kid_birthday_party",
+     "intent_text": "도착 다음 날 토요일 생일 일정에 맞춰 케이크와 초, 고깔모자와 풍선, 답례품 봉투를 준비해 아이 생일을 축하한다.",
+     "bundle_items": [
+      "케이크",
+      "생일 초",
+      "고깔모자",
+      "풍선",
+      "답례품 봉투"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "아이 생일 파티",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "67cfc925",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "c5749dff",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "ef4ab968",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "8c9d725a",
+   "intents": [
+    {
+     "intent_id": "closet_change",
+     "intent_text": "압축팩과 옷걸이, 수납박스를 이용해 옷과 이불을 정리하고 교체한다.",
+     "bundle_items": [
+      "압축팩",
+      "옷걸이",
+      "수납박스"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "옷과 이불 정리",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "57466480",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "7bb77398",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "020330dc",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "camping_trip"
+   ]
+  },
+  {
+   "case_ref": "fb03e3ff",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "camping_trip"
+   ]
+  },
+  {
+   "case_ref": "af4ab370",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "2ae163df",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "41a3d28f",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "cc81a662",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a606a73c",
+   "intents": [
+    {
+     "intent_id": "anniversary_dinner",
+     "intent_text": "도착 6일 뒤 수요일 기념일에 맞춰 부부가 스테이크와 레드와인, 꽃다발과 양초를 준비해 집에서 기념일 저녁을 즐긴다.",
+     "bundle_items": [
+      "꽃다발",
+      "레드와인",
+      "양초",
+      "안심 스테이크"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "기념일",
+    "guests": null,
+    "activity": "기념일 저녁 식사",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "85bbcd59",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b4447875",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "38e2b892",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "42a0c7e3",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "85567151",
+   "intents": [
+    {
+     "intent_id": "anniversary_dinner",
+     "intent_text": "도착 8일 뒤 월요일 기념일에 맞춰 부부가 스테이크와 와인, 꽃다발과 양초를 준비해 집에서 기념일 저녁을 즐긴다.",
+     "bundle_items": [
+      "와인",
+      "꽃다발",
+      "그린빈",
+      "스테이크",
+      "양초"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "기념일",
+    "guests": null,
+    "activity": "기념일 저녁 식사",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "dfa5976f",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e972b4a7",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a8efbf11",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "92563d19",
+   "intents": [
+    {
+     "intent_id": "closet_change",
+     "intent_text": "압축팩과 이불 커버, 옷걸이와 방충제를 준비해 옷과 이불을 교체하고 정리한다.",
+     "bundle_items": [
+      "방충제",
+      "압축팩",
+      "이불 커버",
+      "옷걸이"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "옷과 이불 교체",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "439a541c",
+   "intents": [
+    {
+     "intent_id": "new_dog",
+     "intent_text": "켄넬과 강아지 사료, 배변패드와 식기를 마련해 강아지를 맞이한다.",
+     "bundle_items": [
+      "켄넬",
+      "강아지 사료",
+      "배변패드",
+      "강아지 식기"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "강아지 맞이 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "d6c3e392",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "c03d79e6",
+   "intents": [
+    {
+     "intent_id": "picnic_lunchbox",
+     "intent_text": "도착 14일 뒤 일요일 나들이·소풍에 맞춰 햄과 치즈, 식빵으로 샌드위치 도시락을 준비하고 돗자리를 챙긴다.",
+     "bundle_items": [
+      "슬라이스 햄",
+      "체다 치즈",
+      "피크닉 돗자리",
+      "샌드위치 용기",
+      "식빵",
+      "비닐장갑"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "나들이·소풍",
+    "guests": null,
+    "activity": "도시락 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "fba4d92c",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "f230245d",
+   "intents": [
+    {
+     "intent_id": "unclassified",
+     "intent_text": "카라비너와 클라이밍 초크를 준비해 클라이밍을 한다.",
+     "bundle_items": [
+      "카라비너",
+      "클라이밍 초크"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "클라이밍",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "6bc88ef3",
+   "intents": [
+    {
+     "intent_id": "kid_birthday_party",
+     "intent_text": "도착 7일 뒤 금요일 생일 일정에 맞춰 초콜릿 케이크와 멜로디 초, 파티 안경과 구디백 봉투로 자녀의 생일을 축하한다.",
+     "bundle_items": [
+      "구디백 봉투",
+      "멜로디 초",
+      "초콜릿 케이크",
+      "파티 안경"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "생일 파티",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "16cee728",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "3b609017",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e1f469f0",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  }
+ ]
+}
