@@ -7,25 +7,24 @@
  "person": "J",
  "prompt_version": "label@v1",
  "model_config": "claude-sonnet-5-5",
- "models_seen": [],
- "usage": {
-  "input_tokens": 0,
-  "cache_creation_input_tokens": 0,
-  "cache_read_input_tokens": 0,
-  "output_tokens": 0,
-  "total_cost_usd": 0
- },
- "total_tokens": 0,
- "quota": null,
- "attempts": 2,
- "ok": false,
- "errors": [
-  "[1회] 에이전트 실행 실패: API Error: 400 Invalid model specified. The model claude-sonnet-5-5 is either not supported or misspelled. View supported models at: https://url.sap/vxs9sw",
-  "[2회] 에이전트 실행 실패: API Error: 400 Invalid model specified. The model claude-sonnet-5-5 is either not supported or misspelled. View supported models at: https://url.sap/vxs9sw"
+ "models_seen": [
+  "claude-sonnet-5-5"
  ],
- "started_at": "2026-11-16T13:41:56+09:00",
- "finished_at": "2026-11-16T13:42:11+09:00",
- "seconds": 15,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 39061,
+  "cache_read_input_tokens": 83023,
+  "output_tokens": 9953,
+  "total_cost_usd": 0.2640923
+ },
+ "total_tokens": 132045,
+ "quota": null,
+ "attempts": 1,
+ "ok": true,
+ "errors": [],
+ "started_at": "2026-11-16T14:00:00+09:00",
+ "finished_at": "2026-11-16T14:01:01+09:00",
+ "seconds": 61,
  "local_date": "2026-11-16",
  "fake": false
 }
