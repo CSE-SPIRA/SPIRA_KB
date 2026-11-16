@@ -8,22 +8,25 @@
  "prompt_version": "generate_bundle@v1",
  "model_config": null,
  "models_seen": [],
- "usage": {},
- "total_tokens": null,
+ "usage": {
+  "input_tokens": 98999,
+  "cached_input_tokens": 77440,
+  "cache_write_input_tokens": 0,
+  "output_tokens": 2241,
+  "reasoning_output_tokens": 16
+ },
+ "total_tokens": 178696,
  "quota": {
   "weekly_left_after": 91.0,
   "weekly_used_pct": 0.0,
-  "five_h_used_pct": 0.0
+  "five_h_used_pct": 1.0
  },
- "attempts": 2,
- "ok": false,
- "errors": [
-  "[1회] 에이전트 실행 실패: Error loading config.toml: invalid transport\nin `mcp_servers.code-review`\n\n",
-  "[2회] 에이전트 실행 실패: Error loading config.toml: invalid transport\nin `mcp_servers.code-review`\n\n"
- ],
- "started_at": "2026-11-16T13:03:58+09:00",
- "finished_at": "2026-11-16T13:03:58+09:00",
- "seconds": 0,
+ "attempts": 1,
+ "ok": true,
+ "errors": [],
+ "started_at": "2026-11-16T13:18:23+09:00",
+ "finished_at": "2026-11-16T13:19:14+09:00",
+ "seconds": 50,
  "local_date": "2026-11-16",
  "fake": false
 }
