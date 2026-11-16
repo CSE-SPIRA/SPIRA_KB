@@ -214,6 +214,17 @@ def accept(batch: str, reason: str = typer.Option(..., help="통과시키는 이
     typer.echo(f"✓ {batch} 통과 처리. 다음 자동 진행 때 적재됩니다")
 
 
+@app.command()
+def retry(target: str = typer.Argument("", help="배치 이름(예: A1-2)이나 작업 이름. 비우면 실패한 작업 전부")) -> None:
+    """(U) 두 번 실패해 failed에 있는 작업을 대기열로 되돌린다. 원인을 고친 뒤에 쓴다."""
+    from spira import queue
+    back = queue.retry_failed(target)
+    if not back:
+        typer.echo(f"되돌릴 실패 작업이 없습니다{f' ({target})' if target else ''}")
+        return
+    typer.echo(f"✓ {len(back)}개를 대기열로 되돌렸습니다: {', '.join(back)}")
+
+
 @app.command("redo-batch")
 def redo_batch(batch: str) -> None:
     """(U) 배치를 처음부터 다시 만든다. 프롬프트 · 설정을 고친 뒤에 쓴다. 옛 배치는 discarded_batches/로 옮긴다."""

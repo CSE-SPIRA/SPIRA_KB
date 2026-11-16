@@ -124,27 +124,37 @@ def waiting(scope: str, company: str) -> list[Path]:
     return out
 
 
+def _priority(scope_index: int, path: Path) -> tuple:
+    """생성 작업을 라벨보다 먼저 한다. 생성이 끝나야 다른 두 회사가 라벨을 받을 수 있어서다."""
+    try:
+        role = json.loads(path.read_text(encoding="utf-8")).get("role") or ""
+    except (json.JSONDecodeError, OSError):
+        role = ""
+    return (role.startswith("label"), scope_index, path.name)
+
+
 def claim_next(scopes: list[str], company: str, person: str) -> Job | None:
-    """scopes 순서대로 그 회사의 다음 작업을 하나 예약한다. 없으면 None."""
+    """그 회사의 다음 작업을 하나 예약한다 (생성 먼저 → 라벨, 같은 종류는 scopes 순서 · 이름순). 없으면 None."""
     with _lock:
         sync()
-        for scope in scopes:
-            for path in waiting(scope, company):
-                if not path.exists():   # 앞선 시도에서 받은 최신 상태에 이미 없음
-                    continue
-                job_id = path.stem
-                running = _dir(scope, "running")
-                running.mkdir(parents=True, exist_ok=True)
-                dst = running / path.name
-                claim = running / f"{job_id}.claim.json"
-                data = json.loads(path.read_text(encoding="utf-8"))
-                git("mv", str(path.relative_to(ROOT)), str(dst.relative_to(ROOT)))
-                claim.write_text(json.dumps({"person": person, "company": company,
-                                             "claimed_at": now().isoformat()}, ensure_ascii=False),
-                                 encoding="utf-8")
-                if _commit_and_push(f"예약 {job_id} ({person}·{company})", [path, dst, claim]):
-                    return Job(scope, job_id, data)
-                # 남이 먼저 가져감 → 다음 작업
+        order = sorted(((i, scope, p) for i, scope in enumerate(scopes) for p in waiting(scope, company)),
+                       key=lambda t: _priority(t[0], t[2]))
+        for _, scope, path in order:
+            if not path.exists():   # 앞선 시도에서 받은 최신 상태에 이미 없음
+                continue
+            job_id = path.stem
+            running = _dir(scope, "running")
+            running.mkdir(parents=True, exist_ok=True)
+            dst = running / path.name
+            claim = running / f"{job_id}.claim.json"
+            data = json.loads(path.read_text(encoding="utf-8"))
+            git("mv", str(path.relative_to(ROOT)), str(dst.relative_to(ROOT)))
+            claim.write_text(json.dumps({"person": person, "company": company,
+                                         "claimed_at": now().isoformat()}, ensure_ascii=False),
+                             encoding="utf-8")
+            if _commit_and_push(f"예약 {job_id} ({person}·{company})", [path, dst, claim]):
+                return Job(scope, job_id, data)
+            # 남이 먼저 가져감 → 다음 작업
         return None
 
 
@@ -181,6 +191,28 @@ def fail(job: Job, error: str, meta: dict) -> None:
         _remove_running(run, job.job_id)
         _commit_and_push(f"실패 {job.job_id}", [dst, err, log, *kept, run / f"{job.job_id}.json",
                                                 run / f"{job.job_id}.claim.json"])
+
+
+def retry_failed(prefix: str = "") -> list[str]:
+    """failed에 있는 작업을 대기열로 되돌린다 (prefix: 배치 이름이나 작업 이름, 비우면 전부).
+    오류 내용(.error.txt)은 지우고, 실행 기록(logs)은 남긴다 (한도를 쓴 기록이라)."""
+    back, changed = [], []
+    with _lock:
+        sync()
+        for scope_dir in sorted(p for p in DATA.iterdir() if p.is_dir()):
+            failed = scope_dir / "failed"
+            for f in sorted(failed.glob(f"{prefix}*.json")):
+                q = scope_dir / "queue" / f.name
+                q.parent.mkdir(parents=True, exist_ok=True)
+                git("mv", str(f.relative_to(ROOT)), str(q.relative_to(ROOT)))
+                err = failed / f"{f.stem}.error.txt"
+                if err.exists():
+                    err.unlink()
+                changed += [f, q, err]
+                back.append(f.stem)
+        if back:
+            _commit_and_push(f"실패 작업 다시 대기열로: {', '.join(back)}", changed)
+    return back
 
 
 def release(job: Job) -> None:
