@@ -27,29 +27,23 @@ _MCP_CACHE: list[str] | None = None
 
 
 def _mcp_servers() -> list[str]:
-    """이 노트북 Codex에 등록된 MCP 서버 이름. `codex mcp list --json`으로 읽고, 안 되면 config.toml에서 읽는다."""
+    """이 노트북 Codex의 config.toml에 적힌 MCP 서버 이름.
+    플러그인 등 다른 경로로 들어온 서버는 -c로 끌 수 없어서 (빈 설정이 생겨 Codex가 시작을 못 함) 건드리지 않는다."""
     global _MCP_CACHE
     if _MCP_CACHE is not None:
         return _MCP_CACHE
     import os
-    import shutil
-    import subprocess
+    import re
+    import tomllib
     names: list[str] = []
-    exe = shutil.which("codex")
-    if exe:
-        try:
-            out = subprocess.run([exe, "mcp", "list", "--json"], capture_output=True, text=True, encoding="utf-8",
-                                 errors="replace", timeout=60, stdin=subprocess.DEVNULL).stdout
-            names = [s["name"] for s in json.loads(out) if isinstance(s, dict) and s.get("name")]
-        except (OSError, subprocess.SubprocessError, ValueError, TypeError):
-            names = []
-    if not names:
-        try:
-            import tomllib
-            home = Path(os.environ.get("CODEX_HOME") or Path.home() / ".codex")
-            names = list((tomllib.loads((home / "config.toml").read_text(encoding="utf-8")).get("mcp_servers") or {}))
-        except (OSError, ValueError):
-            names = []
+    try:
+        home = Path(os.environ.get("CODEX_HOME") or Path.home() / ".codex")
+        servers = tomllib.loads((home / "config.toml").read_text(encoding="utf-8")).get("mcp_servers") or {}
+        # 연결 방식(command 또는 url)이 적힌 서버만, -c 키로 쓸 수 있는 이름만
+        names = [n for n, v in servers.items()
+                 if isinstance(v, dict) and (v.get("command") or v.get("url")) and re.fullmatch(r"[A-Za-z0-9_-]+", n)]
+    except (OSError, ValueError):
+        names = []
     _MCP_CACHE = names
     return names
 
