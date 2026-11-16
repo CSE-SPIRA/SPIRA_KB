@@ -1,0 +1,25 @@
+{
+ "job_id": "A1-2_generate_011",
+ "scope": "A",
+ "batch": "A1-2",
+ "role": "generate",
+ "company": "codex",
+ "person": "S",
+ "prompt_version": "generate_bundle@v1",
+ "model_config": null,
+ "models_seen": [],
+ "usage": {},
+ "total_tokens": null,
+ "quota": null,
+ "attempts": 2,
+ "ok": false,
+ "errors": [
+  "[1회] 에이전트 실행 실패: Reading additional input from stdin...\n2026-11-16T02:09:27.041953Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest(\"http/request failed: error sending request for url (http://127.0.0.1:64342/stream)\")))\n2026-11-16T02:09:27.295526Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest(\"http/request failed: error sending request for url (http://127.0.0.1:64342/stream)\")))\n2026-11-16T02:09:27.363304Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when AuthRequired(AuthRequiredError { www_authenticate_header: \"Bearer realm=\\\"OAuth\\\", resource_metadata=\\\"https://mcp.notion.com/.well-known/oauth-protected-resource/mcp\\\", scope=\\\"default\\\"\" })\n2026-11-16T02:09:27.876487Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when AuthRequired(AuthRequiredError { www_authenticate_header: \"Bearer resource_metadata=\\\"https://mcp.context7.com/.well-known/oauth-protected-resource/mcp\\\"\" })\n2026-11-16T02:09:28.017545Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when AuthRequired(AuthRequiredError { www_authenticate_header: \"Bearer error=\\\"invalid_request\\\", error_description=\\\"No access token was provided in this request\\\", resource_metadata=\\\"https://api.githubcopilot.com/.well-known/oauth-protected-resource/mcp/\\\"\" })\n2026-11-16T02:09:28.298052Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest(\"http/request failed: error sending request for url (http://127.0.0.1:64342/stream)\")))\n",
+  "[2회] 에이전트 실행 실패: Reading additional input from stdin...\n2026-11-16T02:09:32.520916Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest(\"http/request failed: error sending request for url (http://127.0.0.1:64342/stream)\")))\n2026-11-16T02:09:32.773434Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest(\"http/request failed: error sending request for url (http://127.0.0.1:64342/stream)\")))\n2026-11-16T02:09:33.091658Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when AuthRequired(AuthRequiredError { www_authenticate_header: \"Bearer realm=\\\"OAuth\\\", resource_metadata=\\\"https://mcp.notion.com/.well-known/oauth-protected-resource/mcp\\\", scope=\\\"default\\\"\" })\n2026-11-16T02:09:33.367827Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when AuthRequired(AuthRequiredError { www_authenticate_header: \"Bearer resource_metadata=\\\"https://mcp.context7.com/.well-known/oauth-protected-resource/mcp\\\"\" })\n2026-11-16T02:09:33.477389Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when AuthRequired(AuthRequiredError { www_authenticate_header: \"Bearer error=\\\"invalid_request\\\", error_description=\\\"No access token was provided in this request\\\", resource_metadata=\\\"https://api.githubcopilot.com/.well-known/oauth-protected-resource/mcp/\\\"\" })\n2026-11-16T02:09:33.776081Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest(\"http/request failed: error sending request for url (http://127.0.0.1:64342/stream)\")))\n"
+ ],
+ "started_at": "2026-11-16T11:09:26+09:00",
+ "finished_at": "2026-11-16T11:09:37+09:00",
+ "seconds": 12,
+ "local_date": "2026-11-16",
+ "fake": false
+}
