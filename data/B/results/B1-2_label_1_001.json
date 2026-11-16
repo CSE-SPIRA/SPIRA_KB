@@ -1,0 +1,789 @@
+{
+ "job_id": "B1-2_label_1_001",
+ "labels": [
+  {
+   "case_ref": "b96f0789",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "52afff8a",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "meal_prep"
+   ]
+  },
+  {
+   "case_ref": "677862f1",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "7633e986",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "edc7c4ac",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "7aa3b584",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "62778f1b",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "838ee162",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "9482f5b3",
+   "intents": [
+    {
+     "intent_id": "rainy_season",
+     "intent_text": "제습제, 곰팡이 제거제, 제습기 필터를 한꺼번에 갖춰 장마철 습기와 곰팡이에 대비한다",
+     "bundle_items": [
+      "제습제",
+      "곰팡이 제거제",
+      "제습기 필터"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "습기 제거와 곰팡이 방지",
+    "theme": "장마·습기"
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "91bea1f0",
+   "intents": [
+    {
+     "intent_id": "deep_cleaning",
+     "intent_text": "1인 가구 대학생이 주방·욕실·유리용 세정제와 청소솔, 고무장갑을 한꺼번에 사서 집을 대청소한다",
+     "bundle_items": [
+      "주방 세정제",
+      "욕실 세정제",
+      "청소솔",
+      "고무장갑",
+      "유리 세정제"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "주방·욕실·유리 청소",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "7130c472",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "camping_trip",
+    "picnic_lunchbox"
+   ]
+  },
+  {
+   "case_ref": "7c3b8fc3",
+   "intents": [
+    {
+     "intent_id": "holiday_feast",
+     "intent_text": "도착 10일 뒤 금요일 추석에 맞춰 약과, 꼬치전, 풋고추 등으로 명절 음식을 준비한다",
+     "bundle_items": [
+      "약과",
+      "꼬치전",
+      "풋고추"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "추석",
+    "guests": null,
+    "activity": "명절 음식 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "ec714b21",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "8084083a",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "560402b6",
+   "intents": [
+    {
+     "intent_id": "kid_birthday_party",
+     "intent_text": "케이크와 생일 초, 풍선, 파티 모자, 답례품 봉투를 갖춰 집에서 자녀 생일 파티를 연다",
+     "bundle_items": [
+      "답례품 봉투",
+      "케이크",
+      "생일 초",
+      "풍선",
+      "파티 모자",
+      "사이다"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "집에서 생일 파티",
+    "theme": "파티"
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e9a0a57e",
+   "intents": [
+    {
+     "intent_id": "summer_heat",
+     "intent_text": "에어컨 필터와 선풍기, 암막 커튼으로 여름 더위에 대비한다",
+     "bundle_items": [
+      "에어컨 필터",
+      "선풍기",
+      "암막 커튼"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "더위 대비",
+    "theme": "여름"
+   },
+   "alternatives": [
+    "rainy_season"
+   ]
+  },
+  {
+   "case_ref": "75a42359",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5fac29f2",
+   "intents": [
+    {
+     "intent_id": "adult_birthday",
+     "intent_text": "도착 6일 뒤 월요일 생일 일정에 맞춰, 1인 가구 노년의 생일을 케이크와 생일 초, 꽃다발, 와인으로 축하한다",
+     "bundle_items": [
+      "꽃다발",
+      "양초",
+      "와인",
+      "생일 초",
+      "케이크"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "케이크와 꽃, 와인으로 생일 축하",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "8d62b6b7",
+   "intents": [
+    {
+     "intent_id": "watch_party",
+     "intent_text": "응원 머플러를 두르고 팝콘, 피자, 맥주를 곁들이며 화면 앞에서 함께 응원하며 본다",
+     "bundle_items": [
+      "팝콘",
+      "응원 머플러",
+      "피자",
+      "맥주"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "함께 화면을 보며 응원",
+    "theme": "응원"
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "8e1864dd",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "36091984",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "6e8aabc0",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "3ac5d588",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4147602a",
+   "intents": [
+    {
+     "intent_id": "trip_away",
+     "intent_text": "캐리어와 여권 지갑, 목베개, 여행용 파우치, 공병을 챙겨 여행을 떠날 짐을 꾸린다",
+     "bundle_items": [
+      "공병",
+      "여권 지갑",
+      "목베개",
+      "캐리어",
+      "여행용 파우치"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "여행",
+    "guests": null,
+    "activity": "짐 꾸리기",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "998c7670",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "2b824dcd",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "meal_prep"
+   ]
+  },
+  {
+   "case_ref": "9e52b9c5",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "2e06d28a",
+   "intents": [
+    {
+     "intent_id": "winter_dry_cold",
+     "intent_text": "문풍지와 전기요, 가습기로 겨울 추위와 건조함에 대비한다",
+     "bundle_items": [
+      "문풍지",
+      "전기요",
+      "가습기"
+     ]
+    },
+    {
+     "intent_id": "picnic_lunchbox",
+     "intent_text": "돗자리를 챙기고 유부초밥과 과일을 도시락 용기에 담아 당일 나들이를 간다",
+     "bundle_items": [
+      "돗자리",
+      "유부초밥",
+      "도시락 용기",
+      "과일"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "겨울 대비와 나들이 도시락 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "77c6edfd",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b4a862c6",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "1c845cc1",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b323bf03",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "aa6e5230",
+   "intents": [
+    {
+     "intent_id": "deep_cleaning",
+     "intent_text": "1인 가구 대학생이 유리 세정제, 욕실 세제, 청소솔, 걸레, 밀대를 한꺼번에 사서 집을 대청소한다",
+     "bundle_items": [
+      "유리 세정제",
+      "걸레",
+      "청소솔",
+      "밀대",
+      "욕실 세제"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "유리·욕실·바닥 청소",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "7c412271",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "밀가루, 버터, 이스트와 반죽 주걱, 식빵 틀로 집에서 식빵을 구우려 한다",
+     "bundle_items": [
+      "밀가루",
+      "버터",
+      "이스트",
+      "반죽 주걱",
+      "식빵 틀"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "식빵 베이킹",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a08d059a",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "d20037ba",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "08f1b44e",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "trip_away"
+   ]
+  },
+  {
+   "case_ref": "e83b0f36",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "44bbdd38",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "0ca2ec61",
+   "intents": [
+    {
+     "intent_id": "deep_cleaning",
+     "intent_text": "도착 2일 뒤 금요일 대청소 일정에 맞춰 수세미, 틈새솔, 주방·욕실 세정제, 고무장갑으로 집을 청소한다",
+     "bundle_items": [
+      "수세미",
+      "틈새솔",
+      "주방 세정제",
+      "고무장갑",
+      "욕실 세정제"
+     ]
+    },
+    {
+     "intent_id": "school_start",
+     "intent_text": "대학생이 새 학기를 맞아 백팩, 볼펜, 필통, 노트를 장만한다",
+     "bundle_items": [
+      "백팩",
+      "볼펜",
+      "필통",
+      "노트"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "대청소",
+    "guests": null,
+    "activity": "대청소와 학용품 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "59b65228",
+   "intents": [
+    {
+     "intent_id": "school_start",
+     "intent_text": "도착 13일 뒤 화요일 입학·개학 일정에 맞춰 책가방, 실내화, 필통, 색연필, 스케치북 등 입학 준비물을 갖춘다",
+     "bundle_items": [
+      "실내화",
+      "필통",
+      "색연필",
+      "스케치북",
+      "책가방"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "입학·개학",
+    "guests": null,
+    "activity": "입학 준비물 장만",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "cd185633",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "0471b5df",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "40671575",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "839006bf",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "495f25f1",
+   "intents": [
+    {
+     "intent_id": "holiday_feast",
+     "intent_text": "도착 11일 뒤 목요일 추석에 맞춰 동태포, 부침가루, 산적꼬치, 약과로 전과 산적 등 명절 음식을 준비한다",
+     "bundle_items": [
+      "동태포",
+      "부침가루",
+      "산적꼬치",
+      "약과"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "추석",
+    "guests": null,
+    "activity": "전·산적 등 명절 음식 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "632e3414",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "14e067b9",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "1ecc0e09",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "1c2d3c8e",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "efd683db",
+   "intents": [
+    {
+     "intent_id": "trip_away",
+     "intent_text": "캐리어와 수하물 저울, 여행용 자물쇠, 짐 정리함으로 여행 짐을 꾸린다",
+     "bundle_items": [
+      "수하물 저울",
+      "여행용 자물쇠",
+      "캐리어",
+      "짐 정리함"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "여행",
+    "guests": null,
+    "activity": "짐 꾸리기",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e6789f93",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "69644bb2",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  }
+ ]
+}
