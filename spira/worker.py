@@ -15,6 +15,7 @@
 from __future__ import annotations
 
 import json
+import re
 import os
 import shutil
 import sys
@@ -120,6 +121,13 @@ def fmt(x: float) -> str:
 
 # ---------------------------------------------------------------- 작업 하나
 
+def prompt_file_version(role: str) -> str | None:
+    """프롬프트 파일 첫 줄의 (vN)을 읽어 '이름@vN'으로 돌려준다. 없으면 None."""
+    first = (PROMPTS / PROMPT_FILE[role]).read_text(encoding="utf-8").splitlines()[0]
+    m = re.search(r"\((v\d+)", first)
+    return f"{PROMPT_FILE[role].removesuffix('.md')}@{m.group(1)}" if m else None
+
+
 def render_prompt(role: str) -> str:
     text = (PROMPTS / PROMPT_FILE[role]).read_text(encoding="utf-8")
     if "\n---\n" in text:   # 위쪽 머리말(관리용 설명)은 에이전트에게 주지 않는다
@@ -165,7 +173,7 @@ def run_one(acc: Account, job: queue.Job, stop: threading.Event, log, q_before: 
     meta = {
         "job_id": job.job_id, "scope": job.scope, "batch": job.data.get("batch"),
         "role": job.role, "company": acc.company, "person": acc.person,
-        "prompt_version": job.data.get("prompt_version"),
+        "prompt_version": prompt_file_version(job.role) or job.data.get("prompt_version"),
         "model_config": acc.model, "models_seen": sorted(models_seen),
         "usage": usage_all, "total_tokens": total_tokens(usage_all),
         "quota": _quota_delta(q_before, q_after),

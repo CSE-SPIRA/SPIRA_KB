@@ -32,7 +32,7 @@ from spira import checks, config, household
 from spira.queue import DATA
 from spira.schemas import LabelJob
 
-PROMPT_VERSION = "label@v1"
+PROMPT_VERSION = "label@v2"
 
 
 def ready(batch: str) -> bool:
