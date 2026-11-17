@@ -1,0 +1,141 @@
+{
+ "metrics": {
+  "cases": 1000,
+  "items": {
+   "none_ratio": {
+    "value": 0.659,
+    "target": [
+     0.6,
+     0.75
+    ],
+    "ok": true
+   },
+   "calendar_shortcut": {
+    "value": 0.01679689444085003,
+    "target": [
+     0,
+     0.05
+    ],
+    "ok": true
+   },
+   "label_agreement": {
+    "value": 0.938,
+    "target": [
+     0.85,
+     0.97
+    ],
+    "ok": true
+   },
+   "b_recall": {
+    "value": 0.844,
+    "target": [
+     0.85,
+     1
+    ],
+    "ok": false
+   },
+   "w_seen": {
+    "value": 0.6,
+    "target": [
+     0.3,
+     0.7
+    ],
+    "ok": true
+   },
+   "per_intent": {
+    "value": 5,
+    "low": [
+     "home_party",
+     "family_gathering",
+     "kids_playdate",
+     "picnic_lunchbox",
+     "rainy_season"
+    ],
+    "ok": false
+   },
+   "checks": {
+    "value": 0,
+    "total": 120,
+    "ok": true
+   }
+  },
+  "unseen_intent": 133,
+  "unclassified": 1,
+  "frequent_splits": [
+   [
+    "kids_playdate ↔ none",
+    8
+   ],
+   [
+    "moving_in ↔ none",
+    6
+   ],
+   [
+    "family_gathering ↔ none",
+    6
+   ],
+   [
+    "home_party ↔ none",
+    6
+   ],
+   [
+    "camping_trip ↔ none",
+    4
+   ],
+   [
+    "adult_birthday ↔ none",
+    4
+   ],
+   [
+    "guest_overnight ↔ none",
+    3
+   ],
+   [
+    "exam_focus ↔ none",
+    3
+   ],
+   [
+    "kids_vacation ↔ none",
+    3
+   ],
+   [
+    "christmas_party ↔ none",
+    2
+   ]
+  ],
+  "intent_counts": {
+   "summer_heat": 26,
+   "trip_away": 26,
+   "winter_dry_cold": 22,
+   "adult_birthday": 21,
+   "kid_birthday_party": 21,
+   "closet_change": 20,
+   "deep_cleaning": 19,
+   "school_start": 19,
+   "anniversary_dinner": 17,
+   "kids_vacation": 16,
+   "guest_overnight": 15,
+   "watch_party": 15,
+   "meal_prep": 14,
+   "home_baking": 13,
+   "holiday_feast": 12,
+   "christmas_party": 10,
+   "home_workout_start": 9,
+   "moving_in": 9,
+   "camping_trip": 9,
+   "fine_dust": 9,
+   "new_cat": 9,
+   "wfh_start": 8,
+   "exam_focus": 8,
+   "kimjang": 7,
+   "home_party": 7,
+   "rainy_season": 6,
+   "new_dog": 6,
+   "picnic_lunchbox": 6,
+   "kids_playdate": 2,
+   "family_gathering": 2
+  }
+ },
+ "review": null,
+ "verdict": null
+}
