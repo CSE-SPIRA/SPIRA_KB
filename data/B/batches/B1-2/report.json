@@ -1,0 +1,140 @@
+{
+ "metrics": {
+  "cases": 1000,
+  "items": {
+   "none_ratio": {
+    "value": 0.676,
+    "target": [
+     0.6,
+     0.75
+    ],
+    "ok": true
+   },
+   "calendar_shortcut": {
+    "value": 0.04611491351155936,
+    "target": [
+     0,
+     0.05
+    ],
+    "ok": true
+   },
+   "label_agreement": {
+    "value": 0.931,
+    "target": [
+     0.85,
+     0.97
+    ],
+    "ok": true
+   },
+   "b_recall": {
+    "value": 0.876,
+    "target": [
+     0.85,
+     1
+    ],
+    "ok": true
+   },
+   "w_seen": {
+    "value": 0.54,
+    "target": [
+     0.3,
+     0.7
+    ],
+    "ok": true
+   },
+   "per_intent": {
+    "value": 4,
+    "low": [
+     "home_party",
+     "family_gathering",
+     "kids_playdate",
+     "closet_change"
+    ],
+    "ok": false
+   },
+   "checks": {
+    "value": 0,
+    "total": 120,
+    "ok": true
+   }
+  },
+  "unseen_intent": 141,
+  "unclassified": 1,
+  "frequent_splits": [
+   [
+    "home_party ↔ none",
+    13
+   ],
+   [
+    "kids_playdate ↔ none",
+    8
+   ],
+   [
+    "family_gathering ↔ none",
+    5
+   ],
+   [
+    "adult_birthday ↔ none",
+    4
+   ],
+   [
+    "kids_vacation ↔ none",
+    4
+   ],
+   [
+    "camping_trip ↔ none",
+    4
+   ],
+   [
+    "moving_in ↔ none",
+    3
+   ],
+   [
+    "none ↔ unclassified",
+    2
+   ],
+   [
+    "meal_prep ↔ none",
+    2
+   ],
+   [
+    "none ↔ trip_away",
+    2
+   ]
+  ],
+  "intent_counts": {
+   "kid_birthday_party": 28,
+   "winter_dry_cold": 26,
+   "deep_cleaning": 25,
+   "trip_away": 20,
+   "summer_heat": 19,
+   "school_start": 19,
+   "adult_birthday": 19,
+   "holiday_feast": 17,
+   "anniversary_dinner": 15,
+   "home_baking": 15,
+   "fine_dust": 15,
+   "meal_prep": 14,
+   "camping_trip": 14,
+   "picnic_lunchbox": 13,
+   "christmas_party": 11,
+   "exam_focus": 10,
+   "rainy_season": 10,
+   "watch_party": 9,
+   "kids_vacation": 8,
+   "moving_in": 7,
+   "new_dog": 6,
+   "new_cat": 6,
+   "guest_overnight": 6,
+   "home_party": 5,
+   "wfh_start": 5,
+   "kimjang": 5,
+   "home_workout_start": 5,
+   "closet_change": 4,
+   "kids_playdate": 3,
+   "family_gathering": 1
+  }
+ },
+ "review": null,
+ "verdict": null
+}
