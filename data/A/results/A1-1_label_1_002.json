@@ -1,0 +1,792 @@
+{
+ "job_id": "A1-1_label_1_002",
+ "labels": [
+  {
+   "case_ref": "f30e1777",
+   "intents": [
+    {
+     "intent_id": "kid_birthday_party",
+     "intent_text": "초등 자녀가 있는 집에서 생일 가랜드와 숫자 초로 생일을 꾸미고 어린이 주스와 쿠키, 클레이와 비눗방울을 준비해 아이 생일을 축하한다.",
+     "bundle_items": [
+      "어린이 주스",
+      "생일 가랜드",
+      "컬러 클레이",
+      "숫자 초",
+      "초코칩 쿠키",
+      "비눗방울"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "아이 생일 축하와 놀이",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "c6f1c667",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4ab87900",
+   "intents": [
+    {
+     "intent_id": "anniversary_dinner",
+     "intent_text": "도착 12일 뒤 일요일 기념일에 맞춰 부부·커플이 집에서 스테이크와 올리브, 와인으로 저녁을 먹고 꽃다발과 향초를 곁들인다.",
+     "bundle_items": [
+      "꽃다발",
+      "향초",
+      "스테이크 고기",
+      "올리브",
+      "와인"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "기념일",
+    "guests": null,
+    "activity": "둘이 집에서 저녁 식사",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "379872e9",
+   "intents": [
+    {
+     "intent_id": "kids_vacation",
+     "intent_text": "도착 8일 뒤 수요일 시작하는 방학에 대비해 아이가 집에서 먹을 어린이 음료, 핫도그, 볶음밥과 감자칩을 마련하고 보드게임과 한글 학습지를 준비한다.",
+     "bundle_items": [
+      "어린이 음료",
+      "핫도그",
+      "보드게임",
+      "냉동 볶음밥",
+      "감자칩",
+      "한글 학습지"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "방학",
+    "guests": null,
+    "activity": "아이의 집 안 식사와 학습·놀이 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "3fd5827c",
+   "intents": [
+    {
+     "intent_id": "exam_focus",
+     "intent_text": "집에서 공부에 집중할 수 있도록 탁상용 스탠드와 독서대, 스프링 노트를 갖추고 견과류와 볶음밥으로 간식과 간편식을 준비한다.",
+     "bundle_items": [
+      "탁상용 스탠드",
+      "독서대",
+      "견과류",
+      "볶음밥",
+      "스프링 노트"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "집중 학습 환경 준비",
+    "theme": null
+   },
+   "alternatives": [
+    "school_start"
+   ]
+  },
+  {
+   "case_ref": "8de381d4",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a4112fc3",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "f761c710",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4eec5f8b",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "aee58d88",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "3f18a6e3",
+   "intents": [
+    {
+     "intent_id": "adult_birthday",
+     "intent_text": "도착 10일 뒤 일요일 생일에 맞춰 초코 케이크에 골드 초를 꽂고 꽃바구니를 곁들여 어른의 생일을 축하한다.",
+     "bundle_items": [
+      "꽃바구니",
+      "초코 케이크",
+      "골드 초"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "어른 생일 축하",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4b0c1c4a",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "0cc6b0e6",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "1bf546e7",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "f397aece",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "9aa0ec9f",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4637cab2",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "26b57974",
+   "intents": [
+    {
+     "intent_id": "picnic_lunchbox",
+     "intent_text": "도착 8일 뒤 금요일 나들이·소풍에 가져갈 김밥을 김밥 김과 단무지로 준비하고 보랭백과 방수 돗자리를 챙긴다.",
+     "bundle_items": [
+      "김밥용 단무지",
+      "김밥 김",
+      "보랭백",
+      "방수 돗자리"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "나들이·소풍",
+    "guests": null,
+    "activity": "김밥 도시락을 준비해 나들이",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "92903fa2",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "20f34ac5",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "christmas_party"
+   ]
+  },
+  {
+   "case_ref": "00bb7be3",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "kimjang",
+    "trip_away"
+   ]
+  },
+  {
+   "case_ref": "0e992c68",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "new_cat"
+   ]
+  },
+  {
+   "case_ref": "6bd25dda",
+   "intents": [
+    {
+     "intent_id": "summer_heat",
+     "intent_text": "집에서 여름 더위에 대비해 에어컨 필터를 마련하고 침대 쿨매트와 탁상용 선풍기를 준비한다.",
+     "bundle_items": [
+      "에어컨 필터",
+      "침대 쿨매트",
+      "탁상용 선풍기"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "집 안 냉방과 시원한 잠자리 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "fae05f9e",
+   "intents": [
+    {
+     "intent_id": "home_party",
+     "intent_text": "도착 8일 뒤 목요일 집들이에 맞춰 어묵탕과 고다 치즈를 대접하고 함께 먹을 나눔접시를 준비한다.",
+     "bundle_items": [
+      "어묵탕",
+      "나눔접시",
+      "고다 치즈"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "집들이",
+    "guests": null,
+    "activity": "집들이 음식 대접",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "22a7239d",
+   "intents": [
+    {
+     "intent_id": "home_party",
+     "intent_text": "집에 지인을 초대해 바비큐 립과 샐러드, 수제 소시지와 수제 맥주를 함께 대접할 준비를 한다.",
+     "bundle_items": [
+      "바비큐 립",
+      "샐러드 믹스",
+      "수제 맥주",
+      "수제 소시지"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "음식과 맥주를 곁들인 홈파티 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "6c4be093",
+   "intents": [
+    {
+     "intent_id": "new_cat",
+     "intent_text": "도착 다음 날 토요일 반려동물 입양 일정에 맞춰 고양이가 사용할 스크래처를 준비한다.",
+     "bundle_items": [
+      "스크래처"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "반려동물 입양",
+    "guests": null,
+    "activity": "고양이 맞이 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "eace20a3",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a119f41c",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "848361c2",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "0b24a6ae",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "집에서 쿠키 만들기 키트로 쿠키를 굽는다.",
+     "bundle_items": [
+      "쿠키 만들기 키트"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "쿠키 만들기",
+    "theme": null
+   },
+   "alternatives": [
+    "new_cat"
+   ]
+  },
+  {
+   "case_ref": "340a6c16",
+   "intents": [
+    {
+     "intent_id": "new_dog",
+     "intent_text": "도착 7일 뒤 토요일 반려동물 입양에 맞춰 강아지 사료와 배변패드, 켄넬과 방석을 갖추어 강아지를 맞이한다.",
+     "bundle_items": [
+      "반려견 켄넬",
+      "강아지 방석",
+      "강아지 사료",
+      "배변패드"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "반려동물 입양",
+    "guests": null,
+    "activity": "강아지 맞이 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "cdd2aea2",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "0412da8a",
+   "intents": [
+    {
+     "intent_id": "kimjang",
+     "intent_text": "도착 다음 날 토요일 김장 일정에 맞춰 절임배추에 고춧가루와 마늘로 양념하고 김장 매트와 대용량 통을 사용해 김치를 담근다.",
+     "bundle_items": [
+      "절임배추",
+      "고춧가루",
+      "김장 매트",
+      "대용량 통",
+      "마늘"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "김장",
+    "guests": null,
+    "activity": "김치 담그기와 보관",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "075c28af",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "553c0ba9",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "c4dc17df",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "baf047a1",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "new_cat"
+   ]
+  },
+  {
+   "case_ref": "6865effb",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "7f4930fa",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "2e878cd8",
+   "intents": [
+    {
+     "intent_id": "family_gathering",
+     "intent_text": "도착 14일 뒤 일요일 가족 모임에 맞춰 소고기 등심과 새송이버섯, 쌈채소로 식사를 준비하고 모둠 과일을 곁들여 가족에게 대접한다.",
+     "bundle_items": [
+      "모둠 과일",
+      "새송이버섯",
+      "쌈채소",
+      "소고기 등심"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "가족 모임",
+    "guests": "가족",
+    "activity": "고기와 채소, 과일로 식사 대접",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "f179223a",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "706a1117",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "school_start"
+   ]
+  },
+  {
+   "case_ref": "913ad104",
+   "intents": [
+    {
+     "intent_id": "home_workout_start",
+     "intent_text": "집에서 요가매트와 덤벨, 폼롤러를 이용한 운동을 시작하고 단백질 보충제를 함께 준비한다.",
+     "bundle_items": [
+      "폼롤러",
+      "단백질 보충제",
+      "덤벨",
+      "요가매트"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "홈트레이닝 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5ceb796e",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "61538b5e",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "winter_dry_cold"
+   ]
+  },
+  {
+   "case_ref": "fb40404f",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "summer_heat"
+   ]
+  },
+  {
+   "case_ref": "54bb963b",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "6bedded8",
+   "intents": [
+    {
+     "intent_id": "adult_birthday",
+     "intent_text": "도착 14일 뒤 화요일 생일에 맞춰 케이크와 생일 초, 축하 카드와 꽃바구니를 준비해 어른의 생일을 축하한다.",
+     "bundle_items": [
+      "케이크",
+      "축하 카드",
+      "생일 초",
+      "꽃바구니"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "어른 생일 축하",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "722587c7",
+   "intents": [
+    {
+     "intent_id": "winter_dry_cold",
+     "intent_text": "겨울의 추위와 건조함에 대비해 문풍지와 단열 시트로 외풍을 막고 가습기와 보습 크림을 준비한다.",
+     "bundle_items": [
+      "문풍지",
+      "가습기",
+      "보습 크림",
+      "단열 시트"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "외풍 차단과 실내 습도·보습 관리 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a54ec909",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "89890cd6",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "379eeb8c",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "140b0f24",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  }
+ ]
+}
