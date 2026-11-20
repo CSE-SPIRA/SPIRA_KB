@@ -1,0 +1,141 @@
+{
+ "metrics": {
+  "cases": 1000,
+  "items": {
+   "none_ratio": {
+    "value": 0.75,
+    "target": [
+     0.6,
+     0.75
+    ],
+    "ok": true
+   },
+   "calendar_shortcut": {
+    "value": 0.01356761565836298,
+    "target": [
+     0,
+     0.05
+    ],
+    "ok": true
+   },
+   "label_agreement": {
+    "value": 0.868,
+    "target": [
+     0.85,
+     0.97
+    ],
+    "ok": true
+   },
+   "b_recall": {
+    "value": 0.624,
+    "target": [
+     0.85,
+     1
+    ],
+    "ok": false
+   },
+   "w_seen": {
+    "value": 0.46,
+    "target": [
+     0.3,
+     0.7
+    ],
+    "ok": true
+   },
+   "per_intent": {
+    "value": 5,
+    "low": [
+     "home_party",
+     "family_gathering",
+     "kids_playdate",
+     "kids_vacation",
+     "meal_prep"
+    ],
+    "ok": false
+   },
+   "checks": {
+    "value": 1,
+    "total": 120,
+    "ok": false
+   }
+  },
+  "unseen_intent": 229,
+  "unclassified": 3,
+  "frequent_splits": [
+   [
+    "none ↔ unclassified",
+    11
+   ],
+   [
+    "holiday_feast ↔ none",
+    7
+   ],
+   [
+    "none ↔ school_start",
+    7
+   ],
+   [
+    "guest_overnight ↔ none",
+    7
+   ],
+   [
+    "meal_prep ↔ none",
+    6
+   ],
+   [
+    "none ↔ picnic_lunchbox",
+    6
+   ],
+   [
+    "none ↔ trip_away",
+    6
+   ],
+   [
+    "camping_trip ↔ none",
+    5
+   ],
+   [
+    "deep_cleaning ↔ none",
+    5
+   ],
+   [
+    "kids_playdate ↔ none",
+    5
+   ]
+  ],
+  "intent_counts": {
+   "deep_cleaning": 24,
+   "kid_birthday_party": 19,
+   "christmas_party": 18,
+   "summer_heat": 17,
+   "winter_dry_cold": 14,
+   "picnic_lunchbox": 13,
+   "trip_away": 13,
+   "adult_birthday": 12,
+   "closet_change": 11,
+   "camping_trip": 11,
+   "home_baking": 11,
+   "wfh_start": 8,
+   "anniversary_dinner": 8,
+   "rainy_season": 8,
+   "home_workout_start": 7,
+   "holiday_feast": 7,
+   "kimjang": 7,
+   "school_start": 7,
+   "watch_party": 7,
+   "fine_dust": 6,
+   "exam_focus": 6,
+   "new_cat": 6,
+   "guest_overnight": 5,
+   "meal_prep": 4,
+   "new_dog": 4,
+   "moving_in": 3,
+   "home_party": 3,
+   "kids_playdate": 3,
+   "family_gathering": 2,
+   "kids_vacation": 2
+  }
+ },
+ "review": null,
+ "verdict": null
+}
