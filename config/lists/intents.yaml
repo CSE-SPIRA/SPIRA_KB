@@ -11,7 +11,7 @@
 # related_tags: "관련 있는 일정"을 붙일 때 쓰는 캘린더 태그
 # 민감한 의도(출산 준비, 병간호, 다이어트)는 넣지 않는다.
 
-version: 1
+version: 2
 reserved: [none, unclassified]
 frequency_weight: { common: 3, normal: 2, rare: 1 }
 
@@ -24,16 +24,16 @@ intents:
       definition: "어른 생일. 케이크·초·꽃. 아이용 파티 소품 없음",
       related_tags: [생일] }
   - { id: home_party, group: 손님·모임, name: 지인 초대 홈파티 (집들이 포함), frequency: common,
-      definition: "친구·동료를 불러 음식·술 대접. 생일 소품·응원 용품 없음",
-      related_tags: [집들이, 친구 모임, 연말 모임] }
+      definition: "친구·동료를 불러 대접. 술·안주·핑거푸드 + 일회용 접시·컵. 생일 소품·응원 용품 없음",
+      related_tags: [집들이, 친구 모임, 연말 모임, 손님 방문] }
   - { id: family_gathering, group: 손님·모임, name: 가족 모임·식사 대접, frequency: common,
-      definition: "부모님·친척과 집에서 식사. 명절 음식 재료 없음",
+      definition: "부모님·친척과 집에서 식사. 갈비찜·잡채 같은 손님상 재료 + 과일 바구니·선물세트. 제수용품·명절 음식 재료 없음",
       related_tags: [가족 모임, 어버이날, 졸업식] }
   - { id: guest_overnight, group: 손님·모임, name: 손님 숙박, frequency: normal,
       definition: "손님이 하룻밤 이상 묵음. 여분 침구·수건·세면도구",
       related_tags: [손님 방문] }
   - { id: kids_playdate, group: 손님·모임, name: 아이 친구 놀러 옴, frequency: normal,
-      definition: "생일이 아닌 아이 친구 방문. 소량 간식·놀이 용품. 케이크·학습지 없음",
+      definition: "생일이 아닌 아이 친구 방문. 과자·주스 여러 개 + 보드게임·클레이 같은 놀이 용품. 케이크·학습지 없음",
       related_tags: [손님 방문, 어린이날] }
   - { id: watch_party, group: 손님·모임, name: 경기·영화 함께 보기, frequency: normal,
       definition: "여럿이 화면 앞에 모임. 응원 용품·야식·맥주",
