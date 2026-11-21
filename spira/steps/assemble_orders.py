@@ -181,8 +181,10 @@ def label_case(c: dict) -> dict:
 
 
 def original_chunks(batch: str, cases: list[dict]) -> list[list[dict]]:
-    """처음 라벨 작업을 만들 때 나눈 사례 묶음. 시드가 고정이라 언제 다시 계산해도 같다."""
-    per = B.pipeline()["cases_per_job"]
+    """처음 라벨 작업을 만들 때 나눈 사례 묶음. 시드가 고정이라 언제 다시 계산해도 같다.
+    묶음 크기는 처음 만들 때 label_map에 적어 둔 값을 쓴다 (나중에 설정을 바꿔도 옛 배치는 그대로)."""
+    lm = B.read(batch, "label_map.json") or {}
+    per = lm.get("cases_per_job") or B.pipeline()["cases_per_job"]
     order = cases[:]
     B.rng_for(batch, "label_jobs").shuffle(order)
     return [order[k:k + per] for k in range(0, len(order), per)]
@@ -200,7 +202,9 @@ def make_label_jobs(batch: str, cases: list[dict], only: list[str] | None = None
     chunks = original_chunks(batch, cases)
     rng.shuffle(cases[:])   # 예전과 같은 난수 흐름을 유지한다 (확인용 사례 뽑기가 달라지지 않게)
     label_map = B.read(batch, "label_map.json") or {"jobs": {}, "checks_available": len(check_pool)}
-    used = {r for j in label_map["jobs"].values() for r in j["cases"]} | {c["case_ref"] for c in cases}
+    label_map.setdefault("cases_per_job", len(chunks[0]) if only is None else cfg["cases_per_job"])
+    used = ({r for j in label_map["jobs"].values() for r in j["cases"]} | {c["case_ref"] for c in cases}
+            | {r for j in label_map["jobs"].values() for r in j.get("checks", {})})
     qdir = DATA / cycle / "queue"
     qdir.mkdir(parents=True, exist_ok=True)
     written = []

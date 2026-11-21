@@ -205,6 +205,10 @@ def accept(batch: str, reason: str = typer.Option(..., help="통과시키는 이
     if B.state(batch) != "failed":
         typer.echo(f"{batch}는 failed 상태가 아닙니다 ({B.state(batch)})")
         raise typer.Exit(1)
+    from spira.steps import compare_labels, fix_labels
+    if fix_labels.wrong_jobs(batch) or compare_labels.label_problems(batch):
+        typer.echo(f"{batch}는 라벨 결과가 작업과 맞지 않아 통과시킬 수 없습니다. 먼저 `spira fix-labels {batch}`")
+        raise typer.Exit(1)
     rep = B.read(batch, "report.json")
     rep["accepted"] = {"by": _me(), "reason": reason, "at": B.now_iso()}
     B.write(batch, "report.json", rep)
@@ -221,8 +225,14 @@ def fix_labels(batch: list[str] = typer.Argument(None, help="비우면 모든 �
     from spira import queue
     from spira.steps import fix_labels as F
     queue.sync()
+    targets = batch or B.all_batches()
+    blocked = [w for b in targets if (w := F.blocker(b))]
+    if blocked:   # 하나라도 막히면 아무것도 바꾸지 않는다
+        for w in blocked:
+            typer.echo(f"✗ {w}")
+        raise typer.Exit(1)
     changed, done = [], []
-    for b in batch or B.all_batches():
+    for b in targets:
         jobs, written = F.fix(b)
         if jobs:
             done.append(f"{b}: {', '.join(j.split('_', 1)[1] for j in jobs)}")
@@ -233,7 +243,7 @@ def fix_labels(batch: list[str] = typer.Argument(None, help="비우면 모든 �
     queue._commit_and_push("라벨 작업 묶음 바로잡음", changed)
     for line in done:
         typer.echo(f"✓ {line} → 처음 묶음으로 다시 넣음")
-    typer.echo("라벨이 다 모이면 자동 진행이 다시 비교 · 판정합니다 (사람 검수는 그대로 씁니다)")
+    typer.echo("라벨이 다 모이면 자동 진행이 다시 비교하고 사람 검수 파일을 새로 만듭니다")
 
 
 @app.command()
@@ -261,6 +271,13 @@ def redo_batch(batch: str) -> None:
         typer.echo(f"{batch}가 없습니다")
         raise typer.Exit(1)
     queue.sync()
+    if B.state(batch) == "loaded":
+        typer.echo(f"{batch}는 이미 적재됐습니다. DB의 줄과 섞이므로 다시 만들 수 없습니다")
+        raise typer.Exit(1)
+    busy = list((queue.DATA / cycle / "running").glob(f"{batch}_*.json"))
+    if busy:
+        typer.echo(f"{batch}: 지금 누가 하고 있는 작업이 있습니다 ({', '.join(f.stem for f in busy)}). 끝난 뒤 다시 실행하세요")
+        raise typer.Exit(1)
     k = 1
     while (dst := queue.DATA / cycle / "discarded_batches" / f"{batch}.{k}").exists():
         k += 1

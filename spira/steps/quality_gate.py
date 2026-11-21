@@ -168,8 +168,7 @@ def review_result(batch: str) -> dict:
 def step1(batch: str) -> list:
     m = metrics(batch)
     written = [B.write(batch, "report.json", {"metrics": m, "review": None, "verdict": None})]
-    if not B.read(batch, "review_plan.json"):   # 다시 비교한 배치는 이미 받은 사람 검수를 그대로 쓴다
-        written += make_review(batch)
+    written += make_review(batch)
     written.append(_write_md(batch))
     B.set_state(batch, "reviewing")
     written.append(B.bdir(batch) / "state.json")

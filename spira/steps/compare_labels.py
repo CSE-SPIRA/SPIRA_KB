@@ -78,12 +78,34 @@ def rerun_failed_checks(batch: str) -> list:
     return written
 
 
-def missing_labels(batch: str) -> dict[str, int]:
-    """라벨을 못 받은 사례 수 (role → 개수). 0이 아니면 비교하지 않는다.
-    빠진 라벨을 "의도 없음"으로 세면 지표가 틀어지기 때문이다."""
-    by_role, _, _ = _labels(batch)
+def label_problems(batch: str) -> list[str]:
+    """라벨 결과가 라벨 작업과 맞지 않는 곳. 비어 있어야 비교 · 채점을 한다.
+    - 작업 결과의 사례가 그 작업에 준 사례(+ 확인용 사례)와 정확히 같아야 한다
+    - 같은 역할 안에서 한 사례가 두 번 라벨을 받으면 안 된다
+    - 모든 사례가 역할마다 라벨을 하나씩 받아야 한다"""
+    cycle, _, _ = B.parse(batch)
+    lm = B.read(batch, "label_map.json")
     refs = {c["case_ref"] for c in B.read(batch, "cases.json")}
-    return {role: len(refs - set(labs)) for role, labs in by_role.items() if refs - set(labs)}
+    seen: dict = {"label_1": {}, "label_2": {}}
+    out = []
+    for job_id, j in lm["jobs"].items():
+        r = B.job_result(cycle, job_id)
+        if r is None:
+            out.append(f"{job_id}: 결과 없음")
+            continue
+        got = [lab["case_ref"] for lab in r["labels"]]
+        want = set(j["cases"]) | set(j.get("checks", {}))
+        if set(got) != want or len(got) != len(set(got)):
+            out.append(f"{job_id}: 결과 사례가 작업과 다름 (빠짐 {len(want - set(got))} · 남음 {len(set(got) - want)}"
+                       f" · 겹침 {len(got) - len(set(got))})")
+        for ref in j["cases"]:
+            seen[j["role"]][ref] = seen[j["role"]].get(ref, 0) + 1
+    for role, cnt in seen.items():
+        missing = len(refs - set(cnt))
+        twice = sum(1 for v in cnt.values() if v > 1)
+        if missing or twice:
+            out.append(f"{role}: 라벨 없는 사례 {missing} · 두 번 받은 사례 {twice}")
+    return out
 
 
 def _closer(items_a: list[str], items_b: list[str]) -> int:
@@ -94,6 +116,9 @@ def _closer(items_a: list[str], items_b: list[str]) -> int:
 
 
 def compare(batch: str) -> list:
+    problems = label_problems(batch)
+    if problems:   # 빠진 라벨을 "의도 없음"으로 세지 않는다
+        raise RuntimeError(f"{batch}: 라벨 결과가 작업과 맞지 않아 비교하지 않습니다: {'; '.join(problems)}")
     by_role, _, lm = _labels(batch)
     cases = B.read(batch, "cases.json")
     graded = grade_checks(batch)

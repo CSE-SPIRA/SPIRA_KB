@@ -47,14 +47,14 @@ def tick(today: date | None = None) -> dict:
             changed += assemble_orders.assemble(b)
             log.append(f"{b}: 주문 조립 · 라벨 작업 만듦")
         elif st == "labeling" and compare_labels.ready(b):
+            problems = compare_labels.label_problems(b)
+            if problems:   # 채점 · 비교 전에 먼저 본다 (빠진 라벨로 확인용 사례를 잘못 채점하지 않게)
+                log.append(f"{b}: 라벨 결과가 작업과 맞지 않아 멈춤 ({'; '.join(problems[:3])}) → U가 `spira fix-labels`")
+                continue
             rerun = compare_labels.rerun_failed_checks(b)
             if rerun:
                 changed += rerun
                 log.append(f"{b}: 확인용 사례를 틀린 라벨 작업 다시 돌림")
-                continue
-            missing = compare_labels.missing_labels(b)
-            if missing:
-                log.append(f"{b}: 라벨을 못 받은 사례가 있어 비교를 멈춤 {missing} → U가 `spira fix-labels`")
                 continue
             changed += compare_labels.compare(b)
             changed += quality_gate.step1(b)
