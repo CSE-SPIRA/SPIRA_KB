@@ -1,0 +1,682 @@
+{
+ "job_id": "B2-3_generate_009",
+ "batch": "B2-3",
+ "role": "generate",
+ "company": "claude",
+ "prompt_version": "generate_bundle@v2",
+ "goals": [
+  {
+   "goal_id": "B2-3_g0437",
+   "intent": {
+    "id": "rainy_season",
+    "name": "장마·습기 대비",
+    "definition": "제습제·제습기 필터·곰팡이 제거제 중 2개 이상"
+   },
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0149",
+   "intent": {
+    "id": "trip_away",
+    "name": "여행으로 집 비움",
+    "definition": "여행용품·짐 꾸리기. 캠핑 장비 없음"
+   },
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0534",
+   "intent": {
+    "id": "home_workout_start",
+    "name": "홈트레이닝 시작",
+    "definition": "요가매트·덤벨·폼롤러"
+   },
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0306",
+   "intent": {
+    "id": "new_dog",
+    "name": "강아지 맞이",
+    "definition": "강아지 사료·배변패드·켄넬"
+   },
+   "household_types": [
+    "3~4인",
+    "영유아 자녀",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0368",
+   "intent": {
+    "id": "christmas_party",
+    "name": "크리스마스·연말 파티",
+    "definition": "트리·장식 + 파티 음식"
+   },
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0208",
+   "intent": {
+    "id": "guest_overnight",
+    "name": "손님 숙박",
+    "definition": "손님이 하룻밤 이상 묵음. 여분 침구·수건·세면도구"
+   },
+   "household_types": [
+    "2인",
+    "고등학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0479",
+   "intent": {
+    "id": "family_gathering",
+    "name": "가족 모임·식사 대접",
+    "definition": "부모님·친척과 집에서 식사. 갈비찜·잡채 같은 손님상 재료 + 과일 바구니·선물세트. 제수용품·명절 음식 재료 없음"
+   },
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0261",
+   "intent": {
+    "id": "christmas_party",
+    "name": "크리스마스·연말 파티",
+    "definition": "트리·장식 + 파티 음식"
+   },
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0265",
+   "intent": {
+    "id": "guest_overnight",
+    "name": "손님 숙박",
+    "definition": "손님이 하룻밤 이상 묵음. 여분 침구·수건·세면도구"
+   },
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0221",
+   "intent": {
+    "id": "family_gathering",
+    "name": "가족 모임·식사 대접",
+    "definition": "부모님·친척과 집에서 식사. 갈비찜·잡채 같은 손님상 재료 + 과일 바구니·선물세트. 제수용품·명절 음식 재료 없음"
+   },
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0396",
+   "intent": {
+    "id": "kid_birthday_party",
+    "name": "아이 생일 파티",
+    "definition": "아이 생일을 집에서 축하. 케이크·초 + 아이용 파티 소품·답례품"
+   },
+   "household_types": [
+    "3~4인",
+    "영유아 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0119",
+   "intent": {
+    "id": "home_baking",
+    "name": "홈베이킹",
+    "definition": "밀가루·버터·베이킹 도구. 초·파티 소품 없음"
+   },
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "부모 + 성인 자녀",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0425",
+   "intent": {
+    "id": "family_gathering",
+    "name": "가족 모임·식사 대접",
+    "definition": "부모님·친척과 집에서 식사. 갈비찜·잡채 같은 손님상 재료 + 과일 바구니·선물세트. 제수용품·명절 음식 재료 없음"
+   },
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0503",
+   "intent": {
+    "id": "christmas_party",
+    "name": "크리스마스·연말 파티",
+    "definition": "트리·장식 + 파티 음식"
+   },
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0439",
+   "intent": {
+    "id": "closet_change",
+    "name": "옷·이불 교체",
+    "definition": "압축팩·이불 커버·옷걸이 중 2개 이상"
+   },
+   "household_types": [
+    "2인",
+    "룸메이트·셰어하우스",
+    "대학생"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0453",
+   "intent": {
+    "id": "kid_birthday_party",
+    "name": "아이 생일 파티",
+    "definition": "아이 생일을 집에서 축하. 케이크·초 + 아이용 파티 소품·답례품"
+   },
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "고등학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0109",
+   "intent": {
+    "id": "home_baking",
+    "name": "홈베이킹",
+    "definition": "밀가루·버터·베이킹 도구. 초·파티 소품 없음"
+   },
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0361",
+   "intent": {
+    "id": "school_start",
+    "name": "입학·새 학기 (초중고·대학)",
+    "definition": "가방·필기구·실내화"
+   },
+   "household_types": [
+    "2인",
+    "대학생"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0132",
+   "intent": {
+    "id": "adult_birthday",
+    "name": "어른 생일 축하",
+    "definition": "어른 생일. 케이크·초·꽃. 아이용 파티 소품 없음"
+   },
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0422",
+   "intent": {
+    "id": "guest_overnight",
+    "name": "손님 숙박",
+    "definition": "손님이 하룻밤 이상 묵음. 여분 침구·수건·세면도구"
+   },
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0276",
+   "intent": {
+    "id": "deep_cleaning",
+    "name": "대청소",
+    "definition": "청소 도구·세제 여러 종류를 한꺼번에"
+   },
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0135",
+   "intent": {
+    "id": "wfh_start",
+    "name": "재택근무 시작",
+    "definition": "홈오피스 세팅. 모니터암·의자 쿠션·책상 조명"
+   },
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0145",
+   "intent": {
+    "id": "meal_prep",
+    "name": "밀프렙",
+    "definition": "도시락 용기 여러 개 + 닭가슴살·채소 대량"
+   },
+   "household_types": [
+    "2인",
+    "고등학생 자녀",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0211",
+   "intent": {
+    "id": "kids_playdate",
+    "name": "아이 친구 놀러 옴",
+    "definition": "생일이 아닌 아이 친구 방문. 과자·주스 여러 개 + 보드게임·클레이 같은 놀이 용품. 케이크·학습지 없음"
+   },
+   "household_types": [
+    "5인 이상",
+    "부부·커플",
+    "중학생 자녀",
+    "고등학생 자녀",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0022",
+   "intent": {
+    "id": "home_party",
+    "name": "지인 초대 홈파티 (집들이 포함)",
+    "definition": "친구·동료를 불러 대접. 술·안주·핑거푸드 + 일회용 접시·컵. 생일 소품·응원 용품 없음"
+   },
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0060",
+   "intent": {
+    "id": "kids_vacation",
+    "name": "아이 방학 시작",
+    "definition": "방학 동안 집에 있는 아이 준비. 간식·점심 재료 대량, 학습지"
+   },
+   "household_types": [
+    "3~4인",
+    "영유아 자녀",
+    "초등 자녀",
+    "중학생 자녀",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0292",
+   "intent": {
+    "id": "home_party",
+    "name": "지인 초대 홈파티 (집들이 포함)",
+    "definition": "친구·동료를 불러 대접. 술·안주·핑거푸드 + 일회용 접시·컵. 생일 소품·응원 용품 없음"
+   },
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0416",
+   "intent": {
+    "id": "family_gathering",
+    "name": "가족 모임·식사 대접",
+    "definition": "부모님·친척과 집에서 식사. 갈비찜·잡채 같은 손님상 재료 + 과일 바구니·선물세트. 제수용품·명절 음식 재료 없음"
+   },
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0206",
+   "intent": {
+    "id": "home_workout_start",
+    "name": "홈트레이닝 시작",
+    "definition": "요가매트·덤벨·폼롤러"
+   },
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "대학생"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0200",
+   "intent": {
+    "id": "kids_playdate",
+    "name": "아이 친구 놀러 옴",
+    "definition": "생일이 아닌 아이 친구 방문. 과자·주스 여러 개 + 보드게임·클레이 같은 놀이 용품. 케이크·학습지 없음"
+   },
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "3대 함께",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0248",
+   "intent": {
+    "id": "fine_dust",
+    "name": "미세먼지 대비",
+    "definition": "공기청정기 필터·대용량 마스크 등 2개 이상"
+   },
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0076",
+   "intent": {
+    "id": "kids_playdate",
+    "name": "아이 친구 놀러 옴",
+    "definition": "생일이 아닌 아이 친구 방문. 과자·주스 여러 개 + 보드게임·클레이 같은 놀이 용품. 케이크·학습지 없음"
+   },
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "부모 + 성인 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0515",
+   "intent": {
+    "id": "picnic_lunchbox",
+    "name": "나들이 도시락",
+    "definition": "당일 나들이. 도시락 재료·돗자리"
+   },
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0044",
+   "intent": {
+    "id": "home_party",
+    "name": "지인 초대 홈파티 (집들이 포함)",
+    "definition": "친구·동료를 불러 대접. 술·안주·핑거푸드 + 일회용 접시·컵. 생일 소품·응원 용품 없음"
+   },
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0388",
+   "intent": {
+    "id": "home_baking",
+    "name": "홈베이킹",
+    "definition": "밀가루·버터·베이킹 도구. 초·파티 소품 없음"
+   },
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "맞벌이",
+    "반려견"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0041",
+   "intent": {
+    "id": "deep_cleaning",
+    "name": "대청소",
+    "definition": "청소 도구·세제 여러 종류를 한꺼번에"
+   },
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0408",
+   "intent": {
+    "id": "kid_birthday_party",
+    "name": "아이 생일 파티",
+    "definition": "아이 생일을 집에서 축하. 케이크·초 + 아이용 파티 소품·답례품"
+   },
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "부모 + 성인 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0301",
+   "intent": {
+    "id": "exam_focus",
+    "name": "시험·수험 기간",
+    "definition": "집중 환경. 독서대·스탠드·간편식"
+   },
+   "household_types": [
+    "2인",
+    "룸메이트·셰어하우스",
+    "대학생"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0073",
+   "intent": {
+    "id": "closet_change",
+    "name": "옷·이불 교체",
+    "definition": "압축팩·이불 커버·옷걸이 중 2개 이상"
+   },
+   "household_types": [
+    "3~4인",
+    "초등 자녀",
+    "직장인",
+    "재택근무",
+    "반려견"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0082",
+   "intent": {
+    "id": "home_party",
+    "name": "지인 초대 홈파티 (집들이 포함)",
+    "definition": "친구·동료를 불러 대접. 술·안주·핑거푸드 + 일회용 접시·컵. 생일 소품·응원 용품 없음"
+   },
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0098",
+   "intent": {
+    "id": "summer_heat",
+    "name": "여름 더위 대비",
+    "definition": "선풍기·쿨매트·에어컨 필터 중 2개 이상"
+   },
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0151",
+   "intent": {
+    "id": "meal_prep",
+    "name": "밀프렙",
+    "definition": "도시락 용기 여러 개 + 닭가슴살·채소 대량"
+   },
+   "household_types": [
+    "2인",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0469",
+   "intent": {
+    "id": "adult_birthday",
+    "name": "어른 생일 축하",
+    "definition": "어른 생일. 케이크·초·꽃. 아이용 파티 소품 없음"
+   },
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0363",
+   "intent": {
+    "id": "school_start",
+    "name": "입학·새 학기 (초중고·대학)",
+    "definition": "가방·필기구·실내화"
+   },
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인",
+    "맞벌이",
+    "반려묘"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0508",
+   "intent": {
+    "id": "rainy_season",
+    "name": "장마·습기 대비",
+    "definition": "제습제·제습기 필터·곰팡이 제거제 중 2개 이상"
+   },
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0067",
+   "intent": {
+    "id": "exam_focus",
+    "name": "시험·수험 기간",
+    "definition": "집중 환경. 독서대·스탠드·간편식"
+   },
+   "household_types": [
+    "3~4인",
+    "부모 + 성인 자녀",
+    "대학생"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0397",
+   "intent": {
+    "id": "trip_away",
+    "name": "여행으로 집 비움",
+    "definition": "여행용품·짐 꾸리기. 캠핑 장비 없음"
+   },
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0257",
+   "intent": {
+    "id": "camping_trip",
+    "name": "캠핑 준비",
+    "definition": "캠핑 장비·연료·캠핑 음식"
+   },
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0382",
+   "intent": {
+    "id": "home_party",
+    "name": "지인 초대 홈파티 (집들이 포함)",
+    "definition": "친구·동료를 불러 대접. 술·안주·핑거푸드 + 일회용 접시·컵. 생일 소품·응원 용품 없음"
+   },
+   "household_types": [
+    "1인",
+    "대학생"
+   ]
+  },
+  {
+   "goal_id": "B2-3_g0296",
+   "intent": {
+    "id": "kids_vacation",
+    "name": "아이 방학 시작",
+    "definition": "방학 동안 집에 있는 아이 준비. 간식·점심 재료 대량, 학습지"
+   },
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "중학생 자녀",
+    "직장인"
+   ]
+  }
+ ]
+}

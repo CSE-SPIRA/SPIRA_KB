@@ -1,0 +1,139 @@
+{
+ "metrics": {
+  "cases": 1000,
+  "items": {
+   "none_ratio": {
+    "value": 0.656,
+    "target": [
+     0.6,
+     0.75
+    ],
+    "ok": true
+   },
+   "calendar_shortcut": {
+    "value": 0.006874583835729808,
+    "target": [
+     0,
+     0.05
+    ],
+    "ok": true
+   },
+   "label_agreement": {
+    "value": 0.935,
+    "target": [
+     0.85,
+     0.97
+    ],
+    "ok": true
+   },
+   "b_recall": {
+    "value": 0.884,
+    "target": [
+     0.85,
+     1
+    ],
+    "ok": true
+   },
+   "w_seen": {
+    "value": 0.54,
+    "target": [
+     0.3,
+     0.7
+    ],
+    "ok": true
+   },
+   "per_intent": {
+    "value": 3,
+    "low": [
+     "home_party",
+     "family_gathering",
+     "kids_playdate"
+    ],
+    "ok": false
+   },
+   "checks": {
+    "value": 0,
+    "total": 120,
+    "ok": true
+   }
+  },
+  "unseen_intent": 139,
+  "unclassified": 2,
+  "frequent_splits": [
+   [
+    "none ↔ unclassified",
+    15
+   ],
+   [
+    "deep_cleaning ↔ none",
+    6
+   ],
+   [
+    "family_gathering ↔ none",
+    5
+   ],
+   [
+    "home_party ↔ none",
+    5
+   ],
+   [
+    "kids_playdate ↔ none",
+    4
+   ],
+   [
+    "camping_trip ↔ none",
+    3
+   ],
+   [
+    "none ↔ watch_party",
+    2
+   ],
+   [
+    "christmas_party ↔ none",
+    2
+   ],
+   [
+    "exam_focus ↔ none",
+    2
+   ],
+   [
+    "kids_vacation ↔ none",
+    2
+   ]
+  ],
+  "intent_counts": {
+   "summer_heat": 24,
+   "camping_trip": 22,
+   "deep_cleaning": 22,
+   "winter_dry_cold": 22,
+   "kid_birthday_party": 21,
+   "home_baking": 19,
+   "adult_birthday": 18,
+   "trip_away": 17,
+   "school_start": 16,
+   "closet_change": 15,
+   "holiday_feast": 15,
+   "guest_overnight": 15,
+   "exam_focus": 14,
+   "picnic_lunchbox": 14,
+   "christmas_party": 11,
+   "kids_vacation": 11,
+   "fine_dust": 11,
+   "watch_party": 11,
+   "kimjang": 10,
+   "anniversary_dinner": 8,
+   "meal_prep": 8,
+   "rainy_season": 8,
+   "home_party": 7,
+   "wfh_start": 6,
+   "kids_playdate": 6,
+   "moving_in": 5,
+   "new_dog": 5,
+   "family_gathering": 4,
+   "new_cat": 4,
+   "home_workout_start": 4
+  }
+ },
+ "review": null,
+ "verdict": null
+}
