@@ -97,6 +97,12 @@ section { min-width: 0; }
 .legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--muted); padding: 10px 14px 0; }
 .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
 
+/* 끝난 것 */
+.done-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px; }
+.done-item { padding: 10px 14px; display: grid; gap: 2px; }
+.done-item .t { font-weight: 600; display: flex; gap: 8px; align-items: baseline; justify-content: space-between; }
+.done-item .s { font-size: 12px; color: var(--muted); }
+
 /* 사람별 */
 .people { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
 .person { padding: 12px 14px; display: grid; gap: 8px; }
@@ -157,6 +163,11 @@ footer a { color: inherit; }
   <section>
     <h2>지금 돌리는 중</h2>
     <div id="running" class="running"><div class="panel empty">불러오는 중…</div></div>
+  </section>
+
+  <section id="done-sec" hidden>
+    <h2>끝난 것</h2>
+    <div id="done" class="done-list"></div>
   </section>
 
   <section>
@@ -264,16 +275,44 @@ function bar(c) {
     <span class="done" style="width:${w(c.results)}"></span><span class="run" style="width:${w(c.running)}"></span><span class="fail" style="width:${w(c.failed)}"></span></div>`;
 }
 
+// 끝난 것: 확정된 아이템 풀, 통과했거나 적재된 배치. 진행 막대에서는 빼고 위에 요약만 보여 준다.
+const FINISHED = new Set(["passed", "loaded"]);
+function isFinished(s, b) {
+  if (s === "pool") return data.item_pool === "confirmed";
+  return FINISHED.has(((data.batches || {})[b] || {}).state);
+}
+function jobSum(groups) {
+  return Object.values(groups).reduce((a, c) => ({ done: a.done + c.results, all: a.all + c.queue + c.running + c.results + c.failed }), { done: 0, all: 0 });
+}
+
+function renderDone() {
+  const p = data.progress || {};
+  const items = [];
+  for (const s of Object.keys(p).sort((a, b) => (a === "pool" ? -1 : b === "pool" ? 1 : a.localeCompare(b)))) {
+    for (const b of Object.keys(p[s]).sort()) {
+      if (!isFinished(s, b)) continue;
+      const sum = jobSum(p[s][b]);
+      const title = s === "pool" ? "아이템 풀" : `${SCOPE[s] || s} · ${b}`;
+      const info = (data.batches || {})[b];
+      const state = s === "pool" ? "확정" : STATE[info.state][0];
+      items.push(`<div class="panel done-item"><div class="t">${esc(title)}<span class="state ok">${esc(state)}</span></div>
+        <div class="s num">작업 ${sum.done} / ${sum.all}</div></div>`);
+    }
+  }
+  $("done-sec").hidden = !items.length;
+  $("done").innerHTML = items.join("");
+}
+
 function renderProgress() {
   const p = data.progress || {};
   const scopes = Object.keys(p).sort((a, b) => (a === "pool" ? -1 : b === "pool" ? 1 : a.localeCompare(b)));
-  if (!scopes.length) { $("progress").innerHTML = `<div class="empty">아직 만든 작업이 없습니다.</div>`; return; }
   let html = "";
   for (const s of scopes) {
     const batches = p[s];
     for (const b of Object.keys(batches).sort()) {
+      if (isFinished(s, b)) continue;
       const groups = batches[b];
-      const sum = Object.values(groups).reduce((a, c) => ({ done: a.done + c.results, all: a.all + c.queue + c.running + c.results + c.failed }), { done: 0, all: 0 });
+      const sum = jobSum(groups);
       const title = s === "pool" ? SCOPE.pool : `${SCOPE[s] || s} · 배치 ${b}`;
       const info = s === "pool" ? null : (data.batches || {})[b];
       let chip = "";
@@ -296,7 +335,7 @@ function renderProgress() {
       }
     }
   }
-  $("progress").innerHTML = html;
+  $("progress").innerHTML = html || `<div class="empty">지금 진행 중인 배치가 없습니다.</div>`;
 }
 
 function renderPeople() {
@@ -364,7 +403,7 @@ function renderTodo() {
 
 function render() {
   $("updated").textContent = clock(data.generated_at) + ` (${ago(data.generated_at)})`;
-  renderTodo(); renderRunning(); renderProgress(); renderPeople(); renderFailed(); renderRecent();
+  renderTodo(); renderRunning(); renderDone(); renderProgress(); renderPeople(); renderFailed(); renderRecent();
 }
 
 async function load() {
