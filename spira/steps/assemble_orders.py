@@ -180,18 +180,25 @@ def label_case(c: dict) -> dict:
             "calendar": [{k: e[k] for k in ("tag", "days_from_arrival", "weekday")} for e in c["calendar"]]}
 
 
+def original_chunks(batch: str, cases: list[dict]) -> list[list[dict]]:
+    """처음 라벨 작업을 만들 때 나눈 사례 묶음. 시드가 고정이라 언제 다시 계산해도 같다."""
+    per = B.pipeline()["cases_per_job"]
+    order = cases[:]
+    B.rng_for(batch, "label_jobs").shuffle(order)
+    return [order[k:k + per] for k in range(0, len(order), per)]
+
+
 def make_label_jobs(batch: str, cases: list[dict], only: list[str] | None = None) -> list:
-    """라벨 작업을 대기열에 넣는다. only가 있으면 그 작업만 다시 만든다 (확인용 사례를 틀린 작업)."""
+    """라벨 작업을 대기열에 넣는다. only가 있으면 그 작업만 다시 만든다 (확인용 사례를 틀린 작업).
+    다시 만들 때도 사례 묶음은 처음과 같다. 확인용 사례만 새로 뽑는다."""
     cycle, _, _ = B.parse(batch)
     cfg = B.pipeline()
     rng = B.rng_for(batch, "label_jobs" if only is None else f"rerun:{','.join(only)}")
     plan = B.read(batch, "plan.json")
     intents = [B.intent_ref(i) for i in B.intents()]
     check_pool = checks.load()
-    per = cfg["cases_per_job"]
-    order = cases[:]
-    rng.shuffle(order)
-    chunks = [order[k:k + per] for k in range(0, len(order), per)]
+    chunks = original_chunks(batch, cases)
+    rng.shuffle(cases[:])   # 예전과 같은 난수 흐름을 유지한다 (확인용 사례 뽑기가 달라지지 않게)
     label_map = B.read(batch, "label_map.json") or {"jobs": {}, "checks_available": len(check_pool)}
     used = {r for j in label_map["jobs"].values() for r in j["cases"]} | {c["case_ref"] for c in cases}
     qdir = DATA / cycle / "queue"

@@ -16,8 +16,9 @@ from collections.abc import Sequence
 from functools import lru_cache
 
 MODEL_NAME = "BAAI/bge-m3"
-# TODO(첫 적재 전): Hugging Face 모델 커밋 해시로 고정해서 양쪽이 같은 가중치를 쓰게 한다.
-MODEL_REVISION: str | None = None
+# Hugging Face 모델 커밋 해시로 고정한다. 서버와 같은 가중치를 써야 같은 벡터가 나온다.
+# 바꾸면 이미 적재한 사례를 모두 다시 임베딩해야 한다.
+MODEL_REVISION: str | None = "5617a9f61b028005a4858fdac845db406aefb181"
 DIM = 1024
 
 

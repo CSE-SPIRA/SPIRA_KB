@@ -115,6 +115,7 @@ uv run spira confirm-pool          # 아이템 풀 검토 뒤 확정 (확정해�
 uv run spira accept B1-1 --reason "…"   # 관문을 못 넘었지만 통과시킬 때 (첫 배치 기준 재조정 등)
 uv run spira redo-batch B1-1       # 프롬프트 · 설정을 고친 뒤 배치를 처음부터 다시
 uv run spira retry A1-2            # 두 번 실패해 failed에 간 작업을 원인을 고친 뒤 대기열로 되돌림 (비우면 전부)
+uv run spira fix-labels             # 라벨 작업의 사례 묶음이 처음 묶음과 다르면 그 작업만 처음 묶음으로 다시 넣음
 ```
 
 - 작업은 **생성 먼저, 그다음 라벨** 순서로 가져간다. 생성이 끝나야 다른 두 회사가 라벨을 받을 수 있어서다

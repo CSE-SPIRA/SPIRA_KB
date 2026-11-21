@@ -78,6 +78,14 @@ def rerun_failed_checks(batch: str) -> list:
     return written
 
 
+def missing_labels(batch: str) -> dict[str, int]:
+    """라벨을 못 받은 사례 수 (role → 개수). 0이 아니면 비교하지 않는다.
+    빠진 라벨을 "의도 없음"으로 세면 지표가 틀어지기 때문이다."""
+    by_role, _, _ = _labels(batch)
+    refs = {c["case_ref"] for c in B.read(batch, "cases.json")}
+    return {role: len(refs - set(labs)) for role, labs in by_role.items() if refs - set(labs)}
+
+
 def _closer(items_a: list[str], items_b: list[str]) -> int:
     """두 라벨 묶음 중 교집합에 더 가까운 쪽 (0 = 라벨①, 1 = 라벨②)."""
     inter = set(items_a) & set(items_b)

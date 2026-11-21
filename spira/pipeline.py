@@ -52,6 +52,10 @@ def tick(today: date | None = None) -> dict:
                 changed += rerun
                 log.append(f"{b}: 확인용 사례를 틀린 라벨 작업 다시 돌림")
                 continue
+            missing = compare_labels.missing_labels(b)
+            if missing:
+                log.append(f"{b}: 라벨을 못 받은 사례가 있어 비교를 멈춤 {missing} → U가 `spira fix-labels`")
+                continue
             changed += compare_labels.compare(b)
             changed += quality_gate.step1(b)
             log.append(f"{b}: 두 라벨 비교 · 자동 지표 · 검수 파일 만듦")

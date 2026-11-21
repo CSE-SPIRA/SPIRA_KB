@@ -214,6 +214,28 @@ def accept(batch: str, reason: str = typer.Option(..., help="통과시키는 이
     typer.echo(f"✓ {batch} 통과 처리. 다음 자동 진행 때 적재됩니다")
 
 
+@app.command("fix-labels")
+def fix_labels(batch: list[str] = typer.Argument(None, help="비우면 모든 배치를 검사")) -> None:
+    """(U) 다시 돌린 라벨 작업이 엉뚱한 사례를 받은 배치를 바로잡는다. 그 작업만 처음 묶음으로 다시 넣는다."""
+    from spira import batches as B
+    from spira import queue
+    from spira.steps import fix_labels as F
+    queue.sync()
+    changed, done = [], []
+    for b in batch or B.all_batches():
+        jobs, written = F.fix(b)
+        if jobs:
+            done.append(f"{b}: {', '.join(j.split('_', 1)[1] for j in jobs)}")
+            changed += written
+    if not done:
+        typer.echo("바로잡을 라벨 작업이 없습니다")
+        return
+    queue._commit_and_push("라벨 작업 묶음 바로잡음", changed)
+    for line in done:
+        typer.echo(f"✓ {line} → 처음 묶음으로 다시 넣음")
+    typer.echo("라벨이 다 모이면 자동 진행이 다시 비교 · 판정합니다 (사람 검수는 그대로 씁니다)")
+
+
 @app.command()
 def retry(target: str = typer.Argument("", help="배치 이름(예: A1-2)이나 작업 이름. 비우면 실패한 작업 전부")) -> None:
     """(U) 두 번 실패해 failed에 있는 작업을 대기열로 되돌린다. 원인을 고친 뒤에 쓴다."""
