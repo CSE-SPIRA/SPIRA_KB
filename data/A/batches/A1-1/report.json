@@ -1,0 +1,140 @@
+{
+ "metrics": {
+  "cases": 1000,
+  "items": {
+   "none_ratio": {
+    "value": 0.68,
+    "target": [
+     0.6,
+     0.75
+    ],
+    "ok": true
+   },
+   "calendar_shortcut": {
+    "value": 0.05085319282641271,
+    "target": [
+     0,
+     0.05
+    ],
+    "ok": false
+   },
+   "label_agreement": {
+    "value": 0.932,
+    "target": [
+     0.85,
+     0.97
+    ],
+    "ok": true
+   },
+   "b_recall": {
+    "value": 0.848,
+    "target": [
+     0.85,
+     1
+    ],
+    "ok": false
+   },
+   "w_seen": {
+    "value": 0.49,
+    "target": [
+     0.3,
+     0.7
+    ],
+    "ok": true
+   },
+   "per_intent": {
+    "value": 4,
+    "low": [
+     "home_party",
+     "family_gathering",
+     "kids_playdate",
+     "kids_vacation"
+    ],
+    "ok": false
+   },
+   "checks": {
+    "value": 0,
+    "total": 120,
+    "ok": true
+   }
+  },
+  "unseen_intent": 158,
+  "unclassified": 2,
+  "frequent_splits": [
+   [
+    "none ↔ unclassified",
+    14
+   ],
+   [
+    "deep_cleaning ↔ none",
+    9
+   ],
+   [
+    "kids_vacation ↔ none",
+    5
+   ],
+   [
+    "home_party ↔ none",
+    5
+   ],
+   [
+    "adult_birthday ↔ none",
+    4
+   ],
+   [
+    "none ↔ trip_away",
+    2
+   ],
+   [
+    "family_gathering ↔ none",
+    2
+   ],
+   [
+    "guest_overnight ↔ none",
+    2
+   ],
+   [
+    "kids_playdate ↔ none",
+    2
+   ],
+   [
+    "none ↔ watch_party",
+    2
+   ]
+  ],
+  "intent_counts": {
+   "trip_away": 27,
+   "summer_heat": 25,
+   "adult_birthday": 22,
+   "winter_dry_cold": 20,
+   "deep_cleaning": 16,
+   "camping_trip": 16,
+   "rainy_season": 16,
+   "kid_birthday_party": 15,
+   "fine_dust": 14,
+   "holiday_feast": 14,
+   "anniversary_dinner": 13,
+   "new_dog": 13,
+   "home_workout_start": 11,
+   "kimjang": 11,
+   "school_start": 10,
+   "new_cat": 10,
+   "meal_prep": 10,
+   "wfh_start": 10,
+   "picnic_lunchbox": 10,
+   "home_baking": 9,
+   "watch_party": 8,
+   "home_party": 8,
+   "christmas_party": 8,
+   "closet_change": 7,
+   "guest_overnight": 7,
+   "exam_focus": 6,
+   "family_gathering": 4,
+   "kids_vacation": 4,
+   "moving_in": 3,
+   "kids_playdate": 2
+  }
+ },
+ "review": null,
+ "verdict": null
+}
