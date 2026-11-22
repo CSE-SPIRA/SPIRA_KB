@@ -12,7 +12,8 @@ dependencies = [
 [project.optional-dependencies]
 # 임베딩 함수만 (서버가 설치하는 묶음): pip install "spira-kb[embed] @ git+https://github.com/CSE-SPIRA/SPIRA_KB"
 embed = [
-  "FlagEmbedding>=1.2",      # BGE-M3
+  "FlagEmbedding==1.4.2",    # BGE-M3
+  "transformers==5.23.0",    # 5.24부터 FlagEmbedding이 쓰는 모듈이 빠져서 고정
 ]
 # 코드 단계 (GitHub Actions에서만 필요). 노트북에는 설치하지 않아도 된다.
 pipeline = [
@@ -20,7 +21,8 @@ pipeline = [
   "duckdb>=1",
   "faiss-cpu>=1.8",
   "scikit-learn>=1.5",
-  "FlagEmbedding>=1.2",      # BGE-M3
+  "FlagEmbedding==1.4.2",    # BGE-M3
+  "transformers==5.23.0",
   "psycopg[binary]>=3.2",
   "pgvector>=0.3",
 ]
