@@ -114,7 +114,11 @@ def load(batch: str, dry_run: bool | None = None) -> list:
             cur.execute(sql, [adapt(c, vals[c]) for c in COLUMNS])
             loaded += cur.rowcount
         conn.commit()
-    written = [B.write(batch, "loaded.json", {"kb_version": kb_version, "loaded": loaded, "dropped": dropped,
+        # 이번에 넣은 줄 수와 별개로, 이 배치가 DB에 몇 줄 있는지 센다 (앞 실행이 넣고 기록을 못 남긴 경우에도 맞게)
+        cur.execute("select count(*) from cases where case_id like %s", (f"syn_{batch}_%",))
+        in_db = cur.fetchone()[0]
+    written = [B.write(batch, "loaded.json", {"kb_version": kb_version, "loaded": loaded, "in_db": in_db,
+                                              "dropped": dropped,
                                               "model": MODEL_NAME, "at": B.now_iso()})]
     B.set_state(batch, "loaded")
     written.append(B.bdir(batch) / "state.json")
