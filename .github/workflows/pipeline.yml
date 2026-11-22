@@ -20,6 +20,8 @@ jobs:
       ready_to_load: ${{ steps.tick.outputs.ready_to_load }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # 실행을 부른 커밋이 아니라 지금의 main (기다리는 동안 앞 실행이 올린 기록까지 받는다)
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -42,6 +44,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
