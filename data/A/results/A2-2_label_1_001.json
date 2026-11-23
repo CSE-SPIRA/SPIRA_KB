@@ -1,0 +1,796 @@
+{
+ "job_id": "A2-2_label_1_001",
+ "labels": [
+  {
+   "case_ref": "ef6d6811",
+   "intents": [
+    {
+     "intent_id": "watch_party",
+     "intent_text": "도착 1일 뒤 월요일 경기 관람 일정에 맞춰, 치킨·맥주·팝콘을 준비하고 응원봉을 들고 함께 경기를 본다",
+     "bundle_items": [
+      "치킨",
+      "응원봉",
+      "맥주",
+      "팝콘"
+     ]
+    },
+    {
+     "intent_id": "home_baking",
+     "intent_text": "강력분·이스트·버터와 식빵 틀로 집에서 식빵을 구워 만든다",
+     "bundle_items": [
+      "버터",
+      "강력분",
+      "식빵 틀",
+      "이스트"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "경기 관람",
+    "guests": null,
+    "activity": "경기를 보며 치킨과 맥주를 먹고, 집에서 식빵을 굽는다",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "486769b2",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "kimjang"
+   ]
+  },
+  {
+   "case_ref": "83f30f87",
+   "intents": [
+    {
+     "intent_id": "home_party",
+     "intent_text": "카나페·올리브 같은 핑거푸드와 하이볼을 일회용 컵에 내어 지인을 집에 초대해 대접한다",
+     "bundle_items": [
+      "일회용 컵",
+      "카나페",
+      "하이볼",
+      "올리브"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "핑거푸드와 하이볼로 대접",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "7d8e282f",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "kids_vacation"
+   ]
+  },
+  {
+   "case_ref": "fd16ee96",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a263b0d0",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "38b8e44f",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "6a076c5b",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "ef978efb",
+   "intents": [
+    {
+     "intent_id": "exam_focus",
+     "intent_text": "도착 7일 뒤 일요일 시험 일정에 맞춰, 고등학생 자녀가 독서대와 스탠드로 공부 환경을 갖추고 컵밥·에너지바로 간편히 끼니를 해결한다",
+     "bundle_items": [
+      "독서대",
+      "스탠드",
+      "컵밥",
+      "에너지바",
+      "포스트잇"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "시험",
+    "guests": null,
+    "activity": "시험 공부",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "7e603b8d",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b99fa5af",
+   "intents": [
+    {
+     "intent_id": "deep_cleaning",
+     "intent_text": "도착 14일 뒤 목요일 대청소 일정에 맞춰, 곰팡이 제거제·배수구 세정제·수세미·고무장갑으로 집을 대청소한다",
+     "bundle_items": [
+      "곰팡이 제거제",
+      "고무장갑",
+      "배수구 세정제",
+      "수세미"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "대청소",
+    "guests": null,
+    "activity": "곰팡이·배수구 등 집안 청소",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "607d01c7",
+   "intents": [
+    {
+     "intent_id": "new_cat",
+     "intent_text": "도착 7일 뒤 금요일 반려동물 입양 일정에 맞춰, 고양이 화장실·모래·스크래처·이동장을 미리 갖춰 고양이를 맞이한다",
+     "bundle_items": [
+      "스크래처",
+      "고양이 화장실",
+      "고양이 모래",
+      "고양이 이동장"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "반려동물 입양",
+    "guests": null,
+    "activity": "고양이 맞이 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a2a079b8",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "dac22bee",
+   "intents": [
+    {
+     "intent_id": "christmas_party",
+     "intent_text": "크리스마스 트리와 트리 장식으로 집을 꾸미고, 스테이크와 와인으로 크리스마스 식사를 즐긴다",
+     "bundle_items": [
+      "스테이크",
+      "크리스마스 트리",
+      "트리 장식",
+      "와인"
+     ]
+    },
+    {
+     "intent_id": "fine_dust",
+     "intent_text": "미세먼지 마스크, 공기청정기 필터, 방진망으로 미세먼지에 대비한다",
+     "bundle_items": [
+      "미세먼지 마스크",
+      "공기청정기 필터",
+      "방진망"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "크리스마스",
+    "guests": null,
+    "activity": "트리 장식, 스테이크와 와인 식사, 미세먼지 대비",
+    "theme": "크리스마스"
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b7ae62f6",
+   "intents": [
+    {
+     "intent_id": "fine_dust",
+     "intent_text": "미세먼지 방충망·마스크·공기청정기 필터로 미세먼지에 대비한다",
+     "bundle_items": [
+      "미세먼지 방충망",
+      "마스크",
+      "공기청정기 필터"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "미세먼지 대비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "8f3828f0",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "18c16afc",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "9114acd1",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4870d6a6",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "adc0cbd3",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5c151cc0",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "60e2649b",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "deep_cleaning"
+   ]
+  },
+  {
+   "case_ref": "ea8f61d9",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "c4037577",
+   "intents": [
+    {
+     "intent_id": "winter_dry_cold",
+     "intent_text": "단열 뽁뽁이로 창가 찬 기운을 막고 가습기로 건조함을 줄여 겨울 추위와 건조에 대비한다",
+     "bundle_items": [
+      "단열 뽁뽁이",
+      "가습기"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "겨울 추위·건조 대비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "134dc936",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "home_baking"
+   ]
+  },
+  {
+   "case_ref": "d9e9b4e6",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "exam_focus"
+   ]
+  },
+  {
+   "case_ref": "d705e205",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "d81df8b0",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "987d067d",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "6fa7d103",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "254dc8dd",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "7eb7753c",
+   "intents": [
+    {
+     "intent_id": "christmas_party",
+     "intent_text": "크리스마스 트리와 트리 장식으로 집을 꾸미고, 케이크와 스파클링 와인으로 크리스마스를 즐긴다",
+     "bundle_items": [
+      "케이크",
+      "트리 장식",
+      "크리스마스 트리",
+      "스파클링 와인"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "크리스마스",
+    "guests": null,
+    "activity": "트리 장식, 케이크와 스파클링 와인",
+    "theme": "크리스마스"
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "04f3bd2a",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "d272e7b1",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "28740cde",
+   "intents": [
+    {
+     "intent_id": "deep_cleaning",
+     "intent_text": "도착 8일 뒤 토요일 대청소 일정에 맞춰, 주방 세정제·욕실 세제·걸레·청소솔·먼지떨이로 집 전체를 대청소한다",
+     "bundle_items": [
+      "주방 세정제",
+      "걸레",
+      "먼지떨이",
+      "욕실 세제",
+      "청소솔"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "대청소",
+    "guests": null,
+    "activity": "주방·욕실 등 집안 청소",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "210f0655",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "efeab585",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "anniversary_dinner"
+   ]
+  },
+  {
+   "case_ref": "22cee97e",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "3b83f284",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4f3159bc",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "wfh_start"
+   ]
+  },
+  {
+   "case_ref": "9ce9ef29",
+   "intents": [
+    {
+     "intent_id": "home_party",
+     "intent_text": "와인·막걸리와 치즈·크래커 안주를 일회용 접시에 담아 지인을 집에 불러 대접한다",
+     "bundle_items": [
+      "와인",
+      "일회용 접시",
+      "막걸리",
+      "치즈",
+      "크래커"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "술과 안주로 대접",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e55c06e7",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "8ad075b2",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a95720cb",
+   "intents": [
+    {
+     "intent_id": "winter_dry_cold",
+     "intent_text": "문풍지로 바람을 막고 전기요와 가습기로 겨울 추위와 건조에 대비한다",
+     "bundle_items": [
+      "문풍지",
+      "가습기",
+      "전기요"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "겨울 추위·건조 대비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4c7048f0",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a0e6f5fd",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "174ed569",
+   "intents": [
+    {
+     "intent_id": "trip_away",
+     "intent_text": "여행 가방에 압축 파우치로 짐을 꾸리고 여권 케이스와 수하물 태그를 챙겨 여행을 떠나 집을 비운다",
+     "bundle_items": [
+      "여권 케이스",
+      "압축 파우치",
+      "여행 가방",
+      "수하물 태그"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "여행 짐 꾸리기",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "3dbb47b3",
+   "intents": [
+    {
+     "intent_id": "rainy_season",
+     "intent_text": "제습제·제습기 필터·곰팡이 제거제로 장마철 습기와 곰팡이에 대비한다",
+     "bundle_items": [
+      "제습제",
+      "곰팡이 제거제",
+      "제습기 필터"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "습기·곰팡이 대비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "cb3d5d70",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5cebfb2b",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "00b3118e",
+   "intents": [
+    {
+     "intent_id": "home_party",
+     "intent_text": "카나페·치즈 안주와 와인을 종이 접시와 종이컵에 내어 지인을 집에 불러 대접한다",
+     "bundle_items": [
+      "카나페",
+      "와인",
+      "치즈",
+      "종이 접시",
+      "종이컵"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "와인과 핑거푸드로 대접",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "8d79f837",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "579beb22",
+   "intents": [
+    {
+     "intent_id": "kids_playdate",
+     "intent_text": "생일이 아닌 날 아이 친구들이 집에 놀러 와, 과자와 주스를 먹으며 클레이와 보드게임을 하고 논다",
+     "bundle_items": [
+      "클레이",
+      "주스",
+      "보드게임",
+      "과자"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": "아이 친구들",
+    "activity": "클레이·보드게임 놀이와 간식",
+    "theme": null
+   },
+   "alternatives": []
+  }
+ ]
+}
