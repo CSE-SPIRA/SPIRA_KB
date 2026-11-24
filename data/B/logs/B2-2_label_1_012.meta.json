@@ -7,25 +7,24 @@
  "person": "S",
  "prompt_version": "label@v2",
  "model_config": "claude-sonnet-5-5",
- "models_seen": [],
- "usage": {
-  "input_tokens": 0,
-  "cache_creation_input_tokens": 0,
-  "cache_read_input_tokens": 0,
-  "output_tokens": 0,
-  "total_cost_usd": 0
- },
- "total_tokens": 0,
- "quota": null,
- "attempts": 2,
- "ok": false,
- "errors": [
-  "[1회] 에이전트 실행 실패: You've hit your session limit · resets 1:30am (Asia/Seoul)",
-  "[2회] 에이전트 실행 실패: You've hit your session limit · resets 1:30am (Asia/Seoul)"
+ "models_seen": [
+  "claude-sonnet-5-5"
  ],
- "started_at": "2026-11-24T23:44:51+09:00",
- "finished_at": "2026-11-24T23:44:57+09:00",
- "seconds": 6,
- "local_date": "2026-11-24",
+ "usage": {
+  "input_tokens": 16,
+  "cache_creation_input_tokens": 50920,
+  "cache_read_input_tokens": 344983,
+  "output_tokens": 13242,
+  "total_cost_usd": 0.3706303000000001
+ },
+ "total_tokens": 409161,
+ "quota": null,
+ "attempts": 1,
+ "ok": true,
+ "errors": [],
+ "started_at": "2026-11-25T02:05:35+09:00",
+ "finished_at": "2026-11-25T02:06:53+09:00",
+ "seconds": 77,
+ "local_date": "2026-11-25",
  "fake": false
 }
