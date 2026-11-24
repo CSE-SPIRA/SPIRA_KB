@@ -165,9 +165,15 @@ def review_result(batch: str) -> dict:
     return {"judged": judged, "wrong": wrong, "wrong_ratio": _rate(wrong, judged), "fixes": fixes}
 
 
+def review_on() -> bool:
+    return B.pipeline()["review"]["per_batch"] > 0
+
+
 def step1(batch: str) -> list:
     m = metrics(batch)
     written = [B.write(batch, "report.json", {"metrics": m, "review": None, "verdict": None})]
+    if not review_on():   # 사람 검수 없음: 자동 지표로 바로 판정
+        return written + step2(batch)
     written += make_review(batch)
     written.append(_write_md(batch))
     B.set_state(batch, "reviewing")
@@ -178,11 +184,15 @@ def step1(batch: str) -> list:
 def step2(batch: str) -> list:
     cfg = B.pipeline()["gate"]
     rep = B.read(batch, "report.json")
-    rv = review_result(batch)
-    review_ok = rv["wrong_ratio"] is not None and rv["wrong_ratio"] <= cfg["review_wrong_max"]
-    oks = [it["ok"] for it in rep["metrics"]["items"].values()] + [review_ok]
-    verdict = "passed" if all(x is not False for x in oks) and review_ok else "failed"
-    rep.update(review=rv | {"ok": review_ok}, verdict=verdict, judged_at=B.now_iso())
+    oks = [it["ok"] for it in rep["metrics"]["items"].values()]
+    review = None
+    if review_on():
+        rv = review_result(batch)
+        review_ok = rv["wrong_ratio"] is not None and rv["wrong_ratio"] <= cfg["review_wrong_max"]
+        oks.append(review_ok)
+        review = rv | {"ok": review_ok}
+    verdict = "passed" if all(x is not False for x in oks) else "failed"
+    rep.update(review=review, verdict=verdict, judged_at=B.now_iso())
     written = [B.write(batch, "report.json", rep), _write_md(batch)]
     B.set_state(batch, verdict)
     written.append(B.bdir(batch) / "state.json")
