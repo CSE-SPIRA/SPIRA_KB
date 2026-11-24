@@ -91,7 +91,7 @@ section { min-width: 0; }
 .prog { padding: 6px 14px 12px; display: grid; gap: 4px; }
 .batch-title { font-weight: 600; margin: 10px 0 2px; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
 .batch-title .num { color: var(--muted); font-weight: 400; font-size: 12px; }
-.row { display: grid; grid-template-columns: 260px 1fr 118px; gap: 10px; align-items: center; min-height: 26px; }
+.row { display: grid; grid-template-columns: 190px 1fr 118px; gap: 10px; align-items: center; min-height: 26px; }
 .row .label { font-size: 13px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
 .row .label .role { font-weight: 600; min-width: 46px; }
 .row .label .who { font-size: 12px; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
@@ -159,7 +159,7 @@ footer a { color: inherit; }
   <div id="error" class="notice" hidden></div>
 
   <section id="kb-sec" hidden>
-    <h2>DB에 적재된 사례</h2>
+    <h2>DB 적재</h2>
     <div id="kb" class="kb-cards"></div>
   </section>
 
@@ -283,13 +283,10 @@ function renderKb() {
   $("kb-sec").hidden = !k || !k.batches.length;
   if (!k || !k.batches.length) return;
   const fmt = (n) => n.toLocaleString("ko-KR");
-  const est = k.estimated.length ? ` · ${k.estimated.join(", ")}는 어림값` : "";
-  const ver = Object.entries(k.versions).map(([v, n]) => `${v} ${fmt(n)}줄`).join(" · ");
+  const est = k.estimated.length ? " · 일부 어림값" : "";
   $("kb").innerHTML = `
-    <div class="panel kb-card"><span class="s">사례</span><span class="big">${fmt(k.cases)}</span><span class="s">주문 기준 · 중복 제거 뒤</span></div>
-    <div class="panel kb-card"><span class="s">DB 줄 (cases 표)</span><span class="big">${fmt(k.rows)}</span><span class="s">의도가 2개인 주문은 2줄${esc(est)}</span></div>
-    <div class="panel kb-card"><span class="s">적재된 배치</span><span class="big">${k.batches.length}</span><span class="s">${esc(k.batches.join(" · "))}</span></div>
-    <div class="panel kb-card"><span class="s">KB 버전</span><span class="big">${esc(Object.keys(k.versions).join(", "))}</span><span class="s">${esc(ver)}</span></div>`;
+    <div class="panel kb-card"><span class="s">적재된 사례</span><span class="big">${fmt(k.cases)}개</span>
+      <span class="s">${esc(Object.keys(k.versions).join(", "))} · DB ${fmt(k.rows)}줄${esc(est)}</span></div>`;
 }
 
 // 진행에는 지금 하고 있는 것만: 적재된 배치와 확정된 아이템 풀은 뺀다
@@ -297,7 +294,6 @@ function isDone(s, b) {
   if (s === "pool") return data.item_pool === "confirmed";
   return (((data.batches || {})[b] || {}).state) === "loaded";
 }
-const shortModel = (m) => (m || "").replace(/^gemini-/, "").replace(/^claude-/, "").replace(/^gpt-/, "gpt-");
 
 function renderProgress() {
   const p = data.progress || {};
@@ -326,7 +322,7 @@ function renderProgress() {
         const c = groups[k];
         let label = s === "pool" ? coTag(k) : `<span class="role">${esc(ROLE[k] || k)}</span>`;
         const r = s === "pool" ? null : ((info || {}).roles || {})[k];
-        if (r) label += `<span class="who">${coTag(r.company)} · ${esc(r.person || "?")}${r.model ? ` · <span class="num">${esc(shortModel(r.model))}</span>` : ""}</span>`;
+        if (r) label += `<span class="who">${coTag(r.company)} · ${esc(r.person || "?")}</span>`;
         const extra = [c.running ? `하는 중 ${c.running}` : "", c.failed ? `실패 ${c.failed}` : ""].filter(Boolean).join(" · ");
         html += `<div class="row"><span class="label">${label}</span>${bar(c)}
           <span class="count num"><b>${c.results}</b> / ${c.queue + c.running + c.results + c.failed}${extra ? `<br>${extra}` : ""}</span></div>`;
