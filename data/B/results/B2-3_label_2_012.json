@@ -1,0 +1,857 @@
+{
+ "job_id": "B2-3_label_2_012",
+ "labels": [
+  {
+   "case_ref": "aac26ac6",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "베이킹 도구와 재료를 이용해 집에서 초코칩 쿠키를 굽는다.",
+     "bundle_items": [
+      "베이킹 시트",
+      "계란 거품기",
+      "박력분",
+      "쿠키 커터",
+      "초코칩"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "초코칩 쿠키 만들기",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "3dcd88c8",
+   "intents": [
+    {
+     "intent_id": "home_party",
+     "intent_text": "도착 3일 뒤 금요일 손님 방문에 맞춰 맥주와 간식을 일회용 접시와 컵에 내어 대접한다.",
+     "bundle_items": [
+      "일회용 접시",
+      "미니 핫바",
+      "맥주",
+      "플라스틱 컵",
+      "크래커",
+      "나초"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "손님 방문",
+    "guests": "손님",
+    "activity": "음식과 맥주 대접",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "eb62f91a",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a8d78ef9",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "9ece95d9",
+   "intents": [],
+   "situation": {
+    "event": "가족 모임",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "89c6d8d1",
+   "intents": [
+    {
+     "intent_id": "camping_trip",
+     "intent_text": "랜턴과 캠핑 의자, 연료와 고기 등 음식을 챙겨 캠핑을 준비한다.",
+     "bundle_items": [
+      "소 불고기",
+      "삼겹살",
+      "부탄가스",
+      "랜턴",
+      "캠핑 의자",
+      "숯"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "캠핑",
+    "guests": null,
+    "activity": "캠핑 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "6033aa6f",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "748bf99d",
+   "intents": [
+    {
+     "intent_id": "guest_overnight",
+     "intent_text": "손님이 묵을 수 있도록 여분 수건과 세면도구, 침낭과 손님용 베개를 준비한다.",
+     "bundle_items": [
+      "여분 수건",
+      "침낭",
+      "세면도구 세트",
+      "손님용 베개"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "손님 방문",
+    "guests": "손님",
+    "activity": "손님 숙박",
+    "theme": null
+   },
+   "alternatives": [
+    "camping_trip"
+   ]
+  },
+  {
+   "case_ref": "219b1ef2",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "21401e8d",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "9269edc3",
+   "intents": [],
+   "situation": {
+    "event": "공연·영화",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "676028ca",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "493d8803",
+   "intents": [
+    {
+     "intent_id": "kid_birthday_party",
+     "intent_text": "캐릭터 케이크와 생일 초, 풍선과 가랜드, 답례품을 준비해 아이 생일을 집에서 축하한다.",
+     "bundle_items": [
+      "생일 초",
+      "생일 풍선",
+      "답례품 과자",
+      "일회용 컵",
+      "파티 가랜드",
+      "일회용 접시",
+      "캐릭터 케이크"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "아이 생일 파티",
+    "theme": "캐릭터"
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5d489625",
+   "intents": [
+    {
+     "intent_id": "trip_away",
+     "intent_text": "캐리어에 여행용 칫솔과 파우치, 목베개를 챙겨 여행을 준비한다.",
+     "bundle_items": [
+      "여행용 칫솔",
+      "목베개",
+      "여행용 파우치",
+      "캐리어"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "여행 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "d2bfe974",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5aa88b0c",
+   "intents": [
+    {
+     "intent_id": "adult_birthday",
+     "intent_text": "케이크와 생일 초, 꽃다발과 와인으로 어른 생일을 축하한다.",
+     "bundle_items": [
+      "와인",
+      "생일 초",
+      "케이크",
+      "꽃다발"
+     ]
+    },
+    {
+     "intent_id": "camping_trip",
+     "intent_text": "1인용 텐트와 버너, 연료와 컵라면을 챙겨 캠핑을 준비한다.",
+     "bundle_items": [
+      "1인용 텐트",
+      "부탄가스",
+      "캠핑 컵라면",
+      "휴대용 버너"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "생일 축하와 캠핑 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "bdb9acd6",
+   "intents": [],
+   "situation": {
+    "event": "기념일",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "christmas_party",
+    "holiday_feast"
+   ]
+  },
+  {
+   "case_ref": "2c497f50",
+   "intents": [],
+   "situation": {
+    "event": "손님 방문",
+    "guests": "손님",
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "3ec4794c",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "94928bd0",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a1c212c5",
+   "intents": [
+    {
+     "intent_id": "summer_heat",
+     "intent_text": "냉감 베개와 서큘레이터를 마련해 더위에 대비한다.",
+     "bundle_items": [
+      "냉감 베개",
+      "서큘레이터"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "더위 대비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5079ba2d",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "8e10a26a",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "637a7862",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "1821d4a0",
+   "intents": [],
+   "situation": {
+    "event": "회의",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "fine_dust"
+   ]
+  },
+  {
+   "case_ref": "afb44198",
+   "intents": [],
+   "situation": {
+    "event": "공연·영화",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "kimjang"
+   ]
+  },
+  {
+   "case_ref": "82fc348d",
+   "intents": [],
+   "situation": {
+    "event": "나들이·소풍",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "fine_dust"
+   ]
+  },
+  {
+   "case_ref": "daeaa4f5",
+   "intents": [
+    {
+     "intent_id": "deep_cleaning",
+     "intent_text": "도착 4일 뒤 수요일 대청소에 맞춰 배수구 세정제와 먼지 털이개를 준비한다.",
+     "bundle_items": [
+      "배수구 세정제",
+      "먼지 털이개"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "대청소",
+    "guests": null,
+    "activity": "대청소",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e5be4a28",
+   "intents": [],
+   "situation": {
+    "event": "약속·외식",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "18b53921",
+   "intents": [
+    {
+     "intent_id": "adult_birthday",
+     "intent_text": "케이크와 생일 초, 꽃다발과 와인을 준비해 어른 생일을 축하한다.",
+     "bundle_items": [
+      "와인",
+      "케이크",
+      "생일 초",
+      "꽃다발"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "생일 축하",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5c097b43",
+   "intents": [
+    {
+     "intent_id": "camping_trip",
+     "intent_text": "캠핑 테이블과 의자, 버너와 가스 연료를 준비해 캠핑을 간다.",
+     "bundle_items": [
+      "가스 연료",
+      "캠핑 테이블",
+      "캠핑 의자",
+      "버너"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "집들이",
+    "guests": null,
+    "activity": "캠핑 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "6462b0e1",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "99b3e5c6",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4e901d2a",
+   "intents": [],
+   "situation": {
+    "event": "운동",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "c933a519",
+   "intents": [
+    {
+     "intent_id": "kimjang",
+     "intent_text": "도착 다음 날 토요일 김장에 맞춰 절임배추와 양념 재료, 김장 매트와 대용량 통을 준비한다.",
+     "bundle_items": [
+      "절임배추",
+      "고춧가루",
+      "김장 매트",
+      "대용량 통",
+      "마늘"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "김장",
+    "guests": null,
+    "activity": "김장",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "bcf9825d",
+   "intents": [
+    {
+     "intent_id": "camping_trip",
+     "intent_text": "도착 2일 뒤 토요일 캠핑을 위해 텐트와 버너, 연료, 의자와 라면을 준비한다.",
+     "bundle_items": [
+      "텐트",
+      "버너",
+      "부탄가스",
+      "캠핑 의자",
+      "라면"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "캠핑",
+    "guests": null,
+    "activity": "캠핑",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "47137003",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "03c514f7",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "박력분과 버터, 짤주머니와 제과 틀을 이용해 집에서 베이킹한다.",
+     "bundle_items": [
+      "짤주머니",
+      "박력분",
+      "버터",
+      "제과 틀"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "홈베이킹",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "741525b5",
+   "intents": [
+    {
+     "intent_id": "home_party",
+     "intent_text": "맥주와 견과류, 핑거푸드를 종이 접시와 컵에 내어 지인을 대접하는 홈파티를 준비한다.",
+     "bundle_items": [
+      "견과류",
+      "맥주",
+      "핑거푸드",
+      "종이 접시",
+      "종이컵"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": "지인",
+    "activity": "홈파티",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "904d5c7f",
+   "intents": [],
+   "situation": {
+    "event": "어버이날",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "75cbd3d0",
+   "intents": [
+    {
+     "intent_id": "adult_birthday",
+     "intent_text": "도착 7일 뒤 목요일 생일에 케이크와 생일 초, 꽃다발로 어른의 생일을 축하한다.",
+     "bundle_items": [
+      "케이크",
+      "꽃다발",
+      "생일 초"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "생일 축하",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "677c6aa7",
+   "intents": [
+    {
+     "intent_id": "school_start",
+     "intent_text": "초등 자녀의 새 학기에 쓸 책가방과 실내화 주머니를 준비한다.",
+     "bundle_items": [
+      "책가방",
+      "실내화 주머니"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "새 학기 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "94426d26",
+   "intents": [
+    {
+     "intent_id": "family_gathering",
+     "intent_text": "소갈비와 잡채 재료, 과일 바구니와 한우 선물세트를 준비해 가족에게 식사를 대접한다.",
+     "bundle_items": [
+      "한우 선물세트",
+      "소갈비",
+      "과일 바구니",
+      "소고기 등심",
+      "잡채 당면"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "손님 방문",
+    "guests": "손님",
+    "activity": "식사 대접",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "c5228d64",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a659de68",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "0a04f29b",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "82092b34",
+   "intents": [
+    {
+     "intent_id": "adult_birthday",
+     "intent_text": "컵케이크와 생일 초, 작은 꽃다발과 스파클링 와인으로 어른 생일을 축하한다.",
+     "bundle_items": [
+      "스파클링 와인",
+      "작은 꽃다발",
+      "컵케이크",
+      "생일 초"
+     ]
+    },
+    {
+     "intent_id": "home_baking",
+     "intent_text": "강력분과 이스트, 계량스푼과 밀대를 이용해 집에서 빵을 만든다.",
+     "bundle_items": [
+      "계량스푼",
+      "밀대",
+      "이스트",
+      "강력분"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "생일 축하와 빵 만들기",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "ffe5de4b",
+   "intents": [
+    {
+     "intent_id": "home_party",
+     "intent_text": "도착 10일 뒤 토요일 친구 모임에 맞춰 와인과 간식을 일회용 접시와 컵에 내어 대접한다.",
+     "bundle_items": [
+      "와인",
+      "플라스틱 컵",
+      "김말이튀김",
+      "크래커",
+      "올리브",
+      "일회용 접시"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "친구 모임",
+    "guests": "친구",
+    "activity": "홈파티",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "2899fc57",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "8682d8e3",
+   "intents": [
+    {
+     "intent_id": "adult_birthday",
+     "intent_text": "도착 2일 뒤 토요일 생일에 케이크와 생일 초, 꽃다발과 와인으로 어른 생일을 축하한다.",
+     "bundle_items": [
+      "케이크",
+      "생일 초",
+      "꽃다발",
+      "와인"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "생일 축하",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4a7eb5ea",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "8be0c466",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "bd9f465f",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  }
+ ]
+}
