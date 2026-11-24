@@ -1,0 +1,838 @@
+{
+ "job_id": "B2-3_label_2_002",
+ "labels": [
+  {
+   "case_ref": "553dc8f2",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "kimjang"
+   ]
+  },
+  {
+   "case_ref": "650ac3ef",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "01c86aec",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e2e765de",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "093e1db4",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a2723766",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "92216479",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "ba371be9",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "bbfc39ff",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a04be5cc",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "8ae91593",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b78fd3bd",
+   "intents": [
+    {
+     "intent_id": "closet_change",
+     "intent_text": "옷걸이와 이불 커버를 사용해 옷과 이불을 교체하거나 정리한다.",
+     "bundle_items": [
+      "옷걸이",
+      "이불 커버"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "옷과 이불 교체·정리",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "97c982f6",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "home_baking",
+    "trip_away"
+   ]
+  },
+  {
+   "case_ref": "3a557229",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "c0aca03c",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b3d8b5a4",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "fb5a0e3d",
+   "intents": [
+    {
+     "intent_id": "closet_change",
+     "intent_text": "옷걸이와 압축팩, 방충제와 리빙박스를 사용해 옷과 이불을 교체하거나 정리한다.",
+     "bundle_items": [
+      "옷걸이",
+      "방충제",
+      "압축팩",
+      "리빙박스"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "옷과 이불 교체·정리",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "0980ba92",
+   "intents": [
+    {
+     "intent_id": "guest_overnight",
+     "intent_text": "도착 13일 뒤 일요일 손님 방문에 맞춰 이불과 베개 커버, 일회용 칫솔과 여분 수건을 마련해 손님이 묵을 준비를 한다.",
+     "bundle_items": [
+      "손님용 이불",
+      "베개 커버",
+      "일회용 칫솔",
+      "여분 수건"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "손님 방문",
+    "guests": "손님",
+    "activity": "손님 숙박 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "f82310f6",
+   "intents": [
+    {
+     "intent_id": "guest_overnight",
+     "intent_text": "여분 이불과 손님용 베개, 수건과 세면도구를 마련해 손님이 묵을 준비를 한다.",
+     "bundle_items": [
+      "여분 이불",
+      "세면도구 세트",
+      "손님용 베개",
+      "손님용 수건"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": "손님",
+    "activity": "손님 숙박 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "559aa936",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "d65e3bc5",
+   "intents": [
+    {
+     "intent_id": "picnic_lunchbox",
+     "intent_text": "김밥 재료와 일회용 도시락, 과일주스를 준비하고 돗자리와 보냉백을 챙겨 나들이를 간다.",
+     "bundle_items": [
+      "돗자리",
+      "보냉백",
+      "일회용 도시락",
+      "과일주스",
+      "김밥 재료"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "나들이",
+    "guests": null,
+    "activity": "도시락을 준비해 나들이",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4792c38e",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "231ffb08",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "008b50a1",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "17d97d67",
+   "intents": [
+    {
+     "intent_id": "anniversary_dinner",
+     "intent_text": "도착 4일 뒤 화요일 기념일에 맞춰 꽃과 캔들을 놓고 랍스터 꼬리와 화이트와인으로 집에서 저녁을 준비한다.",
+     "bundle_items": [
+      "캔들",
+      "꽃",
+      "유리잔",
+      "화이트와인",
+      "랍스터 꼬리"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "기념일",
+    "guests": null,
+    "activity": "기념일 저녁 식사",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a25efbb0",
+   "intents": [
+    {
+     "intent_id": "guest_overnight",
+     "intent_text": "도착 7일 뒤 월요일 손님 방문에 맞춰 침구와 손님용 베개, 수건과 세면도구를 마련해 손님이 묵을 준비를 한다.",
+     "bundle_items": [
+      "침구 세트",
+      "세면 수건",
+      "샴푸 소분",
+      "손님용 베개",
+      "칫솔 세트"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "손님 방문",
+    "guests": "손님",
+    "activity": "손님 숙박 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "93d3ca4f",
+   "intents": [
+    {
+     "intent_id": "kimjang",
+     "intent_text": "도착 다음 날 토요일 김장 일정에 맞춰 절임배추와 고춧가루, 마늘을 준비하고 김장 매트와 대용량 통을 사용해 김장한다.",
+     "bundle_items": [
+      "절임배추",
+      "고춧가루",
+      "김장 매트",
+      "대용량 통",
+      "마늘"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "김장",
+    "guests": null,
+    "activity": "김장",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "8b4cc509",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "399f3448",
+   "intents": [
+    {
+     "intent_id": "kid_birthday_party",
+     "intent_text": "도착 8일 뒤 수요일 생일에 맞춰 케이크와 생일 초, 가랜드와 답례품을 준비해 자녀의 생일을 축하한다.",
+     "bundle_items": [
+      "생일 가랜드",
+      "답례품",
+      "생일 초",
+      "생일 케이크",
+      "스파클러"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "생일 축하",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "75646501",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "3b7568ff",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "1f784a37",
+   "intents": [
+    {
+     "intent_id": "christmas_party",
+     "intent_text": "도착 13일 뒤 일요일 크리스마스에 맞춰 트리 조명과 가랜드로 장식하고 로스트 치킨과 스파클링 와인을 준비한다.",
+     "bundle_items": [
+      "트리 조명",
+      "가랜드",
+      "스파클링 와인",
+      "로스트 치킨"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "크리스마스",
+    "guests": null,
+    "activity": "크리스마스 음식과 장식 준비",
+    "theme": "크리스마스"
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "c84c7ca0",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "baed7fa3",
+   "intents": [
+    {
+     "intent_id": "holiday_feast",
+     "intent_text": "도착 7일 뒤 목요일 설날 일정에 맞춰 제수용 과일과 향, 나물과 전 재료 등을 준비해 명절 상을 차린다.",
+     "bundle_items": [
+      "송편",
+      "제수용 과일",
+      "향",
+      "나물 세트",
+      "전 재료"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "설날",
+    "guests": null,
+    "activity": "명절 상차림",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "74bbdde9",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "15fa6ec5",
+   "intents": [
+    {
+     "intent_id": "picnic_lunchbox",
+     "intent_text": "도착 10일 뒤 목요일 나들이·소풍에 맞춰 김밥 재료와 도시락 용기를 준비하고 돗자리를 챙긴다.",
+     "bundle_items": [
+      "김밥 김",
+      "달걀",
+      "도시락 용기",
+      "소분 지퍼백",
+      "돗자리",
+      "단무지"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "나들이·소풍",
+    "guests": null,
+    "activity": "김밥 도시락 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5ced010d",
+   "intents": [
+    {
+     "intent_id": "new_dog",
+     "intent_text": "도착 2일 뒤 금요일 반려동물 입양에 맞춰 강아지 사료와 간식, 배변패드, 하네스와 켄넬을 마련한다.",
+     "bundle_items": [
+      "강아지 사료",
+      "강아지 간식",
+      "배변패드",
+      "하네스",
+      "켄넬"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "반려동물 입양",
+    "guests": null,
+    "activity": "강아지 맞이 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "8f8b0430",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "3497b5ba",
+   "intents": [
+    {
+     "intent_id": "deep_cleaning",
+     "intent_text": "도착 11일 뒤 일요일 대청소를 위해 욕실과 유리 세정제, 곰팡이 제거제와 청소 도구를 준비한다.",
+     "bundle_items": [
+      "욕실 세정제",
+      "스펀지",
+      "고무장갑",
+      "유리 세정제",
+      "곰팡이 제거제",
+      "청소솔"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "대청소",
+    "guests": null,
+    "activity": "집안 청소",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "40323180",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "54b3fa9e",
+   "intents": [
+    {
+     "intent_id": "deep_cleaning",
+     "intent_text": "도착 당일 대청소를 위해 걸레와 먼지떨이, 청소봉과 욕실 세제, 얼룩 제거제를 준비한다.",
+     "bundle_items": [
+      "걸레",
+      "먼지떨이",
+      "욕실 세제",
+      "손잡이 청소봉",
+      "얼룩 제거제"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "대청소",
+    "guests": null,
+    "activity": "집안 청소",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "93aa0a07",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "748aced7",
+   "intents": [
+    {
+     "intent_id": "trip_away",
+     "intent_text": "캐리어에 압축 파우치와 여행용 파우치, 세면도구를 챙기고 목베개를 준비해 여행을 떠난다.",
+     "bundle_items": [
+      "압축 파우치",
+      "캐리어",
+      "목베개",
+      "여행용 파우치",
+      "여행용 세면도구"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "여행",
+    "guests": null,
+    "activity": "여행 짐 꾸리기",
+    "theme": null
+   },
+   "alternatives": [
+    "camping_trip"
+   ]
+  },
+  {
+   "case_ref": "f1293022",
+   "intents": [
+    {
+     "intent_id": "exam_focus",
+     "intent_text": "독서대와 스탠드로 공부할 환경을 마련하고 컵라면과 에너지바를 준비한다.",
+     "bundle_items": [
+      "컵라면",
+      "에너지바",
+      "스탠드",
+      "독서대"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "공부 환경 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e89b33ca",
+   "intents": [
+    {
+     "intent_id": "school_start",
+     "intent_text": "도착 전날 입학·개학에 맞춰 백팩과 노트, 필기구와 실내화를 준비한다.",
+     "bundle_items": [
+      "백팩",
+      "노트",
+      "실내화",
+      "필기구 세트"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "입학·개학",
+    "guests": null,
+    "activity": "새 학기 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "276e237d",
+   "intents": [
+    {
+     "intent_id": "kids_playdate",
+     "intent_text": "아이 친구들이 놀러 올 때 먹을 주스와 과자, 함께 즐길 클레이와 퍼즐, 보드게임을 준비한다.",
+     "bundle_items": [
+      "주스",
+      "과자",
+      "클레이",
+      "퍼즐",
+      "보드게임"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": "아이 친구들",
+    "activity": "간식을 먹고 놀이",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e1464f4b",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "68da04b5",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e9b9af45",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "family_gathering"
+   ]
+  },
+  {
+   "case_ref": "d7fb16fb",
+   "intents": [
+    {
+     "intent_id": "exam_focus",
+     "intent_text": "도착 7일 뒤 목요일 시험에 대비해 독서대와 스탠드, 블루라이트 안경으로 공부 환경을 마련하고 에너지바를 준비한다.",
+     "bundle_items": [
+      "독서대",
+      "스탠드",
+      "에너지바",
+      "블루라이트 안경"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "시험",
+    "guests": null,
+    "activity": "시험 공부",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "225de70f",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4f6f2c07",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "이스트와 반죽 스크래퍼를 사용해 집에서 빵 반죽을 만든다.",
+     "bundle_items": [
+      "반죽 스크래퍼",
+      "이스트"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "빵 반죽 만들기",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "7b750995",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  }
+ ]
+}
