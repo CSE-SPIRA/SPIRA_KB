@@ -35,7 +35,7 @@ gate:
   review_wrong_max: 0.20
 
 review:
-  per_batch: 30                 # 배치마다 사람 검수 사례 수
+  per_batch: 0                  # 배치마다 사람 검수 사례 수. 0이면 사람 검수 없이 자동 지표만으로 판정한다 (2회차부터)
   mix: { agree: 0.5, disagree: 0.3, weak: 0.2 }
   people: [U, Y, S, J]          # 배치 30개를 이 사람들에게 나눠 준다
 
