@@ -21,7 +21,7 @@ from spira import config, household
 from spira.queue import DATA
 from spira.schemas import GenerateJob
 
-PROMPT_VERSION = "generate_bundle@v2"
+PROMPT_VERSION = "generate_bundle@v3"
 
 
 def _counts(n: int, ratios: dict[str, float]) -> dict[str, int]:
