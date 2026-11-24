@@ -2,12 +2,14 @@
 
 생성 작업이 모두 끝난 배치에서 돈다. 숫자는 config/pipeline.yaml.
 
+묶음의 앞 2개는 구분 단서(cue), 나머지는 cue와 함께 쓰는 물건이다 (generate_bundle@v3).
+
 주문 유형:
 - A 평범한 장보기: 아이템 풀의 평소 물건만
 - B 묶음 + 평소 물건 1~3개
-- W 약한 단서: 묶음 물건 1~2개 + 평소 물건
-- E 경계 의도: 묶음 + 헷갈리는 다른 의도 묶음의 물건 1~2개 (+ 평소 물건 0~2개)
-- C 의도 둘: 묶음 두 개 (+ 평소 물건 0~1개)
+- W 약한 단서: 묶음 물건 2~3개 (cue 1개는 꼭, 나머지는 묶음에서 아무거나) + 평소 물건
+- E 경계 의도: 묶음 + 헷갈리는 다른 의도 묶음의 cue 1~2개 (+ 평소 물건 0~2개)
+- C 의도 둘: 묶음 두 개, 주문이 길면 함께 쓰는 물건부터 줄이고 cue는 남긴다 (+ 평소 물건 0~1개)
 - D 무작위: 특정 용도 물건을 무작위로 2~5개 (+ 평소 물건 0~2개). 말이 안 되는 조합 포함
 주문 하나는 2~10개. 물건 순서는 섞는다.
 
@@ -33,6 +35,11 @@ from spira.queue import DATA
 from spira.schemas import LabelJob
 
 PROMPT_VERSION = "label@v2"
+N_CUES = 2   # 묶음 앞쪽의 cue 개수 (generate_bundle@v3)
+
+
+def cues(bundle: list[str]) -> list[str]:
+    return bundle[:N_CUES]
 
 
 def ready(batch: str) -> bool:
@@ -126,21 +133,23 @@ def assemble(batch: str) -> list:
             items = everyday_items(target_size(), set())
         elif t == "B":
             items = g[0] + everyday_items(rng.randint(*cfg["everyday_added"]["B"]), set(g[0]))
-        elif t == "W":
+        elif t == "W":   # cue 1개는 꼭, 나머지는 묶음에서 아무거나
             k = min(len(g[0]), rng.randint(*cfg["weak_bundle_items"]))
-            core = rng.sample(g[0], k)
+            first = rng.choice(cues(g[0]))
+            core = [first] + rng.sample([x for x in g[0] if x != first], k - 1)
             items = core + everyday_items(max(target_size() - k, 1), set(core))
-        elif t == "E":
-            borrow = [x for x in g[1] if x not in g[0]]
+        elif t == "E":   # 다른 의도의 cue만 빌린다 (함께 쓰는 물건은 경계 신호가 아님)
+            borrow = [x for x in cues(g[1]) if x not in g[0]]
             k = min(len(borrow), rng.randint(*cfg["boundary_items"]))
             items = g[0] + rng.sample(borrow, k)
             items += everyday_items(rng.randint(*cfg["everyday_added"]["E"]), set(items))
         elif t == "C":
             items = g[0] + [x for x in g[1] if x not in g[0]]
-            while len(items) > cfg["order_size"]["max"]:   # 묶음마다 최소 2개는 남기고 줄인다
+            keep = set(cues(g[0])) | set(cues(g[1]))
+            while len(items) > cfg["order_size"]["max"]:   # 함께 쓰는 물건부터 줄이고 cue는 남긴다
                 side = g[0] if sum(x in g[0] for x in items) > sum(x in g[1] for x in items) else g[1]
-                drop = [x for x in items if x in side]
-                if len(drop) <= 2:
+                drop = [x for x in items if x in side and x not in keep]
+                if not drop:
                     break
                 items.remove(rng.choice(drop))
             items += everyday_items(rng.randint(*cfg["everyday_added"]["C"]), set(items))
