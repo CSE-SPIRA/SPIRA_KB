@@ -91,18 +91,47 @@ def build(now: datetime | None = None) -> dict:
         cell = batch.setdefault(group, {s: 0 for s in STATES})
         cell[j["state"]] += 1
 
-    # 배치 상태 · 품질 관문
+    # 배치 상태 · 품질 관문 · 역할 담당 · 적재
+    cycles = config.load_cycles()
+    model_of: dict = {}   # (사람, 회사) → 마지막으로 쓴 모델
+    for m in sorted(metas, key=lambda m: m.get("finished_at") or ""):
+        seen = m.get("models_seen") or []
+        if seen or m.get("model_config"):
+            model_of[(m.get("person"), m.get("company"))] = seen[-1] if seen else m.get("model_config")
     batch_info = {}
+    kb = {"rows": 0, "cases": 0, "batches": [], "estimated": [], "versions": {}}
     for st_file in sorted(DATA.glob("*/batches/*/state.json")):
         b = st_file.parent.name
         st = (_load(st_file) or {}).get("state")
         rep = _load(st_file.parent / "report.json") or {}
         items = ((rep.get("metrics") or {}).get("items") or {})
+        cyc = cycles.get(b[0]) or {}
+        members = cyc.get("members") or {}
+        roles = {}
+        for role, company in ((_load(st_file.parent / "plan.json") or {}).get("roles") or {}).items():
+            person = (members.get(company) or {}).get("person")
+            roles[role] = {"company": company, "person": person,
+                           "model": model_of.get((person, company)) or (cyc.get("models") or {}).get(company)}
         batch_info[b] = {
             "state": st, "verdict": rep.get("verdict"),
             "failed_items": [k for k, v in items.items() if v.get("ok") is False],
             "review": (rep.get("review") or {}).get("wrong_ratio"),
+            "roles": roles,
         }
+        ld = _load(st_file.parent / "loaded.json")
+        if st == "loaded" and ld:
+            dropped = {d["case_id"] for d in ld.get("dropped") or []}
+            rows = [r for r in ((_load(st_file.parent / "compared.json") or {}).get("rows") or [])
+                    if r["case_id"] not in dropped]
+            n = ld.get("in_db") or ld.get("loaded") or 0
+            if not ld.get("in_db") and not ld.get("loaded"):   # 기록이 없으면 넣으려던 줄 수로 어림한다
+                n = len(rows)
+                kb["estimated"].append(b)
+            kb["rows"] += n
+            kb["cases"] += len({r["order_ref"] for r in rows})
+            kb["batches"].append(b)
+            v = ld.get("kb_version") or "?"
+            kb["versions"][v] = kb["versions"].get(v, 0) + n
     pool_status = None
     pool_file = config.CONFIG / "lists" / "item_pool.yaml"
     if pool_file.exists():
@@ -112,7 +141,6 @@ def build(now: datetime | None = None) -> dict:
     review_todo = sorted(p.name for p in review_dir.glob("*.csv")) if review_dir.exists() else []
 
     # 사람 · 계정별
-    cycles = config.load_cycles()
     people = []
     for person, node in config.load_nodes().items():
         share = float(node.get("weekly_share_percent") or DEFAULT_SHARE)
@@ -151,6 +179,7 @@ def build(now: datetime | None = None) -> dict:
                    | {"weekly_used_pct": (m.get("quota") or {}).get("weekly_used_pct")} for m in recent],
         "failed": failed,
         "batches": batch_info,
+        "kb": kb,
         "item_pool": pool_status,
         "review_todo": review_todo,
         "cycles": {name: {"active": config.is_active(c, today), "ends_on": str(c.get("ends_on") or ""),
