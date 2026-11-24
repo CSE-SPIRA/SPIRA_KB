@@ -1,0 +1,849 @@
+{
+ "job_id": "B2-2_label_2_011",
+ "labels": [
+  {
+   "case_ref": "475c4ab5",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e9cb9013",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "3fe2d570",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "9e439f77",
+   "intents": [
+    {
+     "intent_id": "trip_away",
+     "intent_text": "수하물 태그와 여행용 세면도구를 챙겨 여행을 떠나기 위해 짐을 꾸린다.",
+     "bundle_items": [
+      "수하물 태그",
+      "여행용 세면도구"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "여행",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4467d1b0",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "f2b328dc",
+   "intents": [
+    {
+     "intent_id": "kids_vacation",
+     "intent_text": "도착 6일 뒤 화요일 초등 자녀의 방학 일정에 맞춰, 방학 동안 집에 있을 아이를 위해 학습지와 간식 및 점심 식사 재료를 준비한다.",
+     "bundle_items": [
+      "냉동 만두",
+      "젤리",
+      "비눗방울",
+      "쌀과자",
+      "학습지",
+      "과자",
+      "볶음밥"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "방학",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "ba086c96",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "77f7c76f",
+   "intents": [
+    {
+     "intent_id": "guest_overnight",
+     "intent_text": "집에 하룻밤 묵고 갈 손님을 맞이하기 위해 여분 침구인 이불과 접이식 매트리스, 수건, 칫솔을 준비한다.",
+     "bundle_items": [
+      "이불",
+      "수건",
+      "접이식 매트리스",
+      "칫솔"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "7d01e050",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "집에서 머핀 등 디저트를 만들기 위해 밀가루, 버터, 베이킹파우더와 거품기, 머핀틀 등 베이킹 도구를 준비하여 홈베이킹을 한다.",
+     "bundle_items": [
+      "밀가루",
+      "거품기",
+      "베이킹파우더",
+      "버터",
+      "머핀틀"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "7d422d0b",
+   "intents": [
+    {
+     "intent_id": "trip_away",
+     "intent_text": "도착 10일 뒤 일요일 가족 여행 일정에 맞춰, 영유아 자녀를 위한 유아 목베개와 여행용 파우치, 공병, 캐리어를 챙겨 여행 짐을 꾸린다.",
+     "bundle_items": [
+      "유아 목베개",
+      "여행용 공병",
+      "여행용 파우치",
+      "캐리어"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "여행",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a35a1027",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4141833a",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "38230681",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "9987ff74",
+   "intents": [
+    {
+     "intent_id": "new_dog",
+     "intent_text": "토요일 도착 당일 반려동물 입양 일정에 맞춰, 새로 입양할 강아지를 위해 사료, 배변패드, 켄넬, 장난감을 준비하여 강아지를 맞이한다.",
+     "bundle_items": [
+      "강아지 사료",
+      "배변패드",
+      "켄넬",
+      "강아지 장난감"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "반려동물 입양",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "2cf581d8",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "eca848db",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "0aee89cb",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "23d81fb2",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5e6ccbf0",
+   "intents": [
+    {
+     "intent_id": "home_party",
+     "intent_text": "친구 모임을 위해 스파클링 와인과 카나페, 올리브 같은 핑거푸드 안주 및 종이 접시와 일회용 컵을 준비하여 홈파티를 연다.",
+     "bundle_items": [
+      "일회용 컵",
+      "카나페",
+      "스파클링 와인",
+      "종이 접시",
+      "올리브"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "친구 모임",
+    "guests": "친구들",
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "fdb6a3d8",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "3b65f998",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "f00dfee6",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "집에서 쿠키 등 제과를 만들기 위해 밀가루와 버터, 바닐라 향료, 거품기 및 쿠키 틀을 갖추어 홈베이킹을 한다.",
+     "bundle_items": [
+      "거품기",
+      "바닐라 향료",
+      "쿠키 틀",
+      "버터",
+      "밀가루"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "eb1db534",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "ac029de3",
+   "intents": [
+    {
+     "intent_id": "christmas_party",
+     "intent_text": "도착 8일 뒤 목요일 크리스마스 일정에 맞춰, 전구 장식과 크리스마스 리스로 분위기를 내고 와인과 로스트 치킨 등 파티 음식을 즐기기 위해 크리스마스 파티를 준비한다.",
+     "bundle_items": [
+      "전구 장식",
+      "크리스마스 리스",
+      "와인",
+      "로스트 치킨"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "크리스마스",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4c2e73db",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a230089b",
+   "intents": [
+    {
+     "intent_id": "moving_in",
+     "intent_text": "도착 4일 뒤 화요일 이사 일정에 맞춰, 새 공간을 정리하고 세팅하기 위해 수납함, 리모컨 정리함, 옷걸이와 청소포, 청소솔, 면기를 준비한다.",
+     "bundle_items": [
+      "리모컨 정리함",
+      "청소포",
+      "면기",
+      "청소솔",
+      "수납함",
+      "옷걸이"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "이사",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "ee6bca5e",
+   "intents": [
+    {
+     "intent_id": "christmas_party",
+     "intent_text": "크리스마스와 연말 파티를 위해 크리스마스 트리와 트리 장식, 전구를 꾸미고 와인과 칠면조, 양고기 등 파티 음식을 준비한다.",
+     "bundle_items": [
+      "트리 장식",
+      "와인",
+      "칠면조",
+      "크리스마스 트리",
+      "전구",
+      "양고기"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "33a40e52",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a6569da6",
+   "intents": [
+    {
+     "intent_id": "kimjang",
+     "intent_text": "도착 다음 날인 토요일 김장 일정에 맞춰, 절임배추와 고춧가루, 마늘, 김장 매트, 대용량 통을 준비하여 김장을 한다.",
+     "bundle_items": [
+      "절임배추",
+      "고춧가루",
+      "김장 매트",
+      "대용량 통",
+      "마늘"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "김장",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "eacaa38e",
+   "intents": [
+    {
+     "intent_id": "winter_dry_cold",
+     "intent_text": "겨울철 추위에 대비하기 위해 방한용 문풍지와 전기요를 준비한다.",
+     "bundle_items": [
+      "문풍지",
+      "전기요"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "d0949c8d",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4b64e7dc",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "ad574834",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b99caf8b",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "be48a5de",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "275114db",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "6ae2a0b3",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "db6e9d9d",
+   "intents": [
+    {
+     "intent_id": "picnic_lunchbox",
+     "intent_text": "당일 나들이를 떠나기 위해 돗자리와 도시락 용기, 그리고 도시락을 만들 아스파라거스, 단호박, 연어, 햄 등의 재료를 준비하여 나들이 도시락을 싼다.",
+     "bundle_items": [
+      "아스파라거스",
+      "단호박",
+      "돗자리",
+      "연어",
+      "햄",
+      "도시락 용기"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "afef0af5",
+   "intents": [
+    {
+     "intent_id": "fine_dust",
+     "intent_text": "미세먼지에 대비하기 위해 공기청정기와 공기청정기 필터, 마스크를 준비한다.",
+     "bundle_items": [
+      "공기청정기 필터",
+      "공기청정기",
+      "마스크"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "65774032",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "3598e008",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "집에서 머핀 등 구움과자를 굽기 위해 밀가루, 버터, 베이킹파우더와 머핀틀을 준비하여 홈베이킹을 한다.",
+     "bundle_items": [
+      "베이킹파우더",
+      "버터",
+      "밀가루",
+      "머핀틀"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "40d2e6f6",
+   "intents": [
+    {
+     "intent_id": "kimjang",
+     "intent_text": "도착 11일 뒤 목요일 김장 일정에 맞춰, 절임배추와 고춧가루, 새우젓, 김장 매트, 김치통을 미리 준비하여 김장을 한다.",
+     "bundle_items": [
+      "김장 매트",
+      "고춧가루",
+      "새우젓",
+      "절임배추",
+      "김치통"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "김장",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "93f44635",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "집에서 식빵을 굽기 위해 밀가루, 버터, 이스트와 식빵틀, 오븐장갑을 준비하여 홈베이킹을 한다.",
+     "bundle_items": [
+      "밀가루",
+      "오븐장갑",
+      "식빵틀",
+      "이스트",
+      "버터"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "83082b17",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "camping_trip"
+   ]
+  },
+  {
+   "case_ref": "7ff6b9ae",
+   "intents": [
+    {
+     "intent_id": "winter_dry_cold",
+     "intent_text": "겨울철 추위에 대비하기 위해 방한 커튼과 문풍지, 전기요를 준비한다.",
+     "bundle_items": [
+      "방한 커튼",
+      "문풍지",
+      "전기요"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "fine_dust"
+   ]
+  },
+  {
+   "case_ref": "42e7c8fa",
+   "intents": [
+    {
+     "intent_id": "camping_trip",
+     "intent_text": "캠핑을 떠나기 위해 텐트와 캠핑 의자, 캠핑 버너, 부탄가스 등 캠핑 장비와 소시지, 와인 등 음식을 준비한다.",
+     "bundle_items": [
+      "와인",
+      "소시지",
+      "캠핑 버너",
+      "캠핑 의자",
+      "부탄가스",
+      "텐트"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5c3cbe91",
+   "intents": [
+    {
+     "intent_id": "wfh_start",
+     "intent_text": "재택근무를 위한 홈오피스를 세팅하기 위해 모니터암, 의자 쿠션, 노트북 거치대, 책상 조명을 준비한다.",
+     "bundle_items": [
+      "모니터암",
+      "의자 쿠션",
+      "노트북 거치대",
+      "책상 조명"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "c482ca8a",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e873eb7b",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "rainy_season"
+   ]
+  },
+  {
+   "case_ref": "f54e0ce5",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "rainy_season"
+   ]
+  },
+  {
+   "case_ref": "461a45c4",
+   "intents": [
+    {
+     "intent_id": "trip_away",
+     "intent_text": "여행을 떠나기 위해 여행 가방과 여권 지갑, 여행용 파우치, 목베개를 챙겨 여행 짐을 꾸린다.",
+     "bundle_items": [
+      "여행용 파우치",
+      "여행 가방",
+      "여권 지갑",
+      "목베개"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "de2993b5",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a6e1df91",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  }
+ ]
+}
