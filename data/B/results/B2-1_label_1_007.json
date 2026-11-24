@@ -1,0 +1,854 @@
+{
+ "job_id": "B2-1_label_1_007",
+ "labels": [
+  {
+   "case_ref": "af4c762a",
+   "intents": [
+    {
+     "intent_id": "adult_birthday",
+     "intent_text": "도착 이틀 뒤 토요일 생일에 케이크와 생일 초, 꽃다발과 와인으로 어른의 생일을 축하한다.",
+     "bundle_items": [
+      "케이크",
+      "생일 초",
+      "꽃다발",
+      "와인"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "생일 축하",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "49d0313a",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "8c385f3e",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "식빵 틀과 이스트, 강력분, 버터로 집에서 빵을 만든다.",
+     "bundle_items": [
+      "식빵 틀",
+      "드라이이스트",
+      "강력분",
+      "발효 버터"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "빵 만들기",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5e54ba19",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "1bb5813b",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "closet_change"
+   ]
+  },
+  {
+   "case_ref": "6abcf3ee",
+   "intents": [
+    {
+     "intent_id": "exam_focus",
+     "intent_text": "독서대와 탁상 스탠드로 집중할 환경을 마련하고 죽과 영양바를 간편하게 먹으며 시험 공부를 준비한다.",
+     "bundle_items": [
+      "원목 독서대",
+      "탁상 스탠드",
+      "죽",
+      "영양바"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "시험 공부",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "6c906afd",
+   "intents": [
+    {
+     "intent_id": "watch_party",
+     "intent_text": "토요일 경기 관람에 맞춰 응원봉을 들고 맥주와 치킨, 과자를 먹으며 경기를 본다.",
+     "bundle_items": [
+      "맥주",
+      "치킨",
+      "응원봉",
+      "감자칩",
+      "나초"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "경기 관람",
+    "guests": null,
+    "activity": "경기 응원 및 관람",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "1f3cbe60",
+   "intents": [],
+   "situation": {
+    "event": "반려동물 입양",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "new_cat"
+   ]
+  },
+  {
+   "case_ref": "beb76569",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "0675c53b",
+   "intents": [],
+   "situation": {
+    "event": "반려동물 입양",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "new_cat"
+   ]
+  },
+  {
+   "case_ref": "2dfca55f",
+   "intents": [
+    {
+     "intent_id": "watch_party",
+     "intent_text": "도착 13일 뒤 일요일 경기 관람에 맞춰 응원 머리띠를 쓰고 무알콜 맥주와 팝콘, 나초칩을 먹으며 경기를 본다.",
+     "bundle_items": [
+      "무알콜 맥주",
+      "팝콘",
+      "나초칩",
+      "응원 머리띠"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "경기 관람",
+    "guests": null,
+    "activity": "경기 응원 및 관람",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "6c24f1aa",
+   "intents": [],
+   "situation": {
+    "event": "회의",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "da63802f",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "ce76f147",
+   "intents": [
+    {
+     "intent_id": "watch_party",
+     "intent_text": "응원 막대풍선을 들고 닭강정과 어묵탕, 팝콘과 소주를 종이 그릇과 컵에 담아 먹으며 함께 관람한다.",
+     "bundle_items": [
+      "닭강정",
+      "어묵탕",
+      "종이 그릇",
+      "팝콘",
+      "소주",
+      "일회용 종이컵",
+      "응원 막대풍선"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "손님 방문",
+    "guests": null,
+    "activity": "응원하며 관람",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "ec8874b1",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "73400e48",
+   "intents": [
+    {
+     "intent_id": "kid_birthday_party",
+     "intent_text": "초등 자녀의 생일을 초코 케이크와 멜로디 초, 고깔모자와 가랜드, 답례품 봉투를 준비해 집에서 축하한다.",
+     "bundle_items": [
+      "초코 케이크",
+      "멜로디 초",
+      "답례품 봉투",
+      "고깔모자",
+      "파티 가랜드"
+     ]
+    },
+    {
+     "intent_id": "fine_dust",
+     "intent_text": "공기청정기 필터와 어린이 마스크, 황사 마스크를 마련해 미세먼지에 대비한다.",
+     "bundle_items": [
+      "공기청정기 필터",
+      "어린이 마스크",
+      "황사 마스크",
+      "코세척 분말"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "생일 축하",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5409e5f7",
+   "intents": [],
+   "situation": {
+    "event": "졸업식",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "14821007",
+   "intents": [],
+   "situation": {
+    "event": "손님 방문",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "079f994f",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "d3c43258",
+   "intents": [
+    {
+     "intent_id": "winter_dry_cold",
+     "intent_text": "문풍지와 방풍 비닐, 전기요와 보온 물주머니로 집에서 추위에 대비한다.",
+     "bundle_items": [
+      "보온 물주머니",
+      "문풍지",
+      "방풍 비닐",
+      "전기요"
+     ]
+    },
+    {
+     "intent_id": "school_start",
+     "intent_text": "대학생이 필통과 샤프, 실내화와 에코백을 마련해 새 학기를 준비한다.",
+     "bundle_items": [
+      "필통",
+      "에코백",
+      "샤프",
+      "실내화"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "새 학기 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "2dc86146",
+   "intents": [],
+   "situation": {
+    "event": "어버이날",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e648ed6e",
+   "intents": [],
+   "situation": {
+    "event": "약속·외식",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "2403cf76",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "6194e0e4",
+   "intents": [
+    {
+     "intent_id": "picnic_lunchbox",
+     "intent_text": "김밥김과 단무지로 도시락을 준비하고 피크닉 매트와 보냉백을 챙겨 나들이를 간다.",
+     "bundle_items": [
+      "김밥김",
+      "단무지",
+      "피크닉 매트",
+      "보냉백"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "나들이 도시락 준비",
+    "theme": null
+   },
+   "alternatives": [
+    "camping_trip"
+   ]
+  },
+  {
+   "case_ref": "dfabfa16",
+   "intents": [],
+   "situation": {
+    "event": "캠핑",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "904a661d",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "c37f210d",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b3859317",
+   "intents": [
+    {
+     "intent_id": "anniversary_dinner",
+     "intent_text": "도착 6일 뒤 월요일 기념일에 부부 또는 커플이 집에서 스테이크와 로제 와인, 꽃다발과 양초를 곁들여 저녁을 먹는다.",
+     "bundle_items": [
+      "살치살 스테이크",
+      "로제 와인",
+      "프리지아 꽃다발",
+      "필라 양초"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "기념일",
+    "guests": null,
+    "activity": "기념일 저녁 식사",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "045eb8dc",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "밀가루와 버터, 베이킹파우더와 쿠키 커터, 실리콘 주걱을 이용해 집에서 과자를 굽는다.",
+     "bundle_items": [
+      "쿠키 커터",
+      "밀가루",
+      "실리콘 주걱",
+      "버터",
+      "베이킹파우더"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "홈베이킹",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "81d3eafb",
+   "intents": [],
+   "situation": {
+    "event": "입학·개학",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5759b26b",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "summer_heat"
+   ]
+  },
+  {
+   "case_ref": "736fd3b7",
+   "intents": [],
+   "situation": {
+    "event": "운동",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a2923ef4",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "d9ca7c6a",
+   "intents": [
+    {
+     "intent_id": "christmas_party",
+     "intent_text": "미니 트리와 트리 전구로 꾸미고 진저브레드 쿠키, 팝콘과 무알콜 샴페인을 마련해 크리스마스 파티를 한다.",
+     "bundle_items": [
+      "무알콜 샴페인",
+      "진저브레드 쿠키",
+      "미니 트리",
+      "팝콘",
+      "트리 전구"
+     ]
+    },
+    {
+     "intent_id": "kids_playdate",
+     "intent_text": "아이들이 젤리와 어린이 주스를 먹고 보드게임과 컬러 클레이로 놀 준비를 한다.",
+     "bundle_items": [
+      "젤리",
+      "어린이 주스",
+      "보드게임",
+      "컬러 클레이"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "크리스마스",
+    "guests": null,
+    "activity": "파티와 놀이",
+    "theme": "크리스마스"
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5689bcf4",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "73e3d2ef",
+   "intents": [],
+   "situation": {
+    "event": "친구 모임",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "new_dog",
+    "kid_birthday_party"
+   ]
+  },
+  {
+   "case_ref": "df20fa97",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "00cbafba",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "ca8a6fec",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "f49d8042",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "2749d1f4",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "256ff58e",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "camping_trip"
+   ]
+  },
+  {
+   "case_ref": "4abf145d",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "home_baking"
+   ]
+  },
+  {
+   "case_ref": "82458095",
+   "intents": [
+    {
+     "intent_id": "watch_party",
+     "intent_text": "응원 타월을 준비하고 닭강정과 팝콘, 캔맥주를 먹으며 함께 경기를 응원하며 본다.",
+     "bundle_items": [
+      "닭강정",
+      "캔맥주",
+      "응원 타월",
+      "팝콘"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "응원하며 관람",
+    "theme": null
+   },
+   "alternatives": [
+    "rainy_season"
+   ]
+  },
+  {
+   "case_ref": "77f7f9cf",
+   "intents": [
+    {
+     "intent_id": "meal_prep",
+     "intent_text": "수비드 닭가슴살과 냉동 혼합 채소, 아스파라거스를 소분 밀폐용기에 담아 식사를 미리 준비한다.",
+     "bundle_items": [
+      "수비드 닭가슴살",
+      "소분 밀폐용기",
+      "냉동 혼합 채소",
+      "아스파라거스"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "식사 미리 준비하기",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e4f4c852",
+   "intents": [
+    {
+     "intent_id": "holiday_feast",
+     "intent_text": "도착 3일 뒤 추석을 위해 제기와 지방 쓰기 세트를 준비하고 동태포와 부침가루로 전을 부칠 상차림을 마련한다.",
+     "bundle_items": [
+      "제기 세트",
+      "동태포",
+      "지방 쓰기 세트",
+      "부침가루"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "추석",
+    "guests": null,
+    "activity": "명절 상차림 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "028b4246",
+   "intents": [
+    {
+     "intent_id": "trip_away",
+     "intent_text": "접이식 캐리어에 여행용 파우치와 세면도구, 여권 케이스를 챙겨 여행을 준비한다.",
+     "bundle_items": [
+      "접이식 캐리어",
+      "여행용 파우치",
+      "여행용 세면도구 세트",
+      "여권 케이스"
+     ]
+    },
+    {
+     "intent_id": "kids_vacation",
+     "intent_text": "고등학생 자녀가 집에 있는 방학을 위해 냉동 만두와 컵라면, 시리얼과 치즈스틱, 학습지를 준비한다.",
+     "bundle_items": [
+      "냉동 만두",
+      "컵라면",
+      "시리얼",
+      "학습지",
+      "치즈스틱"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "여행과 방학 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "1783b8e1",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "f9f0d372",
+   "intents": [
+    {
+     "intent_id": "meal_prep",
+     "intent_text": "나눔 도시락통에 훈제 닭가슴살과 냉동 혼합 채소, 고구마 등을 담아 식사를 미리 준비한다.",
+     "bundle_items": [
+      "나눔 도시락통",
+      "훈제 닭가슴살",
+      "냉동 혼합 채소",
+      "고구마",
+      "코티지 치즈"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "식사 미리 준비하기",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "583c27a7",
+   "intents": [],
+   "situation": {
+    "event": "졸업식",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "60b31bc2",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "발효 버터와 박력분, 핸드믹서와 쿠키 커터로 집에서 과자를 굽는다.",
+     "bundle_items": [
+      "핸드믹서",
+      "발효 버터",
+      "박력분",
+      "쿠키 커터"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "홈베이킹",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4ebd296c",
+   "intents": [],
+   "situation": {
+    "event": "회의",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "0399d1c2",
+   "intents": [],
+   "situation": {
+    "event": "김장",
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  }
+ ]
+}
