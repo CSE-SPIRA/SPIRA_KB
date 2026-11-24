@@ -1,0 +1,138 @@
+{
+ "metrics": {
+  "cases": 1000,
+  "items": {
+   "none_ratio": {
+    "value": 0.65,
+    "target": [
+     0.6,
+     0.75
+    ],
+    "ok": true
+   },
+   "calendar_shortcut": {
+    "value": 0.0023161377650774972,
+    "target": [
+     0,
+     0.05
+    ],
+    "ok": true
+   },
+   "label_agreement": {
+    "value": 0.934,
+    "target": [
+     0.85,
+     0.97
+    ],
+    "ok": true
+   },
+   "b_recall": {
+    "value": 0.928,
+    "target": [
+     0.85,
+     1
+    ],
+    "ok": true
+   },
+   "w_seen": {
+    "value": 0.58,
+    "target": [
+     0.3,
+     0.7
+    ],
+    "ok": true
+   },
+   "per_intent": {
+    "value": 1,
+    "low": [
+     "new_cat"
+    ],
+    "ok": false
+   },
+   "checks": {
+    "value": 0,
+    "total": 120,
+    "ok": true
+   }
+  },
+  "unseen_intent": 125,
+  "unclassified": 4,
+  "frequent_splits": [
+   [
+    "home_baking ↔ none",
+    5
+   ],
+   [
+    "kids_playdate ↔ none",
+    5
+   ],
+   [
+    "none ↔ trip_away",
+    5
+   ],
+   [
+    "holiday_feast ↔ none",
+    4
+   ],
+   [
+    "moving_in ↔ none",
+    4
+   ],
+   [
+    "kids_vacation ↔ none",
+    4
+   ],
+   [
+    "home_party ↔ none",
+    4
+   ],
+   [
+    "none ↔ unclassified",
+    4
+   ],
+   [
+    "adult_birthday ↔ none",
+    3
+   ],
+   [
+    "guest_overnight ↔ none",
+    3
+   ]
+  ],
+  "intent_counts": {
+   "kid_birthday_party": 26,
+   "winter_dry_cold": 22,
+   "deep_cleaning": 22,
+   "closet_change": 21,
+   "trip_away": 19,
+   "fine_dust": 19,
+   "christmas_party": 18,
+   "adult_birthday": 17,
+   "home_baking": 16,
+   "home_party": 16,
+   "summer_heat": 16,
+   "picnic_lunchbox": 15,
+   "anniversary_dinner": 15,
+   "rainy_season": 14,
+   "camping_trip": 14,
+   "school_start": 13,
+   "exam_focus": 13,
+   "watch_party": 12,
+   "family_gathering": 11,
+   "meal_prep": 10,
+   "guest_overnight": 8,
+   "holiday_feast": 8,
+   "kids_playdate": 7,
+   "new_dog": 7,
+   "kids_vacation": 7,
+   "kimjang": 6,
+   "home_workout_start": 6,
+   "wfh_start": 5,
+   "moving_in": 4,
+   "new_cat": 2
+  }
+ },
+ "review": null,
+ "verdict": "failed",
+ "judged_at": "2026-11-24T15:31:56+00:00"
+}
