@@ -52,6 +52,19 @@ def plan_batch(batch: str) -> tuple[dict, list[dict]]:
 
     goals: list[dict] = []
 
+    def quota_bag(n: int) -> list[str]:
+        """n개 자리에 의도를 빈도 가중치 비율대로 나눠 담는다 (최대 나머지 방식). 무작위로 뽑으면
+        드문 의도가 기대보다 크게 적게 나올 수 있어서, 개수는 정해 두고 순서만 섞는다."""
+        tw = sum(w)
+        exact = [n * x / tw for x in w]
+        cnt = [int(e) for e in exact]
+        rest = sorted(range(len(ids)), key=lambda k: (exact[k] - cnt[k], rng.random()), reverse=True)
+        for k in rest[: n - sum(cnt)]:
+            cnt[k] += 1
+        bag = [ids[k] for k in range(len(ids)) for _ in range(cnt[k])]
+        rng.shuffle(bag)
+        return bag
+
     def new_goal(intent_id: str, hh: list[str]) -> str:
         gid = f"{batch}_g{len(goals) + 1:04d}"
         goals.append({"goal_id": gid, "intent": B.intent_ref(by_id[intent_id]), "household_types": hh})
@@ -60,11 +73,12 @@ def plan_batch(batch: str) -> tuple[dict, list[dict]]:
     counts = _counts(cfg["cases_per_batch"], cfg["order_types"])
     types = [t for t, n in counts.items() for _ in range(n)]
     rng.shuffle(types)
+    bags = {t: quota_bag(counts.get(t, 0)) for t in ("B", "W")}
     cases = []
     for n, t in enumerate(types, 1):
         c = {"case_no": n, "type": t, "made_intents": [], "goals": [], "household_types": None}
         if t in ("B", "W"):
-            x = pick_intent()
+            x = bags[t].pop()
             hh = household.sample(rng, x)
             c.update(made_intents=[x], goals=[new_goal(x, hh)], household_types=hh)
         elif t == "E":
