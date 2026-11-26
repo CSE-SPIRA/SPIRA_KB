@@ -1,0 +1,139 @@
+{
+ "metrics": {
+  "cases": 1000,
+  "items": {
+   "none_ratio": {
+    "value": 0.646,
+    "target": [
+     0.6,
+     0.75
+    ],
+    "ok": true
+   },
+   "calendar_shortcut": {
+    "value": 0.02201950298836114,
+    "target": [
+     0,
+     0.05
+    ],
+    "ok": true
+   },
+   "label_agreement": {
+    "value": 0.944,
+    "target": [
+     0.85,
+     0.97
+    ],
+    "ok": true
+   },
+   "b_recall": {
+    "value": 0.928,
+    "target": [
+     0.85,
+     1
+    ],
+    "ok": true
+   },
+   "w_seen": {
+    "value": 0.45,
+    "target": [
+     0.3,
+     0.7
+    ],
+    "ok": true
+   },
+   "per_intent": {
+    "value": 2,
+    "low": [
+     "moving_in",
+     "kids_vacation"
+    ],
+    "ok": false
+   },
+   "checks": {
+    "value": 1,
+    "total": 120,
+    "ok": false
+   }
+  },
+  "unseen_intent": 127,
+  "unclassified": 2,
+  "frequent_splits": [
+   [
+    "deep_cleaning ↔ none",
+    11
+   ],
+   [
+    "none ↔ unclassified",
+    6
+   ],
+   [
+    "meal_prep ↔ none",
+    3
+   ],
+   [
+    "kid_birthday_party ↔ unclassified",
+    3
+   ],
+   [
+    "kid_birthday_party ↔ none",
+    3
+   ],
+   [
+    "kids_playdate ↔ none",
+    3
+   ],
+   [
+    "new_cat ↔ none",
+    2
+   ],
+   [
+    "none ↔ winter_dry_cold",
+    2
+   ],
+   [
+    "new_dog ↔ none",
+    2
+   ],
+   [
+    "home_party ↔ none",
+    2
+   ]
+  ],
+  "intent_counts": {
+   "trip_away": 24,
+   "home_party": 22,
+   "summer_heat": 21,
+   "adult_birthday": 20,
+   "fine_dust": 20,
+   "christmas_party": 20,
+   "kid_birthday_party": 19,
+   "deep_cleaning": 19,
+   "winter_dry_cold": 19,
+   "watch_party": 17,
+   "exam_focus": 16,
+   "family_gathering": 15,
+   "guest_overnight": 14,
+   "anniversary_dinner": 14,
+   "holiday_feast": 12,
+   "school_start": 12,
+   "picnic_lunchbox": 11,
+   "closet_change": 11,
+   "kids_playdate": 11,
+   "camping_trip": 10,
+   "meal_prep": 9,
+   "rainy_season": 9,
+   "home_baking": 9,
+   "home_workout_start": 6,
+   "new_cat": 6,
+   "wfh_start": 6,
+   "new_dog": 5,
+   "kimjang": 4,
+   "moving_in": 3,
+   "kids_vacation": 3
+  }
+ },
+ "review": null,
+ "verdict": "failed",
+ "judged_at": "2026-11-26T07:16:24+00:00"
+}
