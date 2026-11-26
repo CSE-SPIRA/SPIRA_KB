@@ -1,0 +1,136 @@
+{
+ "metrics": {
+  "cases": 1000,
+  "items": {
+   "none_ratio": {
+    "value": 0.637,
+    "target": [
+     0.6,
+     0.75
+    ],
+    "ok": true
+   },
+   "calendar_shortcut": {
+    "value": 0.08057779754843813,
+    "target": [
+     0,
+     0.05
+    ],
+    "ok": false
+   },
+   "label_agreement": {
+    "value": 0.954,
+    "target": [
+     0.85,
+     0.97
+    ],
+    "ok": true
+   },
+   "b_recall": {
+    "value": 0.968,
+    "target": [
+     0.85,
+     1
+    ],
+    "ok": true
+   },
+   "w_seen": {
+    "value": 0.69,
+    "target": [
+     0.3,
+     0.7
+    ],
+    "ok": true
+   },
+   "per_intent": {
+    "value": 0,
+    "low": [],
+    "ok": true
+   },
+   "checks": {
+    "value": 1,
+    "total": 120,
+    "ok": false
+   }
+  },
+  "unseen_intent": 109,
+  "unclassified": 3,
+  "frequent_splits": [
+   [
+    "none ↔ unclassified",
+    9
+   ],
+   [
+    "kids_vacation ↔ none",
+    5
+   ],
+   [
+    "deep_cleaning ↔ none",
+    3
+   ],
+   [
+    "kimjang ↔ none",
+    2
+   ],
+   [
+    "none ↔ summer_heat",
+    2
+   ],
+   [
+    "none ↔ picnic_lunchbox",
+    2
+   ],
+   [
+    "home_workout_start ↔ none",
+    2
+   ],
+   [
+    "family_gathering ↔ none",
+    2
+   ],
+   [
+    "kid_birthday_party ↔ none",
+    2
+   ],
+   [
+    "holiday_feast ↔ none",
+    1
+   ]
+  ],
+  "intent_counts": {
+   "adult_birthday": 22,
+   "closet_change": 22,
+   "kid_birthday_party": 21,
+   "summer_heat": 19,
+   "winter_dry_cold": 19,
+   "trip_away": 17,
+   "meal_prep": 17,
+   "guest_overnight": 16,
+   "holiday_feast": 16,
+   "rainy_season": 16,
+   "camping_trip": 16,
+   "family_gathering": 16,
+   "school_start": 15,
+   "deep_cleaning": 15,
+   "home_party": 13,
+   "fine_dust": 13,
+   "home_baking": 13,
+   "exam_focus": 12,
+   "christmas_party": 12,
+   "new_cat": 12,
+   "wfh_start": 11,
+   "anniversary_dinner": 10,
+   "kids_vacation": 10,
+   "picnic_lunchbox": 8,
+   "kimjang": 8,
+   "new_dog": 8,
+   "watch_party": 8,
+   "kids_playdate": 8,
+   "moving_in": 5,
+   "home_workout_start": 4
+  }
+ },
+ "review": null,
+ "verdict": "failed",
+ "judged_at": "2026-11-26T07:16:04+00:00"
+}
