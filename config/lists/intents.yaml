@@ -18,7 +18,7 @@ frequency_weight: { common: 3, normal: 2, rare: 1 }
 intents:
   # 손님·모임
   - { id: kid_birthday_party, group: 손님·모임, name: 아이 생일 파티, frequency: common,
-      definition: "아이 생일을 집에서 축하. 케이크·초 + 아이용 파티 소품·답례품",
+      definition: "아이 생일을 집에서 축하. 아이용 파티 장식·소품(풍선·생일 현수막·고깔모자·답례품) + 집에서 만드는 생일 케이크 재료(케이크 시트·생크림·딸기) 또는 아이 장난감 선물",
       related_tags: [생일] }
   - { id: adult_birthday, group: 손님·모임, name: 어른 생일 축하, frequency: common,
       definition: "어른 생일. 케이크·초·꽃. 아이용 파티 소품 없음",
@@ -78,7 +78,7 @@ intents:
       definition: "가방·필기구·실내화",
       related_tags: [입학·개학] }
   - { id: kids_vacation, group: 생활 변화, name: 아이 방학 시작, frequency: normal,
-      definition: "방학 동안 집에 있는 아이 준비. 간식·점심 재료 대량, 학습지",
+      definition: "방학 동안 집에 있는 아이 준비. 방학 학습지·아이 간식 대량·물놀이용품·만들기 키트 중 2개 이상",
       related_tags: [방학] }
   - { id: exam_focus, group: 생활 변화, name: 시험·수험 기간, frequency: normal,
       definition: "집중 환경. 독서대·스탠드·간편식",
