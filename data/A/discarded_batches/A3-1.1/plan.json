@@ -1,0 +1,11683 @@
+{
+ "batch": "A3-1",
+ "cycle": "A",
+ "round": 3,
+ "slice": "1",
+ "roles": {
+  "generate": "gemini",
+  "label_1": "codex",
+  "label_2": "claude"
+ },
+ "counts": {
+  "A": 450,
+  "B": 250,
+  "W": 100,
+  "E": 50,
+  "C": 50,
+  "D": 100
+ },
+ "cases": [
+  {
+   "case_no": 1,
+   "type": "E",
+   "made_intents": [
+    "deep_cleaning"
+   ],
+   "goals": [
+    "A3-1_g0001",
+    "A3-1_g0002"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "중학생 자녀",
+    "부모 + 성인 자녀",
+    "직장인"
+   ],
+   "boundary_with": "moving_in"
+  },
+  {
+   "case_no": 2,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 3,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 4,
+   "type": "W",
+   "made_intents": [
+    "anniversary_dinner"
+   ],
+   "goals": [
+    "A3-1_g0003"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이",
+    "반려견",
+    "그 밖의 반려동물"
+   ]
+  },
+  {
+   "case_no": 5,
+   "type": "B",
+   "made_intents": [
+    "moving_in"
+   ],
+   "goals": [
+    "A3-1_g0004"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 6,
+   "type": "B",
+   "made_intents": [
+    "new_cat"
+   ],
+   "goals": [
+    "A3-1_g0005"
+   ],
+   "household_types": [
+    "2인",
+    "중학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 7,
+   "type": "C",
+   "made_intents": [
+    "home_party",
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0006",
+    "A3-1_g0007"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 8,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 9,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 10,
+   "type": "B",
+   "made_intents": [
+    "new_dog"
+   ],
+   "goals": [
+    "A3-1_g0008"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 11,
+   "type": "W",
+   "made_intents": [
+    "school_start"
+   ],
+   "goals": [
+    "A3-1_g0009"
+   ],
+   "household_types": [
+    "2인",
+    "중학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 12,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 13,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 14,
+   "type": "W",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0010"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "중학생 자녀",
+    "3대 함께",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 15,
+   "type": "C",
+   "made_intents": [
+    "anniversary_dinner",
+    "christmas_party"
+   ],
+   "goals": [
+    "A3-1_g0011",
+    "A3-1_g0012"
+   ],
+   "household_types": [
+    "5인 이상",
+    "부부·커플",
+    "초등 자녀",
+    "고등학생 자녀",
+    "3대 함께",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 16,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 17,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 18,
+   "type": "B",
+   "made_intents": [
+    "school_start"
+   ],
+   "goals": [
+    "A3-1_g0013"
+   ],
+   "household_types": [
+    "2인",
+    "초등 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 19,
+   "type": "B",
+   "made_intents": [
+    "kids_playdate"
+   ],
+   "goals": [
+    "A3-1_g0014"
+   ],
+   "household_types": [
+    "2인",
+    "초등 자녀",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 20,
+   "type": "C",
+   "made_intents": [
+    "watch_party",
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0015",
+    "A3-1_g0016"
+   ],
+   "household_types": [
+    "1인",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 21,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 22,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 23,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 24,
+   "type": "E",
+   "made_intents": [
+    "kids_playdate"
+   ],
+   "goals": [
+    "A3-1_g0017",
+    "A3-1_g0018"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인",
+    "맞벌이",
+    "반려견"
+   ],
+   "boundary_with": "kids_vacation"
+  },
+  {
+   "case_no": 25,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 26,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 27,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 28,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 29,
+   "type": "E",
+   "made_intents": [
+    "anniversary_dinner"
+   ],
+   "goals": [
+    "A3-1_g0019",
+    "A3-1_g0020"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이",
+    "반려견"
+   ],
+   "boundary_with": "adult_birthday"
+  },
+  {
+   "case_no": 30,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 31,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 32,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 33,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 34,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 35,
+   "type": "W",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0021"
+   ],
+   "household_types": [
+    "2인",
+    "직장인",
+    "그 밖의 반려동물"
+   ]
+  },
+  {
+   "case_no": 36,
+   "type": "B",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0022"
+   ],
+   "household_types": [
+    "3~4인",
+    "초등 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 37,
+   "type": "W",
+   "made_intents": [
+    "home_workout_start"
+   ],
+   "goals": [
+    "A3-1_g0023"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 38,
+   "type": "W",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0024"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 39,
+   "type": "B",
+   "made_intents": [
+    "christmas_party"
+   ],
+   "goals": [
+    "A3-1_g0025"
+   ],
+   "household_types": [
+    "3~4인",
+    "영유아 자녀",
+    "부모 + 성인 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 40,
+   "type": "B",
+   "made_intents": [
+    "rainy_season"
+   ],
+   "goals": [
+    "A3-1_g0026"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 41,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 42,
+   "type": "C",
+   "made_intents": [
+    "deep_cleaning",
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0027",
+    "A3-1_g0028"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 43,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 44,
+   "type": "C",
+   "made_intents": [
+    "kids_vacation",
+    "moving_in"
+   ],
+   "goals": [
+    "A3-1_g0029",
+    "A3-1_g0030"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 45,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 46,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 47,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 48,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 49,
+   "type": "W",
+   "made_intents": [
+    "meal_prep"
+   ],
+   "goals": [
+    "A3-1_g0031"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 50,
+   "type": "W",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0032"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "부모 + 성인 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 51,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 52,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 53,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 54,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 55,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 56,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 57,
+   "type": "B",
+   "made_intents": [
+    "closet_change"
+   ],
+   "goals": [
+    "A3-1_g0033"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 58,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 59,
+   "type": "B",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0034"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 60,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 61,
+   "type": "B",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0035"
+   ],
+   "household_types": [
+    "3~4인",
+    "영유아 자녀",
+    "초등 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 62,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 63,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 64,
+   "type": "C",
+   "made_intents": [
+    "winter_dry_cold",
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0036",
+    "A3-1_g0037"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 65,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 66,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 67,
+   "type": "E",
+   "made_intents": [
+    "picnic_lunchbox"
+   ],
+   "goals": [
+    "A3-1_g0038",
+    "A3-1_g0039"
+   ],
+   "household_types": [
+    "1인",
+    "대학생"
+   ],
+   "boundary_with": "meal_prep"
+  },
+  {
+   "case_no": 68,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 69,
+   "type": "B",
+   "made_intents": [
+    "moving_in"
+   ],
+   "goals": [
+    "A3-1_g0040"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 70,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 71,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 72,
+   "type": "E",
+   "made_intents": [
+    "home_baking"
+   ],
+   "goals": [
+    "A3-1_g0041",
+    "A3-1_g0042"
+   ],
+   "household_types": [
+    "2인",
+    "직장인",
+    "반려묘"
+   ],
+   "boundary_with": "kid_birthday_party"
+  },
+  {
+   "case_no": 73,
+   "type": "C",
+   "made_intents": [
+    "home_party",
+    "anniversary_dinner"
+   ],
+   "goals": [
+    "A3-1_g0043",
+    "A3-1_g0044"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "맞벌이",
+    "반려견",
+    "그 밖의 반려동물"
+   ]
+  },
+  {
+   "case_no": 74,
+   "type": "W",
+   "made_intents": [
+    "deep_cleaning"
+   ],
+   "goals": [
+    "A3-1_g0045"
+   ],
+   "household_types": [
+    "1인",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 75,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 76,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 77,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 78,
+   "type": "B",
+   "made_intents": [
+    "rainy_season"
+   ],
+   "goals": [
+    "A3-1_g0046"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 79,
+   "type": "B",
+   "made_intents": [
+    "christmas_party"
+   ],
+   "goals": [
+    "A3-1_g0047"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 80,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 81,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 82,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 83,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 84,
+   "type": "C",
+   "made_intents": [
+    "exam_focus",
+    "kimjang"
+   ],
+   "goals": [
+    "A3-1_g0048",
+    "A3-1_g0049"
+   ],
+   "household_types": [
+    "2인",
+    "대학생",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 85,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 86,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 87,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 88,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 89,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 90,
+   "type": "B",
+   "made_intents": [
+    "camping_trip"
+   ],
+   "goals": [
+    "A3-1_g0050"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 91,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 92,
+   "type": "B",
+   "made_intents": [
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0051"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 93,
+   "type": "B",
+   "made_intents": [
+    "rainy_season"
+   ],
+   "goals": [
+    "A3-1_g0052"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 94,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 95,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 96,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 97,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 98,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 99,
+   "type": "C",
+   "made_intents": [
+    "summer_heat",
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0053",
+    "A3-1_g0054"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 100,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 101,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 102,
+   "type": "W",
+   "made_intents": [
+    "christmas_party"
+   ],
+   "goals": [
+    "A3-1_g0055"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 103,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 104,
+   "type": "W",
+   "made_intents": [
+    "school_start"
+   ],
+   "goals": [
+    "A3-1_g0056"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "대학생",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 105,
+   "type": "C",
+   "made_intents": [
+    "kid_birthday_party",
+    "guest_overnight"
+   ],
+   "goals": [
+    "A3-1_g0057",
+    "A3-1_g0058"
+   ],
+   "household_types": [
+    "3~4인",
+    "초등 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 106,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 107,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 108,
+   "type": "B",
+   "made_intents": [
+    "kids_playdate"
+   ],
+   "goals": [
+    "A3-1_g0059"
+   ],
+   "household_types": [
+    "2인",
+    "영유아 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 109,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 110,
+   "type": "W",
+   "made_intents": [
+    "holiday_feast"
+   ],
+   "goals": [
+    "A3-1_g0060"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "초등 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 111,
+   "type": "W",
+   "made_intents": [
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0061"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 112,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 113,
+   "type": "W",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0062"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 114,
+   "type": "B",
+   "made_intents": [
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0063"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 115,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 116,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 117,
+   "type": "B",
+   "made_intents": [
+    "closet_change"
+   ],
+   "goals": [
+    "A3-1_g0064"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 118,
+   "type": "B",
+   "made_intents": [
+    "closet_change"
+   ],
+   "goals": [
+    "A3-1_g0065"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 119,
+   "type": "W",
+   "made_intents": [
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0066"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 120,
+   "type": "E",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0067",
+    "A3-1_g0068"
+   ],
+   "household_types": [
+    "2인",
+    "대학생"
+   ],
+   "boundary_with": "camping_trip"
+  },
+  {
+   "case_no": 121,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 122,
+   "type": "C",
+   "made_intents": [
+    "deep_cleaning",
+    "meal_prep"
+   ],
+   "goals": [
+    "A3-1_g0069",
+    "A3-1_g0070"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 123,
+   "type": "B",
+   "made_intents": [
+    "moving_in"
+   ],
+   "goals": [
+    "A3-1_g0071"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 124,
+   "type": "W",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0072"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 125,
+   "type": "W",
+   "made_intents": [
+    "school_start"
+   ],
+   "goals": [
+    "A3-1_g0073"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인",
+    "맞벌이",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 126,
+   "type": "B",
+   "made_intents": [
+    "home_baking"
+   ],
+   "goals": [
+    "A3-1_g0074"
+   ],
+   "household_types": [
+    "2인",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 127,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 128,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 129,
+   "type": "C",
+   "made_intents": [
+    "holiday_feast",
+    "meal_prep"
+   ],
+   "goals": [
+    "A3-1_g0075",
+    "A3-1_g0076"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 130,
+   "type": "W",
+   "made_intents": [
+    "kids_playdate"
+   ],
+   "goals": [
+    "A3-1_g0077"
+   ],
+   "household_types": [
+    "5인 이상",
+    "부부·커플",
+    "초등 자녀",
+    "부모 + 성인 자녀",
+    "직장인",
+    "맞벌이",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 131,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 132,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 133,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 134,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 135,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 136,
+   "type": "E",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0078",
+    "A3-1_g0079"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "그 밖의 반려동물"
+   ],
+   "boundary_with": "holiday_feast"
+  },
+  {
+   "case_no": 137,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 138,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 139,
+   "type": "B",
+   "made_intents": [
+    "rainy_season"
+   ],
+   "goals": [
+    "A3-1_g0080"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 140,
+   "type": "C",
+   "made_intents": [
+    "kids_playdate",
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0081",
+    "A3-1_g0082"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 141,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 142,
+   "type": "B",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0083"
+   ],
+   "household_types": [
+    "3~4인",
+    "초등 자녀",
+    "3대 함께",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 143,
+   "type": "B",
+   "made_intents": [
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0084"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "중학생 자녀",
+    "부모 + 성인 자녀",
+    "3대 함께",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 144,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 145,
+   "type": "B",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0085"
+   ],
+   "household_types": [
+    "3~4인",
+    "중학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 146,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 147,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 148,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 149,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 150,
+   "type": "B",
+   "made_intents": [
+    "picnic_lunchbox"
+   ],
+   "goals": [
+    "A3-1_g0086"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 151,
+   "type": "E",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0087",
+    "A3-1_g0088"
+   ],
+   "household_types": [
+    "3~4인",
+    "영유아 자녀",
+    "직장인"
+   ],
+   "boundary_with": "christmas_party"
+  },
+  {
+   "case_no": 152,
+   "type": "E",
+   "made_intents": [
+    "anniversary_dinner"
+   ],
+   "goals": [
+    "A3-1_g0089",
+    "A3-1_g0090"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "3대 함께",
+    "직장인"
+   ],
+   "boundary_with": "adult_birthday"
+  },
+  {
+   "case_no": 153,
+   "type": "B",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0091"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 154,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 155,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 156,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 157,
+   "type": "E",
+   "made_intents": [
+    "moving_in"
+   ],
+   "goals": [
+    "A3-1_g0092",
+    "A3-1_g0093"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "재택근무"
+   ],
+   "boundary_with": "deep_cleaning"
+  },
+  {
+   "case_no": 158,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 159,
+   "type": "B",
+   "made_intents": [
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0094"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 160,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 161,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 162,
+   "type": "W",
+   "made_intents": [
+    "camping_trip"
+   ],
+   "goals": [
+    "A3-1_g0095"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인",
+    "맞벌이",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 163,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 164,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 165,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 166,
+   "type": "C",
+   "made_intents": [
+    "family_gathering",
+    "home_baking"
+   ],
+   "goals": [
+    "A3-1_g0096",
+    "A3-1_g0097"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 167,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 168,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 169,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 170,
+   "type": "B",
+   "made_intents": [
+    "exam_focus"
+   ],
+   "goals": [
+    "A3-1_g0098"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "부모 + 성인 자녀",
+    "은퇴·노년",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 171,
+   "type": "B",
+   "made_intents": [
+    "kids_vacation"
+   ],
+   "goals": [
+    "A3-1_g0099"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "고등학생 자녀",
+    "직장인",
+    "맞벌이",
+    "반려견",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 172,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 173,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 174,
+   "type": "B",
+   "made_intents": [
+    "deep_cleaning"
+   ],
+   "goals": [
+    "A3-1_g0100"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이",
+    "재택근무",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 175,
+   "type": "B",
+   "made_intents": [
+    "home_baking"
+   ],
+   "goals": [
+    "A3-1_g0101"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 176,
+   "type": "W",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0102"
+   ],
+   "household_types": [
+    "2인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 177,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 178,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 179,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 180,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 181,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 182,
+   "type": "C",
+   "made_intents": [
+    "guest_overnight",
+    "camping_trip"
+   ],
+   "goals": [
+    "A3-1_g0103",
+    "A3-1_g0104"
+   ],
+   "household_types": [
+    "2인",
+    "중학생 자녀",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 183,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 184,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 185,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 186,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 187,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 188,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 189,
+   "type": "B",
+   "made_intents": [
+    "camping_trip"
+   ],
+   "goals": [
+    "A3-1_g0105"
+   ],
+   "household_types": [
+    "2인",
+    "영유아 자녀",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 190,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 191,
+   "type": "B",
+   "made_intents": [
+    "watch_party"
+   ],
+   "goals": [
+    "A3-1_g0106"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 192,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 193,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 194,
+   "type": "B",
+   "made_intents": [
+    "meal_prep"
+   ],
+   "goals": [
+    "A3-1_g0107"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "부모 + 성인 자녀",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 195,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 196,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 197,
+   "type": "B",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0108"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 198,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 199,
+   "type": "E",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0109",
+    "A3-1_g0110"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인"
+   ],
+   "boundary_with": "adult_birthday"
+  },
+  {
+   "case_no": 200,
+   "type": "B",
+   "made_intents": [
+    "guest_overnight"
+   ],
+   "goals": [
+    "A3-1_g0111"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 201,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 202,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 203,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 204,
+   "type": "B",
+   "made_intents": [
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0112"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "맞벌이",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 205,
+   "type": "B",
+   "made_intents": [
+    "picnic_lunchbox"
+   ],
+   "goals": [
+    "A3-1_g0113"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 206,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 207,
+   "type": "B",
+   "made_intents": [
+    "christmas_party"
+   ],
+   "goals": [
+    "A3-1_g0114"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "은퇴·노년",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 208,
+   "type": "B",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0115"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 209,
+   "type": "E",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0116",
+    "A3-1_g0117"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인"
+   ],
+   "boundary_with": "adult_birthday"
+  },
+  {
+   "case_no": 210,
+   "type": "B",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0118"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려묘",
+    "그 밖의 반려동물"
+   ]
+  },
+  {
+   "case_no": 211,
+   "type": "B",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0119"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "초등 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 212,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 213,
+   "type": "B",
+   "made_intents": [
+    "home_baking"
+   ],
+   "goals": [
+    "A3-1_g0120"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 214,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 215,
+   "type": "C",
+   "made_intents": [
+    "guest_overnight",
+    "holiday_feast"
+   ],
+   "goals": [
+    "A3-1_g0121",
+    "A3-1_g0122"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 216,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 217,
+   "type": "B",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0123"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 218,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 219,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 220,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 221,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 222,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 223,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 224,
+   "type": "W",
+   "made_intents": [
+    "guest_overnight"
+   ],
+   "goals": [
+    "A3-1_g0124"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 225,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 226,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 227,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 228,
+   "type": "B",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0125"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 229,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 230,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 231,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 232,
+   "type": "B",
+   "made_intents": [
+    "home_workout_start"
+   ],
+   "goals": [
+    "A3-1_g0126"
+   ],
+   "household_types": [
+    "5인 이상",
+    "부부·커플",
+    "영유아 자녀",
+    "중학생 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 233,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 234,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 235,
+   "type": "B",
+   "made_intents": [
+    "closet_change"
+   ],
+   "goals": [
+    "A3-1_g0127"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "고등학생 자녀",
+    "직장인",
+    "맞벌이",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 236,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 237,
+   "type": "B",
+   "made_intents": [
+    "fine_dust"
+   ],
+   "goals": [
+    "A3-1_g0128"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "중학생 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 238,
+   "type": "W",
+   "made_intents": [
+    "home_workout_start"
+   ],
+   "goals": [
+    "A3-1_g0129"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 239,
+   "type": "B",
+   "made_intents": [
+    "rainy_season"
+   ],
+   "goals": [
+    "A3-1_g0130"
+   ],
+   "household_types": [
+    "5인 이상",
+    "부부·커플",
+    "중학생 자녀",
+    "고등학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 240,
+   "type": "B",
+   "made_intents": [
+    "picnic_lunchbox"
+   ],
+   "goals": [
+    "A3-1_g0131"
+   ],
+   "household_types": [
+    "3~4인",
+    "중학생 자녀",
+    "고등학생 자녀",
+    "부모 + 성인 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 241,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 242,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 243,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 244,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 245,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 246,
+   "type": "W",
+   "made_intents": [
+    "kids_playdate"
+   ],
+   "goals": [
+    "A3-1_g0132"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "3대 함께",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 247,
+   "type": "B",
+   "made_intents": [
+    "wfh_start"
+   ],
+   "goals": [
+    "A3-1_g0133"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 248,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 249,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 250,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 251,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 252,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 253,
+   "type": "B",
+   "made_intents": [
+    "watch_party"
+   ],
+   "goals": [
+    "A3-1_g0134"
+   ],
+   "household_types": [
+    "2인",
+    "은퇴·노년",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 254,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 255,
+   "type": "B",
+   "made_intents": [
+    "picnic_lunchbox"
+   ],
+   "goals": [
+    "A3-1_g0135"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "3대 함께",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 256,
+   "type": "E",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0136",
+    "A3-1_g0137"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ],
+   "boundary_with": "holiday_feast"
+  },
+  {
+   "case_no": 257,
+   "type": "B",
+   "made_intents": [
+    "anniversary_dinner"
+   ],
+   "goals": [
+    "A3-1_g0138"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "부모 + 성인 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 258,
+   "type": "W",
+   "made_intents": [
+    "deep_cleaning"
+   ],
+   "goals": [
+    "A3-1_g0139"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 259,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 260,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 261,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 262,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 263,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 264,
+   "type": "W",
+   "made_intents": [
+    "holiday_feast"
+   ],
+   "goals": [
+    "A3-1_g0140"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "재택근무",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 265,
+   "type": "B",
+   "made_intents": [
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0141"
+   ],
+   "household_types": [
+    "1인",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 266,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 267,
+   "type": "B",
+   "made_intents": [
+    "school_start"
+   ],
+   "goals": [
+    "A3-1_g0142"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 268,
+   "type": "B",
+   "made_intents": [
+    "deep_cleaning"
+   ],
+   "goals": [
+    "A3-1_g0143"
+   ],
+   "household_types": [
+    "5인 이상",
+    "부부·커플",
+    "영유아 자녀",
+    "중학생 자녀",
+    "고등학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 269,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 270,
+   "type": "C",
+   "made_intents": [
+    "family_gathering",
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0144",
+    "A3-1_g0145"
+   ],
+   "household_types": [
+    "2인",
+    "중학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 271,
+   "type": "W",
+   "made_intents": [
+    "christmas_party"
+   ],
+   "goals": [
+    "A3-1_g0146"
+   ],
+   "household_types": [
+    "2인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 272,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 273,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 274,
+   "type": "B",
+   "made_intents": [
+    "new_cat"
+   ],
+   "goals": [
+    "A3-1_g0147"
+   ],
+   "household_types": [
+    "3~4인",
+    "영유아 자녀",
+    "초등 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 275,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 276,
+   "type": "B",
+   "made_intents": [
+    "fine_dust"
+   ],
+   "goals": [
+    "A3-1_g0148"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 277,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 278,
+   "type": "B",
+   "made_intents": [
+    "deep_cleaning"
+   ],
+   "goals": [
+    "A3-1_g0149"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "중학생 자녀",
+    "3대 함께",
+    "직장인",
+    "맞벌이",
+    "그 밖의 반려동물"
+   ]
+  },
+  {
+   "case_no": 279,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 280,
+   "type": "W",
+   "made_intents": [
+    "picnic_lunchbox"
+   ],
+   "goals": [
+    "A3-1_g0150"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 281,
+   "type": "W",
+   "made_intents": [
+    "wfh_start"
+   ],
+   "goals": [
+    "A3-1_g0151"
+   ],
+   "household_types": [
+    "1인",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 282,
+   "type": "B",
+   "made_intents": [
+    "christmas_party"
+   ],
+   "goals": [
+    "A3-1_g0152"
+   ],
+   "household_types": [
+    "1인",
+    "대학생",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 283,
+   "type": "B",
+   "made_intents": [
+    "anniversary_dinner"
+   ],
+   "goals": [
+    "A3-1_g0153"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 284,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 285,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 286,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 287,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 288,
+   "type": "W",
+   "made_intents": [
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0154"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 289,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 290,
+   "type": "E",
+   "made_intents": [
+    "fine_dust"
+   ],
+   "goals": [
+    "A3-1_g0155",
+    "A3-1_g0156"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ],
+   "boundary_with": "winter_dry_cold"
+  },
+  {
+   "case_no": 291,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 292,
+   "type": "B",
+   "made_intents": [
+    "school_start"
+   ],
+   "goals": [
+    "A3-1_g0157"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 293,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 294,
+   "type": "W",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0158"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "고등학생 자녀",
+    "직장인",
+    "맞벌이",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 295,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 296,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 297,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 298,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 299,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 300,
+   "type": "W",
+   "made_intents": [
+    "exam_focus"
+   ],
+   "goals": [
+    "A3-1_g0159"
+   ],
+   "household_types": [
+    "3~4인",
+    "중학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 301,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 302,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 303,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 304,
+   "type": "B",
+   "made_intents": [
+    "camping_trip"
+   ],
+   "goals": [
+    "A3-1_g0160"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 305,
+   "type": "B",
+   "made_intents": [
+    "home_baking"
+   ],
+   "goals": [
+    "A3-1_g0161"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 306,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 307,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 308,
+   "type": "B",
+   "made_intents": [
+    "moving_in"
+   ],
+   "goals": [
+    "A3-1_g0162"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 309,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 310,
+   "type": "B",
+   "made_intents": [
+    "picnic_lunchbox"
+   ],
+   "goals": [
+    "A3-1_g0163"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 311,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 312,
+   "type": "B",
+   "made_intents": [
+    "new_cat"
+   ],
+   "goals": [
+    "A3-1_g0164"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 313,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 314,
+   "type": "W",
+   "made_intents": [
+    "deep_cleaning"
+   ],
+   "goals": [
+    "A3-1_g0165"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 315,
+   "type": "W",
+   "made_intents": [
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0166"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 316,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 317,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 318,
+   "type": "C",
+   "made_intents": [
+    "new_cat",
+    "kids_playdate"
+   ],
+   "goals": [
+    "A3-1_g0167",
+    "A3-1_g0168"
+   ],
+   "household_types": [
+    "3~4인",
+    "영유아 자녀",
+    "초등 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 319,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 320,
+   "type": "W",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0169"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 321,
+   "type": "W",
+   "made_intents": [
+    "rainy_season"
+   ],
+   "goals": [
+    "A3-1_g0170"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 322,
+   "type": "B",
+   "made_intents": [
+    "kimjang"
+   ],
+   "goals": [
+    "A3-1_g0171"
+   ],
+   "household_types": [
+    "3~4인",
+    "중학생 자녀",
+    "직장인",
+    "반려견",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 323,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 324,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 325,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 326,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 327,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 328,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 329,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 330,
+   "type": "B",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0172"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 331,
+   "type": "W",
+   "made_intents": [
+    "picnic_lunchbox"
+   ],
+   "goals": [
+    "A3-1_g0173"
+   ],
+   "household_types": [
+    "5인 이상",
+    "부부·커플",
+    "영유아 자녀",
+    "초등 자녀",
+    "부모 + 성인 자녀",
+    "3대 함께",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 332,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 333,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 334,
+   "type": "B",
+   "made_intents": [
+    "kids_vacation"
+   ],
+   "goals": [
+    "A3-1_g0174"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "중학생 자녀",
+    "직장인",
+    "맞벌이",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 335,
+   "type": "W",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0175"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 336,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 337,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 338,
+   "type": "B",
+   "made_intents": [
+    "fine_dust"
+   ],
+   "goals": [
+    "A3-1_g0176"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 339,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 340,
+   "type": "B",
+   "made_intents": [
+    "anniversary_dinner"
+   ],
+   "goals": [
+    "A3-1_g0177"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 341,
+   "type": "E",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0178",
+    "A3-1_g0179"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ],
+   "boundary_with": "rainy_season"
+  },
+  {
+   "case_no": 342,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 343,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 344,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 345,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 346,
+   "type": "B",
+   "made_intents": [
+    "rainy_season"
+   ],
+   "goals": [
+    "A3-1_g0180"
+   ],
+   "household_types": [
+    "3~4인",
+    "영유아 자녀",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 347,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 348,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 349,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 350,
+   "type": "B",
+   "made_intents": [
+    "wfh_start"
+   ],
+   "goals": [
+    "A3-1_g0181"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 351,
+   "type": "B",
+   "made_intents": [
+    "meal_prep"
+   ],
+   "goals": [
+    "A3-1_g0182"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 352,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 353,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 354,
+   "type": "W",
+   "made_intents": [
+    "deep_cleaning"
+   ],
+   "goals": [
+    "A3-1_g0183"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 355,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 356,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 357,
+   "type": "B",
+   "made_intents": [
+    "kids_playdate"
+   ],
+   "goals": [
+    "A3-1_g0184"
+   ],
+   "household_types": [
+    "3~4인",
+    "고등학생 자녀",
+    "3대 함께",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 358,
+   "type": "E",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0185",
+    "A3-1_g0186"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ],
+   "boundary_with": "rainy_season"
+  },
+  {
+   "case_no": 359,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 360,
+   "type": "B",
+   "made_intents": [
+    "picnic_lunchbox"
+   ],
+   "goals": [
+    "A3-1_g0187"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 361,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 362,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 363,
+   "type": "E",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0188",
+    "A3-1_g0189"
+   ],
+   "household_types": [
+    "2인",
+    "직장인"
+   ],
+   "boundary_with": "christmas_party"
+  },
+  {
+   "case_no": 364,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 365,
+   "type": "B",
+   "made_intents": [
+    "fine_dust"
+   ],
+   "goals": [
+    "A3-1_g0190"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "부모 + 성인 자녀",
+    "직장인",
+    "맞벌이",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 366,
+   "type": "B",
+   "made_intents": [
+    "kimjang"
+   ],
+   "goals": [
+    "A3-1_g0191"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 367,
+   "type": "B",
+   "made_intents": [
+    "camping_trip"
+   ],
+   "goals": [
+    "A3-1_g0192"
+   ],
+   "household_types": [
+    "1인",
+    "대학생",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 368,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 369,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 370,
+   "type": "B",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0193"
+   ],
+   "household_types": [
+    "2인",
+    "부모 + 성인 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 371,
+   "type": "B",
+   "made_intents": [
+    "new_dog"
+   ],
+   "goals": [
+    "A3-1_g0194"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 372,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 373,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 374,
+   "type": "W",
+   "made_intents": [
+    "moving_in"
+   ],
+   "goals": [
+    "A3-1_g0195"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 375,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 376,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 377,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 378,
+   "type": "B",
+   "made_intents": [
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0196"
+   ],
+   "household_types": [
+    "1인",
+    "대학생",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 379,
+   "type": "C",
+   "made_intents": [
+    "kimjang",
+    "wfh_start"
+   ],
+   "goals": [
+    "A3-1_g0197",
+    "A3-1_g0198"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 380,
+   "type": "B",
+   "made_intents": [
+    "meal_prep"
+   ],
+   "goals": [
+    "A3-1_g0199"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 381,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 382,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 383,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 384,
+   "type": "B",
+   "made_intents": [
+    "wfh_start"
+   ],
+   "goals": [
+    "A3-1_g0200"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 385,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 386,
+   "type": "B",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0201"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 387,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 388,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 389,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 390,
+   "type": "B",
+   "made_intents": [
+    "closet_change"
+   ],
+   "goals": [
+    "A3-1_g0202"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 391,
+   "type": "W",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0203"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 392,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 393,
+   "type": "B",
+   "made_intents": [
+    "home_workout_start"
+   ],
+   "goals": [
+    "A3-1_g0204"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 394,
+   "type": "E",
+   "made_intents": [
+    "moving_in"
+   ],
+   "goals": [
+    "A3-1_g0205",
+    "A3-1_g0206"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ],
+   "boundary_with": "deep_cleaning"
+  },
+  {
+   "case_no": 395,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 396,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 397,
+   "type": "B",
+   "made_intents": [
+    "deep_cleaning"
+   ],
+   "goals": [
+    "A3-1_g0207"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 398,
+   "type": "B",
+   "made_intents": [
+    "new_dog"
+   ],
+   "goals": [
+    "A3-1_g0208"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 399,
+   "type": "W",
+   "made_intents": [
+    "kids_playdate"
+   ],
+   "goals": [
+    "A3-1_g0209"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인",
+    "맞벌이",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 400,
+   "type": "E",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0210",
+    "A3-1_g0211"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인"
+   ],
+   "boundary_with": "holiday_feast"
+  },
+  {
+   "case_no": 401,
+   "type": "W",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0212"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 402,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 403,
+   "type": "B",
+   "made_intents": [
+    "deep_cleaning"
+   ],
+   "goals": [
+    "A3-1_g0213"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 404,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 405,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 406,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 407,
+   "type": "W",
+   "made_intents": [
+    "closet_change"
+   ],
+   "goals": [
+    "A3-1_g0214"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "재택근무",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 408,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 409,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 410,
+   "type": "B",
+   "made_intents": [
+    "school_start"
+   ],
+   "goals": [
+    "A3-1_g0215"
+   ],
+   "household_types": [
+    "1인",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 411,
+   "type": "W",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0216"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 412,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 413,
+   "type": "W",
+   "made_intents": [
+    "anniversary_dinner"
+   ],
+   "goals": [
+    "A3-1_g0217"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 414,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 415,
+   "type": "B",
+   "made_intents": [
+    "guest_overnight"
+   ],
+   "goals": [
+    "A3-1_g0218"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 416,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 417,
+   "type": "E",
+   "made_intents": [
+    "kids_playdate"
+   ],
+   "goals": [
+    "A3-1_g0219",
+    "A3-1_g0220"
+   ],
+   "household_types": [
+    "2인",
+    "영유아 자녀",
+    "직장인"
+   ],
+   "boundary_with": "kids_vacation"
+  },
+  {
+   "case_no": 418,
+   "type": "C",
+   "made_intents": [
+    "deep_cleaning",
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0221",
+    "A3-1_g0222"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 419,
+   "type": "B",
+   "made_intents": [
+    "fine_dust"
+   ],
+   "goals": [
+    "A3-1_g0223"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "그 밖의 반려동물"
+   ]
+  },
+  {
+   "case_no": 420,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 421,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 422,
+   "type": "B",
+   "made_intents": [
+    "fine_dust"
+   ],
+   "goals": [
+    "A3-1_g0224"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "부모 + 성인 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 423,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 424,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 425,
+   "type": "C",
+   "made_intents": [
+    "summer_heat",
+    "kids_playdate"
+   ],
+   "goals": [
+    "A3-1_g0225",
+    "A3-1_g0226"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 426,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 427,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 428,
+   "type": "W",
+   "made_intents": [
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0227"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "고등학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 429,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 430,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 431,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 432,
+   "type": "C",
+   "made_intents": [
+    "kid_birthday_party",
+    "closet_change"
+   ],
+   "goals": [
+    "A3-1_g0228",
+    "A3-1_g0229"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 433,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 434,
+   "type": "B",
+   "made_intents": [
+    "holiday_feast"
+   ],
+   "goals": [
+    "A3-1_g0230"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 435,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 436,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 437,
+   "type": "B",
+   "made_intents": [
+    "picnic_lunchbox"
+   ],
+   "goals": [
+    "A3-1_g0231"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "부모 + 성인 자녀",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 438,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 439,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 440,
+   "type": "B",
+   "made_intents": [
+    "kimjang"
+   ],
+   "goals": [
+    "A3-1_g0232"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 441,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 442,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 443,
+   "type": "C",
+   "made_intents": [
+    "camping_trip",
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0233",
+    "A3-1_g0234"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "부모 + 성인 자녀",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 444,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 445,
+   "type": "B",
+   "made_intents": [
+    "deep_cleaning"
+   ],
+   "goals": [
+    "A3-1_g0235"
+   ],
+   "household_types": [
+    "2인",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 446,
+   "type": "E",
+   "made_intents": [
+    "picnic_lunchbox"
+   ],
+   "goals": [
+    "A3-1_g0236",
+    "A3-1_g0237"
+   ],
+   "household_types": [
+    "2인",
+    "고등학생 자녀",
+    "직장인",
+    "반려견"
+   ],
+   "boundary_with": "meal_prep"
+  },
+  {
+   "case_no": 447,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 448,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 449,
+   "type": "B",
+   "made_intents": [
+    "kids_vacation"
+   ],
+   "goals": [
+    "A3-1_g0238"
+   ],
+   "household_types": [
+    "3~4인",
+    "영유아 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 450,
+   "type": "B",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0239"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 451,
+   "type": "B",
+   "made_intents": [
+    "meal_prep"
+   ],
+   "goals": [
+    "A3-1_g0240"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 452,
+   "type": "C",
+   "made_intents": [
+    "anniversary_dinner",
+    "watch_party"
+   ],
+   "goals": [
+    "A3-1_g0241",
+    "A3-1_g0242"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 453,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 454,
+   "type": "E",
+   "made_intents": [
+    "camping_trip"
+   ],
+   "goals": [
+    "A3-1_g0243",
+    "A3-1_g0244"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ],
+   "boundary_with": "picnic_lunchbox"
+  },
+  {
+   "case_no": 455,
+   "type": "B",
+   "made_intents": [
+    "rainy_season"
+   ],
+   "goals": [
+    "A3-1_g0245"
+   ],
+   "household_types": [
+    "2인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 456,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 457,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 458,
+   "type": "W",
+   "made_intents": [
+    "wfh_start"
+   ],
+   "goals": [
+    "A3-1_g0246"
+   ],
+   "household_types": [
+    "1인",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 459,
+   "type": "B",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0247"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 460,
+   "type": "B",
+   "made_intents": [
+    "holiday_feast"
+   ],
+   "goals": [
+    "A3-1_g0248"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 461,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 462,
+   "type": "B",
+   "made_intents": [
+    "guest_overnight"
+   ],
+   "goals": [
+    "A3-1_g0249"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 463,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 464,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 465,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 466,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 467,
+   "type": "B",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0250"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "중학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 468,
+   "type": "B",
+   "made_intents": [
+    "anniversary_dinner"
+   ],
+   "goals": [
+    "A3-1_g0251"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 469,
+   "type": "W",
+   "made_intents": [
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0252"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 470,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 471,
+   "type": "B",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0253"
+   ],
+   "household_types": [
+    "3~4인",
+    "초등 자녀",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 472,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 473,
+   "type": "W",
+   "made_intents": [
+    "watch_party"
+   ],
+   "goals": [
+    "A3-1_g0254"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 474,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 475,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 476,
+   "type": "C",
+   "made_intents": [
+    "deep_cleaning",
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0255",
+    "A3-1_g0256"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 477,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 478,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 479,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 480,
+   "type": "B",
+   "made_intents": [
+    "holiday_feast"
+   ],
+   "goals": [
+    "A3-1_g0257"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 481,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 482,
+   "type": "W",
+   "made_intents": [
+    "kids_vacation"
+   ],
+   "goals": [
+    "A3-1_g0258"
+   ],
+   "household_types": [
+    "2인",
+    "중학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 483,
+   "type": "B",
+   "made_intents": [
+    "fine_dust"
+   ],
+   "goals": [
+    "A3-1_g0259"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 484,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 485,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 486,
+   "type": "W",
+   "made_intents": [
+    "camping_trip"
+   ],
+   "goals": [
+    "A3-1_g0260"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "3대 함께",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 487,
+   "type": "C",
+   "made_intents": [
+    "watch_party",
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0261",
+    "A3-1_g0262"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 488,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 489,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 490,
+   "type": "B",
+   "made_intents": [
+    "meal_prep"
+   ],
+   "goals": [
+    "A3-1_g0263"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "부모 + 성인 자녀",
+    "3대 함께",
+    "직장인",
+    "반려견",
+    "그 밖의 반려동물"
+   ]
+  },
+  {
+   "case_no": 491,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 492,
+   "type": "E",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0264",
+    "A3-1_g0265"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "부모 + 성인 자녀",
+    "직장인",
+    "반려견"
+   ],
+   "boundary_with": "home_baking"
+  },
+  {
+   "case_no": 493,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 494,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 495,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 496,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 497,
+   "type": "E",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0266",
+    "A3-1_g0267"
+   ],
+   "household_types": [
+    "2인",
+    "직장인"
+   ],
+   "boundary_with": "home_party"
+  },
+  {
+   "case_no": 498,
+   "type": "B",
+   "made_intents": [
+    "camping_trip"
+   ],
+   "goals": [
+    "A3-1_g0268"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 499,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 500,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 501,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 502,
+   "type": "B",
+   "made_intents": [
+    "new_cat"
+   ],
+   "goals": [
+    "A3-1_g0269"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "그 밖의 반려동물"
+   ]
+  },
+  {
+   "case_no": 503,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 504,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 505,
+   "type": "B",
+   "made_intents": [
+    "meal_prep"
+   ],
+   "goals": [
+    "A3-1_g0270"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 506,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 507,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 508,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 509,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 510,
+   "type": "B",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0271"
+   ],
+   "household_types": [
+    "3~4인",
+    "영유아 자녀",
+    "부모 + 성인 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 511,
+   "type": "B",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0272"
+   ],
+   "household_types": [
+    "2인",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 512,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 513,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 514,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 515,
+   "type": "B",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0273"
+   ],
+   "household_types": [
+    "3~4인",
+    "초등 자녀",
+    "부모 + 성인 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 516,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 517,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 518,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 519,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 520,
+   "type": "E",
+   "made_intents": [
+    "fine_dust"
+   ],
+   "goals": [
+    "A3-1_g0274",
+    "A3-1_g0275"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "부모 + 성인 자녀",
+    "직장인",
+    "맞벌이"
+   ],
+   "boundary_with": "winter_dry_cold"
+  },
+  {
+   "case_no": 521,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 522,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 523,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 524,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 525,
+   "type": "B",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0276"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "중학생 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 526,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 527,
+   "type": "W",
+   "made_intents": [
+    "picnic_lunchbox"
+   ],
+   "goals": [
+    "A3-1_g0277"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 528,
+   "type": "B",
+   "made_intents": [
+    "deep_cleaning"
+   ],
+   "goals": [
+    "A3-1_g0278"
+   ],
+   "household_types": [
+    "1인",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 529,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 530,
+   "type": "E",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0279",
+    "A3-1_g0280"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ],
+   "boundary_with": "family_gathering"
+  },
+  {
+   "case_no": 531,
+   "type": "B",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0281"
+   ],
+   "household_types": [
+    "3~4인",
+    "초등 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 532,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 533,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 534,
+   "type": "B",
+   "made_intents": [
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0282"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 535,
+   "type": "W",
+   "made_intents": [
+    "kimjang"
+   ],
+   "goals": [
+    "A3-1_g0283"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 536,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 537,
+   "type": "W",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0284"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 538,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 539,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 540,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 541,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 542,
+   "type": "E",
+   "made_intents": [
+    "guest_overnight"
+   ],
+   "goals": [
+    "A3-1_g0285",
+    "A3-1_g0286"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "은퇴·노년"
+   ],
+   "boundary_with": "home_party"
+  },
+  {
+   "case_no": 543,
+   "type": "E",
+   "made_intents": [
+    "new_dog"
+   ],
+   "goals": [
+    "A3-1_g0287",
+    "A3-1_g0288"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ],
+   "boundary_with": "new_cat"
+  },
+  {
+   "case_no": 544,
+   "type": "C",
+   "made_intents": [
+    "family_gathering",
+    "home_baking"
+   ],
+   "goals": [
+    "A3-1_g0289",
+    "A3-1_g0290"
+   ],
+   "household_types": [
+    "3~4인",
+    "중학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 545,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 546,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 547,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 548,
+   "type": "B",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0291"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 549,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 550,
+   "type": "B",
+   "made_intents": [
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0292"
+   ],
+   "household_types": [
+    "2인",
+    "부모 + 성인 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 551,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 552,
+   "type": "E",
+   "made_intents": [
+    "meal_prep"
+   ],
+   "goals": [
+    "A3-1_g0293",
+    "A3-1_g0294"
+   ],
+   "household_types": [
+    "3~4인",
+    "영유아 자녀",
+    "초등 자녀",
+    "고등학생 자녀",
+    "3대 함께",
+    "직장인"
+   ],
+   "boundary_with": "picnic_lunchbox"
+  },
+  {
+   "case_no": 553,
+   "type": "B",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0295"
+   ],
+   "household_types": [
+    "3~4인",
+    "중학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 554,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 555,
+   "type": "W",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0296"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 556,
+   "type": "C",
+   "made_intents": [
+    "summer_heat",
+    "guest_overnight"
+   ],
+   "goals": [
+    "A3-1_g0297",
+    "A3-1_g0298"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 557,
+   "type": "W",
+   "made_intents": [
+    "holiday_feast"
+   ],
+   "goals": [
+    "A3-1_g0299"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 558,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 559,
+   "type": "B",
+   "made_intents": [
+    "holiday_feast"
+   ],
+   "goals": [
+    "A3-1_g0300"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 560,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 561,
+   "type": "W",
+   "made_intents": [
+    "new_dog"
+   ],
+   "goals": [
+    "A3-1_g0301"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "그 밖의 반려동물"
+   ]
+  },
+  {
+   "case_no": 562,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 563,
+   "type": "B",
+   "made_intents": [
+    "closet_change"
+   ],
+   "goals": [
+    "A3-1_g0302"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 564,
+   "type": "E",
+   "made_intents": [
+    "new_dog"
+   ],
+   "goals": [
+    "A3-1_g0303",
+    "A3-1_g0304"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "3대 함께",
+    "직장인",
+    "맞벌이"
+   ],
+   "boundary_with": "new_cat"
+  },
+  {
+   "case_no": 565,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 566,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 567,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 568,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 569,
+   "type": "B",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0305"
+   ],
+   "household_types": [
+    "2인",
+    "중학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 570,
+   "type": "C",
+   "made_intents": [
+    "home_workout_start",
+    "new_dog"
+   ],
+   "goals": [
+    "A3-1_g0306",
+    "A3-1_g0307"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 571,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 572,
+   "type": "B",
+   "made_intents": [
+    "kids_playdate"
+   ],
+   "goals": [
+    "A3-1_g0308"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "고등학생 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 573,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 574,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 575,
+   "type": "W",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0309"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "그 밖의 반려동물"
+   ]
+  },
+  {
+   "case_no": 576,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 577,
+   "type": "B",
+   "made_intents": [
+    "school_start"
+   ],
+   "goals": [
+    "A3-1_g0310"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 578,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 579,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 580,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 581,
+   "type": "W",
+   "made_intents": [
+    "deep_cleaning"
+   ],
+   "goals": [
+    "A3-1_g0311"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 582,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 583,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 584,
+   "type": "E",
+   "made_intents": [
+    "new_cat"
+   ],
+   "goals": [
+    "A3-1_g0312",
+    "A3-1_g0313"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ],
+   "boundary_with": "new_dog"
+  },
+  {
+   "case_no": 585,
+   "type": "B",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0314"
+   ],
+   "household_types": [
+    "5인 이상",
+    "부부·커플",
+    "영유아 자녀",
+    "중학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 586,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 587,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 588,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 589,
+   "type": "W",
+   "made_intents": [
+    "guest_overnight"
+   ],
+   "goals": [
+    "A3-1_g0315"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "중학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 590,
+   "type": "B",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0316"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 591,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 592,
+   "type": "B",
+   "made_intents": [
+    "camping_trip"
+   ],
+   "goals": [
+    "A3-1_g0317"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 593,
+   "type": "B",
+   "made_intents": [
+    "guest_overnight"
+   ],
+   "goals": [
+    "A3-1_g0318"
+   ],
+   "household_types": [
+    "3~4인",
+    "중학생 자녀",
+    "직장인",
+    "재택근무",
+    "그 밖의 반려동물"
+   ]
+  },
+  {
+   "case_no": 594,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 595,
+   "type": "B",
+   "made_intents": [
+    "holiday_feast"
+   ],
+   "goals": [
+    "A3-1_g0319"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 596,
+   "type": "B",
+   "made_intents": [
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0320"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 597,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 598,
+   "type": "E",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0321",
+    "A3-1_g0322"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ],
+   "boundary_with": "home_party"
+  },
+  {
+   "case_no": 599,
+   "type": "B",
+   "made_intents": [
+    "kids_vacation"
+   ],
+   "goals": [
+    "A3-1_g0323"
+   ],
+   "household_types": [
+    "2인",
+    "초등 자녀",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 600,
+   "type": "B",
+   "made_intents": [
+    "camping_trip"
+   ],
+   "goals": [
+    "A3-1_g0324"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 601,
+   "type": "B",
+   "made_intents": [
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0325"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "중학생 자녀",
+    "부모 + 성인 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 602,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 603,
+   "type": "B",
+   "made_intents": [
+    "kids_vacation"
+   ],
+   "goals": [
+    "A3-1_g0326"
+   ],
+   "household_types": [
+    "2인",
+    "고등학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 604,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 605,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 606,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 607,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 608,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 609,
+   "type": "C",
+   "made_intents": [
+    "adult_birthday",
+    "meal_prep"
+   ],
+   "goals": [
+    "A3-1_g0327",
+    "A3-1_g0328"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 610,
+   "type": "B",
+   "made_intents": [
+    "school_start"
+   ],
+   "goals": [
+    "A3-1_g0329"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 611,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 612,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 613,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 614,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 615,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 616,
+   "type": "C",
+   "made_intents": [
+    "home_workout_start",
+    "camping_trip"
+   ],
+   "goals": [
+    "A3-1_g0330",
+    "A3-1_g0331"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "부모 + 성인 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 617,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 618,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 619,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 620,
+   "type": "C",
+   "made_intents": [
+    "summer_heat",
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0332",
+    "A3-1_g0333"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인",
+    "맞벌이",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 621,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 622,
+   "type": "C",
+   "made_intents": [
+    "home_party",
+    "kids_vacation"
+   ],
+   "goals": [
+    "A3-1_g0334",
+    "A3-1_g0335"
+   ],
+   "household_types": [
+    "2인",
+    "영유아 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 623,
+   "type": "W",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0336"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 624,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 625,
+   "type": "W",
+   "made_intents": [
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0337"
+   ],
+   "household_types": [
+    "3~4인",
+    "중학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 626,
+   "type": "B",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0338"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 627,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 628,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 629,
+   "type": "B",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0339"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 630,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 631,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 632,
+   "type": "W",
+   "made_intents": [
+    "rainy_season"
+   ],
+   "goals": [
+    "A3-1_g0340"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 633,
+   "type": "B",
+   "made_intents": [
+    "kimjang"
+   ],
+   "goals": [
+    "A3-1_g0341"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 634,
+   "type": "B",
+   "made_intents": [
+    "home_baking"
+   ],
+   "goals": [
+    "A3-1_g0342"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 635,
+   "type": "B",
+   "made_intents": [
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0343"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 636,
+   "type": "B",
+   "made_intents": [
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0344"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "부모 + 성인 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 637,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 638,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 639,
+   "type": "W",
+   "made_intents": [
+    "kids_vacation"
+   ],
+   "goals": [
+    "A3-1_g0345"
+   ],
+   "household_types": [
+    "3~4인",
+    "초등 자녀",
+    "부모 + 성인 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 640,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 641,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 642,
+   "type": "W",
+   "made_intents": [
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0346"
+   ],
+   "household_types": [
+    "1인",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 643,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 644,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 645,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 646,
+   "type": "B",
+   "made_intents": [
+    "watch_party"
+   ],
+   "goals": [
+    "A3-1_g0347"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 647,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 648,
+   "type": "B",
+   "made_intents": [
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0348"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 649,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 650,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 651,
+   "type": "E",
+   "made_intents": [
+    "new_cat"
+   ],
+   "goals": [
+    "A3-1_g0349",
+    "A3-1_g0350"
+   ],
+   "household_types": [
+    "2인",
+    "직장인"
+   ],
+   "boundary_with": "new_dog"
+  },
+  {
+   "case_no": 652,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 653,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 654,
+   "type": "C",
+   "made_intents": [
+    "adult_birthday",
+    "closet_change"
+   ],
+   "goals": [
+    "A3-1_g0351",
+    "A3-1_g0352"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 655,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 656,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 657,
+   "type": "B",
+   "made_intents": [
+    "wfh_start"
+   ],
+   "goals": [
+    "A3-1_g0353"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 658,
+   "type": "W",
+   "made_intents": [
+    "exam_focus"
+   ],
+   "goals": [
+    "A3-1_g0354"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 659,
+   "type": "W",
+   "made_intents": [
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0355"
+   ],
+   "household_types": [
+    "2인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 660,
+   "type": "E",
+   "made_intents": [
+    "kids_playdate"
+   ],
+   "goals": [
+    "A3-1_g0356",
+    "A3-1_g0357"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인",
+    "맞벌이"
+   ],
+   "boundary_with": "kids_vacation"
+  },
+  {
+   "case_no": 661,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 662,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 663,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 664,
+   "type": "B",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0358"
+   ],
+   "household_types": [
+    "3~4인",
+    "고등학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 665,
+   "type": "E",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0359",
+    "A3-1_g0360"
+   ],
+   "household_types": [
+    "3~4인",
+    "고등학생 자녀",
+    "직장인"
+   ],
+   "boundary_with": "home_baking"
+  },
+  {
+   "case_no": 666,
+   "type": "E",
+   "made_intents": [
+    "new_dog"
+   ],
+   "goals": [
+    "A3-1_g0361",
+    "A3-1_g0362"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ],
+   "boundary_with": "new_cat"
+  },
+  {
+   "case_no": 667,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 668,
+   "type": "B",
+   "made_intents": [
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0363"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 669,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 670,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 671,
+   "type": "B",
+   "made_intents": [
+    "home_baking"
+   ],
+   "goals": [
+    "A3-1_g0364"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 672,
+   "type": "B",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0365"
+   ],
+   "household_types": [
+    "3~4인",
+    "영유아 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 673,
+   "type": "E",
+   "made_intents": [
+    "home_baking"
+   ],
+   "goals": [
+    "A3-1_g0366",
+    "A3-1_g0367"
+   ],
+   "household_types": [
+    "3~4인",
+    "고등학생 자녀",
+    "직장인",
+    "재택근무",
+    "반려묘"
+   ],
+   "boundary_with": "adult_birthday"
+  },
+  {
+   "case_no": 674,
+   "type": "W",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0368"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인",
+    "반려견",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 675,
+   "type": "B",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0369"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 676,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 677,
+   "type": "B",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0370"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 678,
+   "type": "E",
+   "made_intents": [
+    "new_dog"
+   ],
+   "goals": [
+    "A3-1_g0371",
+    "A3-1_g0372"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년",
+    "그 밖의 반려동물"
+   ],
+   "boundary_with": "new_cat"
+  },
+  {
+   "case_no": 679,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 680,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 681,
+   "type": "B",
+   "made_intents": [
+    "watch_party"
+   ],
+   "goals": [
+    "A3-1_g0373"
+   ],
+   "household_types": [
+    "1인",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 682,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 683,
+   "type": "E",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0374",
+    "A3-1_g0375"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ],
+   "boundary_with": "guest_overnight"
+  },
+  {
+   "case_no": 684,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 685,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 686,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 687,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 688,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 689,
+   "type": "B",
+   "made_intents": [
+    "guest_overnight"
+   ],
+   "goals": [
+    "A3-1_g0376"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 690,
+   "type": "C",
+   "made_intents": [
+    "home_party",
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0377",
+    "A3-1_g0378"
+   ],
+   "household_types": [
+    "2인",
+    "영유아 자녀",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 691,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 692,
+   "type": "B",
+   "made_intents": [
+    "school_start"
+   ],
+   "goals": [
+    "A3-1_g0379"
+   ],
+   "household_types": [
+    "1인",
+    "대학생",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 693,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 694,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 695,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 696,
+   "type": "B",
+   "made_intents": [
+    "kids_playdate"
+   ],
+   "goals": [
+    "A3-1_g0380"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 697,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 698,
+   "type": "B",
+   "made_intents": [
+    "guest_overnight"
+   ],
+   "goals": [
+    "A3-1_g0381"
+   ],
+   "household_types": [
+    "1인",
+    "대학생",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 699,
+   "type": "B",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0382"
+   ],
+   "household_types": [
+    "2인",
+    "영유아 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 700,
+   "type": "B",
+   "made_intents": [
+    "christmas_party"
+   ],
+   "goals": [
+    "A3-1_g0383"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 701,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 702,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 703,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 704,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 705,
+   "type": "B",
+   "made_intents": [
+    "deep_cleaning"
+   ],
+   "goals": [
+    "A3-1_g0384"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 706,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 707,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 708,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 709,
+   "type": "E",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0385",
+    "A3-1_g0386"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "고등학생 자녀",
+    "직장인",
+    "맞벌이",
+    "반려견"
+   ],
+   "boundary_with": "guest_overnight"
+  },
+  {
+   "case_no": 710,
+   "type": "C",
+   "made_intents": [
+    "moving_in",
+    "closet_change"
+   ],
+   "goals": [
+    "A3-1_g0387",
+    "A3-1_g0388"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 711,
+   "type": "W",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0389"
+   ],
+   "household_types": [
+    "2인",
+    "중학생 자녀",
+    "직장인",
+    "재택근무",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 712,
+   "type": "W",
+   "made_intents": [
+    "new_dog"
+   ],
+   "goals": [
+    "A3-1_g0390"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 713,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 714,
+   "type": "W",
+   "made_intents": [
+    "guest_overnight"
+   ],
+   "goals": [
+    "A3-1_g0391"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려견",
+    "그 밖의 반려동물"
+   ]
+  },
+  {
+   "case_no": 715,
+   "type": "W",
+   "made_intents": [
+    "watch_party"
+   ],
+   "goals": [
+    "A3-1_g0392"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 716,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 717,
+   "type": "B",
+   "made_intents": [
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0393"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 718,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 719,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 720,
+   "type": "C",
+   "made_intents": [
+    "deep_cleaning",
+    "meal_prep"
+   ],
+   "goals": [
+    "A3-1_g0394",
+    "A3-1_g0395"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "은퇴·노년",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 721,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 722,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 723,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 724,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 725,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 726,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 727,
+   "type": "B",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0396"
+   ],
+   "household_types": [
+    "2인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 728,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 729,
+   "type": "B",
+   "made_intents": [
+    "exam_focus"
+   ],
+   "goals": [
+    "A3-1_g0397"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "부모 + 성인 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 730,
+   "type": "W",
+   "made_intents": [
+    "home_baking"
+   ],
+   "goals": [
+    "A3-1_g0398"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 731,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 732,
+   "type": "B",
+   "made_intents": [
+    "guest_overnight"
+   ],
+   "goals": [
+    "A3-1_g0399"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 733,
+   "type": "E",
+   "made_intents": [
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0400",
+    "A3-1_g0401"
+   ],
+   "household_types": [
+    "3~4인",
+    "초등 자녀",
+    "직장인"
+   ],
+   "boundary_with": "fine_dust"
+  },
+  {
+   "case_no": 734,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 735,
+   "type": "B",
+   "made_intents": [
+    "holiday_feast"
+   ],
+   "goals": [
+    "A3-1_g0402"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 736,
+   "type": "W",
+   "made_intents": [
+    "moving_in"
+   ],
+   "goals": [
+    "A3-1_g0403"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이",
+    "재택근무",
+    "그 밖의 반려동물"
+   ]
+  },
+  {
+   "case_no": 737,
+   "type": "B",
+   "made_intents": [
+    "camping_trip"
+   ],
+   "goals": [
+    "A3-1_g0404"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "맞벌이",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 738,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 739,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 740,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 741,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 742,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 743,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 744,
+   "type": "B",
+   "made_intents": [
+    "kids_vacation"
+   ],
+   "goals": [
+    "A3-1_g0405"
+   ],
+   "household_types": [
+    "2인",
+    "영유아 자녀",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 745,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 746,
+   "type": "E",
+   "made_intents": [
+    "fine_dust"
+   ],
+   "goals": [
+    "A3-1_g0406",
+    "A3-1_g0407"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "대학생"
+   ],
+   "boundary_with": "winter_dry_cold"
+  },
+  {
+   "case_no": 747,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 748,
+   "type": "B",
+   "made_intents": [
+    "watch_party"
+   ],
+   "goals": [
+    "A3-1_g0408"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려견",
+    "그 밖의 반려동물"
+   ]
+  },
+  {
+   "case_no": 749,
+   "type": "B",
+   "made_intents": [
+    "watch_party"
+   ],
+   "goals": [
+    "A3-1_g0409"
+   ],
+   "household_types": [
+    "2인",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 750,
+   "type": "B",
+   "made_intents": [
+    "deep_cleaning"
+   ],
+   "goals": [
+    "A3-1_g0410"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이",
+    "그 밖의 반려동물"
+   ]
+  },
+  {
+   "case_no": 751,
+   "type": "B",
+   "made_intents": [
+    "exam_focus"
+   ],
+   "goals": [
+    "A3-1_g0411"
+   ],
+   "household_types": [
+    "3~4인",
+    "중학생 자녀",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 752,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 753,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 754,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 755,
+   "type": "B",
+   "made_intents": [
+    "deep_cleaning"
+   ],
+   "goals": [
+    "A3-1_g0412"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 756,
+   "type": "W",
+   "made_intents": [
+    "camping_trip"
+   ],
+   "goals": [
+    "A3-1_g0413"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "맞벌이",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 757,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 758,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 759,
+   "type": "W",
+   "made_intents": [
+    "home_baking"
+   ],
+   "goals": [
+    "A3-1_g0414"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 760,
+   "type": "B",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0415"
+   ],
+   "household_types": [
+    "1인",
+    "대학생",
+    "그 밖의 반려동물"
+   ]
+  },
+  {
+   "case_no": 761,
+   "type": "W",
+   "made_intents": [
+    "kids_vacation"
+   ],
+   "goals": [
+    "A3-1_g0416"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 762,
+   "type": "B",
+   "made_intents": [
+    "closet_change"
+   ],
+   "goals": [
+    "A3-1_g0417"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 763,
+   "type": "B",
+   "made_intents": [
+    "watch_party"
+   ],
+   "goals": [
+    "A3-1_g0418"
+   ],
+   "household_types": [
+    "2인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 764,
+   "type": "B",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0419"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "부모 + 성인 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 765,
+   "type": "C",
+   "made_intents": [
+    "summer_heat",
+    "kids_playdate"
+   ],
+   "goals": [
+    "A3-1_g0420",
+    "A3-1_g0421"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "고등학생 자녀",
+    "부모 + 성인 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 766,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 767,
+   "type": "B",
+   "made_intents": [
+    "kids_playdate"
+   ],
+   "goals": [
+    "A3-1_g0422"
+   ],
+   "household_types": [
+    "2인",
+    "고등학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 768,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 769,
+   "type": "B",
+   "made_intents": [
+    "holiday_feast"
+   ],
+   "goals": [
+    "A3-1_g0423"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 770,
+   "type": "W",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0424"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 771,
+   "type": "B",
+   "made_intents": [
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0425"
+   ],
+   "household_types": [
+    "1인",
+    "대학생",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 772,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 773,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 774,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 775,
+   "type": "B",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0426"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 776,
+   "type": "B",
+   "made_intents": [
+    "deep_cleaning"
+   ],
+   "goals": [
+    "A3-1_g0427"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 777,
+   "type": "B",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0428"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 778,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 779,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 780,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 781,
+   "type": "B",
+   "made_intents": [
+    "kids_playdate"
+   ],
+   "goals": [
+    "A3-1_g0429"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 782,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 783,
+   "type": "B",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0430"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 784,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 785,
+   "type": "B",
+   "made_intents": [
+    "exam_focus"
+   ],
+   "goals": [
+    "A3-1_g0431"
+   ],
+   "household_types": [
+    "3~4인",
+    "부모 + 성인 자녀",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 786,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 787,
+   "type": "W",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0432"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 788,
+   "type": "C",
+   "made_intents": [
+    "deep_cleaning",
+    "closet_change"
+   ],
+   "goals": [
+    "A3-1_g0433",
+    "A3-1_g0434"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 789,
+   "type": "C",
+   "made_intents": [
+    "anniversary_dinner",
+    "picnic_lunchbox"
+   ],
+   "goals": [
+    "A3-1_g0435",
+    "A3-1_g0436"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 790,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 791,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 792,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 793,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 794,
+   "type": "B",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0437"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 795,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 796,
+   "type": "B",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0438"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 797,
+   "type": "B",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0439"
+   ],
+   "household_types": [
+    "3~4인",
+    "중학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 798,
+   "type": "C",
+   "made_intents": [
+    "meal_prep",
+    "picnic_lunchbox"
+   ],
+   "goals": [
+    "A3-1_g0440",
+    "A3-1_g0441"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 799,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 800,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 801,
+   "type": "W",
+   "made_intents": [
+    "home_baking"
+   ],
+   "goals": [
+    "A3-1_g0442"
+   ],
+   "household_types": [
+    "2인",
+    "룸메이트·셰어하우스",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 802,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 803,
+   "type": "B",
+   "made_intents": [
+    "anniversary_dinner"
+   ],
+   "goals": [
+    "A3-1_g0443"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 804,
+   "type": "B",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0444"
+   ],
+   "household_types": [
+    "2인",
+    "초등 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 805,
+   "type": "B",
+   "made_intents": [
+    "exam_focus"
+   ],
+   "goals": [
+    "A3-1_g0445"
+   ],
+   "household_types": [
+    "1인",
+    "대학생",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 806,
+   "type": "W",
+   "made_intents": [
+    "fine_dust"
+   ],
+   "goals": [
+    "A3-1_g0446"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 807,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 808,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 809,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 810,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 811,
+   "type": "B",
+   "made_intents": [
+    "exam_focus"
+   ],
+   "goals": [
+    "A3-1_g0447"
+   ],
+   "household_types": [
+    "1인",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 812,
+   "type": "B",
+   "made_intents": [
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0448"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 813,
+   "type": "W",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0449"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "고등학생 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 814,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 815,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 816,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 817,
+   "type": "B",
+   "made_intents": [
+    "christmas_party"
+   ],
+   "goals": [
+    "A3-1_g0450"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 818,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 819,
+   "type": "E",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0451",
+    "A3-1_g0452"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "초등 자녀",
+    "3대 함께",
+    "직장인",
+    "반려견"
+   ],
+   "boundary_with": "kids_playdate"
+  },
+  {
+   "case_no": 820,
+   "type": "W",
+   "made_intents": [
+    "christmas_party"
+   ],
+   "goals": [
+    "A3-1_g0453"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 821,
+   "type": "C",
+   "made_intents": [
+    "home_workout_start",
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0454",
+    "A3-1_g0455"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 822,
+   "type": "B",
+   "made_intents": [
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0456"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "그 밖의 반려동물"
+   ]
+  },
+  {
+   "case_no": 823,
+   "type": "B",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0457"
+   ],
+   "household_types": [
+    "2인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 824,
+   "type": "B",
+   "made_intents": [
+    "rainy_season"
+   ],
+   "goals": [
+    "A3-1_g0458"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 825,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 826,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 827,
+   "type": "W",
+   "made_intents": [
+    "fine_dust"
+   ],
+   "goals": [
+    "A3-1_g0459"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이",
+    "재택근무",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 828,
+   "type": "E",
+   "made_intents": [
+    "kids_vacation"
+   ],
+   "goals": [
+    "A3-1_g0460",
+    "A3-1_g0461"
+   ],
+   "household_types": [
+    "2인",
+    "영유아 자녀",
+    "직장인",
+    "반려견"
+   ],
+   "boundary_with": "kids_playdate"
+  },
+  {
+   "case_no": 829,
+   "type": "C",
+   "made_intents": [
+    "winter_dry_cold",
+    "kids_playdate"
+   ],
+   "goals": [
+    "A3-1_g0462",
+    "A3-1_g0463"
+   ],
+   "household_types": [
+    "3~4인",
+    "영유아 자녀",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 830,
+   "type": "C",
+   "made_intents": [
+    "winter_dry_cold",
+    "school_start"
+   ],
+   "goals": [
+    "A3-1_g0464",
+    "A3-1_g0465"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 831,
+   "type": "W",
+   "made_intents": [
+    "exam_focus"
+   ],
+   "goals": [
+    "A3-1_g0466"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "부모 + 성인 자녀",
+    "직장인",
+    "재택근무",
+    "그 밖의 반려동물"
+   ]
+  },
+  {
+   "case_no": 832,
+   "type": "B",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0467"
+   ],
+   "household_types": [
+    "2인",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 833,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 834,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 835,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 836,
+   "type": "B",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0468"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 837,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 838,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 839,
+   "type": "W",
+   "made_intents": [
+    "rainy_season"
+   ],
+   "goals": [
+    "A3-1_g0469"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 840,
+   "type": "C",
+   "made_intents": [
+    "moving_in",
+    "picnic_lunchbox"
+   ],
+   "goals": [
+    "A3-1_g0470",
+    "A3-1_g0471"
+   ],
+   "household_types": [
+    "5인 이상",
+    "부부·커플",
+    "중학생 자녀",
+    "부모 + 성인 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 841,
+   "type": "B",
+   "made_intents": [
+    "closet_change"
+   ],
+   "goals": [
+    "A3-1_g0472"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 842,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 843,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 844,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 845,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 846,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 847,
+   "type": "W",
+   "made_intents": [
+    "meal_prep"
+   ],
+   "goals": [
+    "A3-1_g0473"
+   ],
+   "household_types": [
+    "2인",
+    "고등학생 자녀",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 848,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 849,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 850,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 851,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 852,
+   "type": "B",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0474"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 853,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 854,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 855,
+   "type": "B",
+   "made_intents": [
+    "exam_focus"
+   ],
+   "goals": [
+    "A3-1_g0475"
+   ],
+   "household_types": [
+    "2인",
+    "고등학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 856,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 857,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 858,
+   "type": "B",
+   "made_intents": [
+    "meal_prep"
+   ],
+   "goals": [
+    "A3-1_g0476"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 859,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 860,
+   "type": "B",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0477"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 861,
+   "type": "B",
+   "made_intents": [
+    "watch_party"
+   ],
+   "goals": [
+    "A3-1_g0478"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "맞벌이",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 862,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 863,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 864,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 865,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 866,
+   "type": "B",
+   "made_intents": [
+    "christmas_party"
+   ],
+   "goals": [
+    "A3-1_g0479"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 867,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 868,
+   "type": "B",
+   "made_intents": [
+    "school_start"
+   ],
+   "goals": [
+    "A3-1_g0480"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 869,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 870,
+   "type": "B",
+   "made_intents": [
+    "home_workout_start"
+   ],
+   "goals": [
+    "A3-1_g0481"
+   ],
+   "household_types": [
+    "2인",
+    "부모 + 성인 자녀",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 871,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 872,
+   "type": "W",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0482"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 873,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 874,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 875,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 876,
+   "type": "B",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0483"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "고등학생 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 877,
+   "type": "B",
+   "made_intents": [
+    "kids_playdate"
+   ],
+   "goals": [
+    "A3-1_g0484"
+   ],
+   "household_types": [
+    "2인",
+    "초등 자녀",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 878,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 879,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 880,
+   "type": "E",
+   "made_intents": [
+    "home_baking"
+   ],
+   "goals": [
+    "A3-1_g0485",
+    "A3-1_g0486"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "재택근무",
+    "그 밖의 반려동물"
+   ],
+   "boundary_with": "adult_birthday"
+  },
+  {
+   "case_no": 881,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 882,
+   "type": "B",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0487"
+   ],
+   "household_types": [
+    "1인",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 883,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 884,
+   "type": "W",
+   "made_intents": [
+    "closet_change"
+   ],
+   "goals": [
+    "A3-1_g0488"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "은퇴·노년",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 885,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 886,
+   "type": "C",
+   "made_intents": [
+    "watch_party",
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0489",
+    "A3-1_g0490"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 887,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 888,
+   "type": "B",
+   "made_intents": [
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0491"
+   ],
+   "household_types": [
+    "1인",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 889,
+   "type": "W",
+   "made_intents": [
+    "fine_dust"
+   ],
+   "goals": [
+    "A3-1_g0492"
+   ],
+   "household_types": [
+    "2인",
+    "대학생",
+    "반려견",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 890,
+   "type": "W",
+   "made_intents": [
+    "new_cat"
+   ],
+   "goals": [
+    "A3-1_g0493"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 891,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 892,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 893,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 894,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 895,
+   "type": "B",
+   "made_intents": [
+    "home_baking"
+   ],
+   "goals": [
+    "A3-1_g0494"
+   ],
+   "household_types": [
+    "2인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 896,
+   "type": "B",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0495"
+   ],
+   "household_types": [
+    "2인",
+    "중학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 897,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 898,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 899,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 900,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 901,
+   "type": "C",
+   "made_intents": [
+    "adult_birthday",
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0496",
+    "A3-1_g0497"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "대학생",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 902,
+   "type": "W",
+   "made_intents": [
+    "kimjang"
+   ],
+   "goals": [
+    "A3-1_g0498"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 903,
+   "type": "B",
+   "made_intents": [
+    "anniversary_dinner"
+   ],
+   "goals": [
+    "A3-1_g0499"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "맞벌이",
+    "재택근무",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 904,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 905,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 906,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 907,
+   "type": "B",
+   "made_intents": [
+    "anniversary_dinner"
+   ],
+   "goals": [
+    "A3-1_g0500"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 908,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 909,
+   "type": "B",
+   "made_intents": [
+    "anniversary_dinner"
+   ],
+   "goals": [
+    "A3-1_g0501"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "부모 + 성인 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 910,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 911,
+   "type": "B",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0502"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "고등학생 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 912,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 913,
+   "type": "E",
+   "made_intents": [
+    "picnic_lunchbox"
+   ],
+   "goals": [
+    "A3-1_g0503",
+    "A3-1_g0504"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "대학생",
+    "반려견",
+    "반려묘"
+   ],
+   "boundary_with": "meal_prep"
+  },
+  {
+   "case_no": 914,
+   "type": "B",
+   "made_intents": [
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0505"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 915,
+   "type": "C",
+   "made_intents": [
+    "kid_birthday_party",
+    "meal_prep"
+   ],
+   "goals": [
+    "A3-1_g0506",
+    "A3-1_g0507"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 916,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 917,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 918,
+   "type": "W",
+   "made_intents": [
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0508"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 919,
+   "type": "W",
+   "made_intents": [
+    "closet_change"
+   ],
+   "goals": [
+    "A3-1_g0509"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 920,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 921,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 922,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 923,
+   "type": "E",
+   "made_intents": [
+    "christmas_party"
+   ],
+   "goals": [
+    "A3-1_g0510",
+    "A3-1_g0511"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "중학생 자녀",
+    "직장인"
+   ],
+   "boundary_with": "home_party"
+  },
+  {
+   "case_no": 924,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 925,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 926,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 927,
+   "type": "B",
+   "made_intents": [
+    "home_baking"
+   ],
+   "goals": [
+    "A3-1_g0512"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "중학생 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 928,
+   "type": "B",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0513"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 929,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 930,
+   "type": "W",
+   "made_intents": [
+    "meal_prep"
+   ],
+   "goals": [
+    "A3-1_g0514"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "부모 + 성인 자녀",
+    "직장인",
+    "맞벌이"
+   ]
+  },
+  {
+   "case_no": 931,
+   "type": "B",
+   "made_intents": [
+    "deep_cleaning"
+   ],
+   "goals": [
+    "A3-1_g0515"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 932,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 933,
+   "type": "E",
+   "made_intents": [
+    "kid_birthday_party"
+   ],
+   "goals": [
+    "A3-1_g0516",
+    "A3-1_g0517"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "고등학생 자녀",
+    "직장인"
+   ],
+   "boundary_with": "home_baking"
+  },
+  {
+   "case_no": 934,
+   "type": "W",
+   "made_intents": [
+    "anniversary_dinner"
+   ],
+   "goals": [
+    "A3-1_g0518"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 935,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 936,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 937,
+   "type": "B",
+   "made_intents": [
+    "kids_vacation"
+   ],
+   "goals": [
+    "A3-1_g0519"
+   ],
+   "household_types": [
+    "3~4인",
+    "영유아 자녀",
+    "중학생 자녀",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 938,
+   "type": "W",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0520"
+   ],
+   "household_types": [
+    "3~4인",
+    "영유아 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 939,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 940,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 941,
+   "type": "B",
+   "made_intents": [
+    "christmas_party"
+   ],
+   "goals": [
+    "A3-1_g0521"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 942,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 943,
+   "type": "B",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0522"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 944,
+   "type": "B",
+   "made_intents": [
+    "new_dog"
+   ],
+   "goals": [
+    "A3-1_g0523"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 945,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 946,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 947,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 948,
+   "type": "B",
+   "made_intents": [
+    "kids_vacation"
+   ],
+   "goals": [
+    "A3-1_g0524"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "중학생 자녀",
+    "직장인",
+    "맞벌이",
+    "재택근무",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 949,
+   "type": "B",
+   "made_intents": [
+    "fine_dust"
+   ],
+   "goals": [
+    "A3-1_g0525"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 950,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 951,
+   "type": "B",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0526"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 952,
+   "type": "B",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0527"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 953,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 954,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 955,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 956,
+   "type": "B",
+   "made_intents": [
+    "guest_overnight"
+   ],
+   "goals": [
+    "A3-1_g0528"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "중학생 자녀",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 957,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 958,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 959,
+   "type": "W",
+   "made_intents": [
+    "watch_party"
+   ],
+   "goals": [
+    "A3-1_g0529"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 960,
+   "type": "B",
+   "made_intents": [
+    "meal_prep"
+   ],
+   "goals": [
+    "A3-1_g0530"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 961,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 962,
+   "type": "B",
+   "made_intents": [
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0531"
+   ],
+   "household_types": [
+    "2인",
+    "부모 + 성인 자녀",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 963,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 964,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 965,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 966,
+   "type": "E",
+   "made_intents": [
+    "adult_birthday"
+   ],
+   "goals": [
+    "A3-1_g0532",
+    "A3-1_g0533"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ],
+   "boundary_with": "home_baking"
+  },
+  {
+   "case_no": 967,
+   "type": "B",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0534"
+   ],
+   "household_types": [
+    "2인",
+    "고등학생 자녀",
+    "직장인",
+    "반려묘"
+   ]
+  },
+  {
+   "case_no": 968,
+   "type": "B",
+   "made_intents": [
+    "home_workout_start"
+   ],
+   "goals": [
+    "A3-1_g0535"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 969,
+   "type": "B",
+   "made_intents": [
+    "trip_away"
+   ],
+   "goals": [
+    "A3-1_g0536"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 970,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 971,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 972,
+   "type": "B",
+   "made_intents": [
+    "picnic_lunchbox"
+   ],
+   "goals": [
+    "A3-1_g0537"
+   ],
+   "household_types": [
+    "2인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 973,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 974,
+   "type": "W",
+   "made_intents": [
+    "family_gathering"
+   ],
+   "goals": [
+    "A3-1_g0538"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 975,
+   "type": "E",
+   "made_intents": [
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0539",
+    "A3-1_g0540"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려묘"
+   ],
+   "boundary_with": "christmas_party"
+  },
+  {
+   "case_no": 976,
+   "type": "B",
+   "made_intents": [
+    "holiday_feast"
+   ],
+   "goals": [
+    "A3-1_g0541"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 977,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 978,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 979,
+   "type": "C",
+   "made_intents": [
+    "new_cat",
+    "holiday_feast"
+   ],
+   "goals": [
+    "A3-1_g0542",
+    "A3-1_g0543"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "3대 함께",
+    "직장인"
+   ]
+  },
+  {
+   "case_no": 980,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 981,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 982,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 983,
+   "type": "B",
+   "made_intents": [
+    "exam_focus"
+   ],
+   "goals": [
+    "A3-1_g0544"
+   ],
+   "household_types": [
+    "2인",
+    "부모 + 성인 자녀",
+    "은퇴·노년"
+   ]
+  },
+  {
+   "case_no": 984,
+   "type": "B",
+   "made_intents": [
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0545"
+   ],
+   "household_types": [
+    "1인",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 985,
+   "type": "B",
+   "made_intents": [
+    "summer_heat"
+   ],
+   "goals": [
+    "A3-1_g0546"
+   ],
+   "household_types": [
+    "1인",
+    "대학생"
+   ]
+  },
+  {
+   "case_no": 986,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 987,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 988,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 989,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 990,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 991,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 992,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 993,
+   "type": "B",
+   "made_intents": [
+    "winter_dry_cold"
+   ],
+   "goals": [
+    "A3-1_g0547"
+   ],
+   "household_types": [
+    "3~4인",
+    "고등학생 자녀",
+    "직장인",
+    "재택근무"
+   ]
+  },
+  {
+   "case_no": 994,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 995,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 996,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 997,
+   "type": "C",
+   "made_intents": [
+    "trip_away",
+    "home_party"
+   ],
+   "goals": [
+    "A3-1_g0548",
+    "A3-1_g0549"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "은퇴·노년",
+    "반려견"
+   ]
+  },
+  {
+   "case_no": 998,
+   "type": "D",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 999,
+   "type": "A",
+   "made_intents": [],
+   "goals": [],
+   "household_types": null
+  },
+  {
+   "case_no": 1000,
+   "type": "W",
+   "made_intents": [
+    "new_cat"
+   ],
+   "goals": [
+    "A3-1_g0550"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ]
+  }
+ ],
+ "generate_jobs": [
+  {
+   "job_id": "A3-1_generate_001",
+   "company": "gemini",
+   "goal_ids": [
+    "A3-1_g0500",
+    "A3-1_g0036",
+    "A3-1_g0255",
+    "A3-1_g0376",
+    "A3-1_g0318",
+    "A3-1_g0017",
+    "A3-1_g0045",
+    "A3-1_g0033",
+    "A3-1_g0180",
+    "A3-1_g0151",
+    "A3-1_g0285",
+    "A3-1_g0435",
+    "A3-1_g0485",
+    "A3-1_g0020",
+    "A3-1_g0410",
+    "A3-1_g0095",
+    "A3-1_g0217",
+    "A3-1_g0534",
+    "A3-1_g0247",
+    "A3-1_g0403",
+    "A3-1_g0440",
+    "A3-1_g0108",
+    "A3-1_g0399",
+    "A3-1_g0526",
+    "A3-1_g0522",
+    "A3-1_g0206",
+    "A3-1_g0003",
+    "A3-1_g0293",
+    "A3-1_g0130",
+    "A3-1_g0402",
+    "A3-1_g0225",
+    "A3-1_g0104",
+    "A3-1_g0041",
+    "A3-1_g0096",
+    "A3-1_g0422",
+    "A3-1_g0379",
+    "A3-1_g0026",
+    "A3-1_g0166",
+    "A3-1_g0071",
+    "A3-1_g0093",
+    "A3-1_g0331",
+    "A3-1_g0279",
+    "A3-1_g0072",
+    "A3-1_g0076",
+    "A3-1_g0280",
+    "A3-1_g0086",
+    "A3-1_g0308",
+    "A3-1_g0415",
+    "A3-1_g0482",
+    "A3-1_g0204"
+   ]
+  },
+  {
+   "job_id": "A3-1_generate_002",
+   "company": "gemini",
+   "goal_ids": [
+    "A3-1_g0366",
+    "A3-1_g0302",
+    "A3-1_g0451",
+    "A3-1_g0154",
+    "A3-1_g0341",
+    "A3-1_g0195",
+    "A3-1_g0008",
+    "A3-1_g0531",
+    "A3-1_g0274",
+    "A3-1_g0135",
+    "A3-1_g0343",
+    "A3-1_g0345",
+    "A3-1_g0240",
+    "A3-1_g0137",
+    "A3-1_g0094",
+    "A3-1_g0109",
+    "A3-1_g0273",
+    "A3-1_g0401",
+    "A3-1_g0224",
+    "A3-1_g0545",
+    "A3-1_g0535",
+    "A3-1_g0332",
+    "A3-1_g0087",
+    "A3-1_g0354",
+    "A3-1_g0336",
+    "A3-1_g0042",
+    "A3-1_g0385",
+    "A3-1_g0075",
+    "A3-1_g0141",
+    "A3-1_g0083",
+    "A3-1_g0105",
+    "A3-1_g0330",
+    "A3-1_g0067",
+    "A3-1_g0425",
+    "A3-1_g0294",
+    "A3-1_g0508",
+    "A3-1_g0327",
+    "A3-1_g0133",
+    "A3-1_g0148",
+    "A3-1_g0194",
+    "A3-1_g0081",
+    "A3-1_g0006",
+    "A3-1_g0333",
+    "A3-1_g0461",
+    "A3-1_g0498",
+    "A3-1_g0446",
+    "A3-1_g0495",
+    "A3-1_g0218",
+    "A3-1_g0411",
+    "A3-1_g0384"
+   ]
+  },
+  {
+   "job_id": "A3-1_generate_003",
+   "company": "gemini",
+   "goal_ids": [
+    "A3-1_g0262",
+    "A3-1_g0270",
+    "A3-1_g0138",
+    "A3-1_g0518",
+    "A3-1_g0320",
+    "A3-1_g0476",
+    "A3-1_g0463",
+    "A3-1_g0215",
+    "A3-1_g0359",
+    "A3-1_g0368",
+    "A3-1_g0409",
+    "A3-1_g0462",
+    "A3-1_g0335",
+    "A3-1_g0349",
+    "A3-1_g0272",
+    "A3-1_g0053",
+    "A3-1_g0250",
+    "A3-1_g0223",
+    "A3-1_g0519",
+    "A3-1_g0473",
+    "A3-1_g0175",
+    "A3-1_g0193",
+    "A3-1_g0276",
+    "A3-1_g0051",
+    "A3-1_g0414",
+    "A3-1_g0031",
+    "A3-1_g0212",
+    "A3-1_g0184",
+    "A3-1_g0043",
+    "A3-1_g0521",
+    "A3-1_g0381",
+    "A3-1_g0442",
+    "A3-1_g0023",
+    "A3-1_g0444",
+    "A3-1_g0213",
+    "A3-1_g0052",
+    "A3-1_g0433",
+    "A3-1_g0254",
+    "A3-1_g0145",
+    "A3-1_g0406",
+    "A3-1_g0266",
+    "A3-1_g0001",
+    "A3-1_g0080",
+    "A3-1_g0365",
+    "A3-1_g0112",
+    "A3-1_g0124",
+    "A3-1_g0056",
+    "A3-1_g0378",
+    "A3-1_g0127",
+    "A3-1_g0337"
+   ]
+  },
+  {
+   "job_id": "A3-1_generate_004",
+   "company": "gemini",
+   "goal_ids": [
+    "A3-1_g0058",
+    "A3-1_g0221",
+    "A3-1_g0509",
+    "A3-1_g0510",
+    "A3-1_g0478",
+    "A3-1_g0120",
+    "A3-1_g0421",
+    "A3-1_g0030",
+    "A3-1_g0078",
+    "A3-1_g0504",
+    "A3-1_g0178",
+    "A3-1_g0121",
+    "A3-1_g0028",
+    "A3-1_g0230",
+    "A3-1_g0496",
+    "A3-1_g0549",
+    "A3-1_g0123",
+    "A3-1_g0182",
+    "A3-1_g0267",
+    "A3-1_g0281",
+    "A3-1_g0181",
+    "A3-1_g0049",
+    "A3-1_g0419",
+    "A3-1_g0179",
+    "A3-1_g0497",
+    "A3-1_g0471",
+    "A3-1_g0253",
+    "A3-1_g0374",
+    "A3-1_g0027",
+    "A3-1_g0085",
+    "A3-1_g0405",
+    "A3-1_g0149",
+    "A3-1_g0326",
+    "A3-1_g0479",
+    "A3-1_g0499",
+    "A3-1_g0012",
+    "A3-1_g0412",
+    "A3-1_g0256",
+    "A3-1_g0477",
+    "A3-1_g0117",
+    "A3-1_g0114",
+    "A3-1_g0396",
+    "A3-1_g0131",
+    "A3-1_g0465",
+    "A3-1_g0263",
+    "A3-1_g0428",
+    "A3-1_g0487",
+    "A3-1_g0228",
+    "A3-1_g0394",
+    "A3-1_g0453"
+   ]
+  },
+  {
+   "job_id": "A3-1_generate_005",
+   "company": "gemini",
+   "goal_ids": [
+    "A3-1_g0417",
+    "A3-1_g0035",
+    "A3-1_g0040",
+    "A3-1_g0506",
+    "A3-1_g0299",
+    "A3-1_g0338",
+    "A3-1_g0371",
+    "A3-1_g0004",
+    "A3-1_g0390",
+    "A3-1_g0375",
+    "A3-1_g0350",
+    "A3-1_g0241",
+    "A3-1_g0391",
+    "A3-1_g0484",
+    "A3-1_g0548",
+    "A3-1_g0167",
+    "A3-1_g0312",
+    "A3-1_g0492",
+    "A3-1_g0437",
+    "A3-1_g0301",
+    "A3-1_g0024",
+    "A3-1_g0383",
+    "A3-1_g0101",
+    "A3-1_g0231",
+    "A3-1_g0139",
+    "A3-1_g0134",
+    "A3-1_g0321",
+    "A3-1_g0540",
+    "A3-1_g0392",
+    "A3-1_g0307",
+    "A3-1_g0472",
+    "A3-1_g0517",
+    "A3-1_g0533",
+    "A3-1_g0351",
+    "A3-1_g0249",
+    "A3-1_g0116",
+    "A3-1_g0047",
+    "A3-1_g0061",
+    "A3-1_g0455",
+    "A3-1_g0209",
+    "A3-1_g0324",
+    "A3-1_g0216",
+    "A3-1_g0118",
+    "A3-1_g0493",
+    "A3-1_g0524",
+    "A3-1_g0236",
+    "A3-1_g0397",
+    "A3-1_g0070",
+    "A3-1_g0009",
+    "A3-1_g0146"
+   ]
+  },
+  {
+   "job_id": "A3-1_generate_006",
+   "company": "gemini",
+   "goal_ids": [
+    "A3-1_g0189",
+    "A3-1_g0103",
+    "A3-1_g0325",
+    "A3-1_g0022",
+    "A3-1_g0057",
+    "A3-1_g0176",
+    "A3-1_g0073",
+    "A3-1_g0439",
+    "A3-1_g0037",
+    "A3-1_g0265",
+    "A3-1_g0111",
+    "A3-1_g0363",
+    "A3-1_g0102",
+    "A3-1_g0271",
+    "A3-1_g0128",
+    "A3-1_g0119",
+    "A3-1_g0292",
+    "A3-1_g0386",
+    "A3-1_g0441",
+    "A3-1_g0191",
+    "A3-1_g0400",
+    "A3-1_g0159",
+    "A3-1_g0494",
+    "A3-1_g0445",
+    "A3-1_g0011",
+    "A3-1_g0210",
+    "A3-1_g0515",
+    "A3-1_g0300",
+    "A3-1_g0404",
+    "A3-1_g0356",
+    "A3-1_g0475",
+    "A3-1_g0346",
+    "A3-1_g0316",
+    "A3-1_g0106",
+    "A3-1_g0245",
+    "A3-1_g0426",
+    "A3-1_g0364",
+    "A3-1_g0344",
+    "A3-1_g0079",
+    "A3-1_g0429",
+    "A3-1_g0032",
+    "A3-1_g0143",
+    "A3-1_g0447",
+    "A3-1_g0530",
+    "A3-1_g0283",
+    "A3-1_g0200",
+    "A3-1_g0448",
+    "A3-1_g0129",
+    "A3-1_g0393",
+    "A3-1_g0211"
+   ]
+  },
+  {
+   "job_id": "A3-1_generate_007",
+   "company": "gemini",
+   "goal_ids": [
+    "A3-1_g0074",
+    "A3-1_g0523",
+    "A3-1_g0060",
+    "A3-1_g0229",
+    "A3-1_g0140",
+    "A3-1_g0483",
+    "A3-1_g0246",
+    "A3-1_g0235",
+    "A3-1_g0512",
+    "A3-1_g0470",
+    "A3-1_g0395",
+    "A3-1_g0002",
+    "A3-1_g0413",
+    "A3-1_g0501",
+    "A3-1_g0099",
+    "A3-1_g0388",
+    "A3-1_g0199",
+    "A3-1_g0489",
+    "A3-1_g0155",
+    "A3-1_g0169",
+    "A3-1_g0456",
+    "A3-1_g0387",
+    "A3-1_g0207",
+    "A3-1_g0227",
+    "A3-1_g0355",
+    "A3-1_g0311",
+    "A3-1_g0423",
+    "A3-1_g0185",
+    "A3-1_g0065",
+    "A3-1_g0491",
+    "A3-1_g0107",
+    "A3-1_g0525",
+    "A3-1_g0007",
+    "A3-1_g0110",
+    "A3-1_g0242",
+    "A3-1_g0291",
+    "A3-1_g0054",
+    "A3-1_g0298",
+    "A3-1_g0122",
+    "A3-1_g0289",
+    "A3-1_g0348",
+    "A3-1_g0339",
+    "A3-1_g0269",
+    "A3-1_g0443",
+    "A3-1_g0226",
+    "A3-1_g0115",
+    "A3-1_g0171",
+    "A3-1_g0513",
+    "A3-1_g0340",
+    "A3-1_g0507"
+   ]
+  },
+  {
+   "job_id": "A3-1_generate_008",
+   "company": "gemini",
+   "goal_ids": [
+    "A3-1_g0244",
+    "A3-1_g0077",
+    "A3-1_g0304",
+    "A3-1_g0438",
+    "A3-1_g0084",
+    "A3-1_g0163",
+    "A3-1_g0158",
+    "A3-1_g0150",
+    "A3-1_g0066",
+    "A3-1_g0063",
+    "A3-1_g0038",
+    "A3-1_g0480",
+    "A3-1_g0196",
+    "A3-1_g0238",
+    "A3-1_g0268",
+    "A3-1_g0010",
+    "A3-1_g0452",
+    "A3-1_g0420",
+    "A3-1_g0434",
+    "A3-1_g0361",
+    "A3-1_g0287",
+    "A3-1_g0015",
+    "A3-1_g0197",
+    "A3-1_g0278",
+    "A3-1_g0315",
+    "A3-1_g0449",
+    "A3-1_g0152",
+    "A3-1_g0474",
+    "A3-1_g0174",
+    "A3-1_g0234",
+    "A3-1_g0219",
+    "A3-1_g0542",
+    "A3-1_g0090",
+    "A3-1_g0319",
+    "A3-1_g0258",
+    "A3-1_g0208",
+    "A3-1_g0064",
+    "A3-1_g0514",
+    "A3-1_g0347",
+    "A3-1_g0543",
+    "A3-1_g0528",
+    "A3-1_g0136",
+    "A3-1_g0342",
+    "A3-1_g0164",
+    "A3-1_g0358",
+    "A3-1_g0329",
+    "A3-1_g0431",
+    "A3-1_g0097",
+    "A3-1_g0187",
+    "A3-1_g0157"
+   ]
+  },
+  {
+   "job_id": "A3-1_generate_009",
+   "company": "gemini",
+   "goal_ids": [
+    "A3-1_g0450",
+    "A3-1_g0488",
+    "A3-1_g0013",
+    "A3-1_g0322",
+    "A3-1_g0546",
+    "A3-1_g0370",
+    "A3-1_g0113",
+    "A3-1_g0408",
+    "A3-1_g0162",
+    "A3-1_g0237",
+    "A3-1_g0382",
+    "A3-1_g0536",
+    "A3-1_g0532",
+    "A3-1_g0282",
+    "A3-1_g0432",
+    "A3-1_g0125",
+    "A3-1_g0260",
+    "A3-1_g0305",
+    "A3-1_g0055",
+    "A3-1_g0050",
+    "A3-1_g0144",
+    "A3-1_g0062",
+    "A3-1_g0362",
+    "A3-1_g0165",
+    "A3-1_g0516",
+    "A3-1_g0039",
+    "A3-1_g0147",
+    "A3-1_g0092",
+    "A3-1_g0286",
+    "A3-1_g0214",
+    "A3-1_g0372",
+    "A3-1_g0464",
+    "A3-1_g0538",
+    "A3-1_g0297",
+    "A3-1_g0481",
+    "A3-1_g0161",
+    "A3-1_g0550",
+    "A3-1_g0142",
+    "A3-1_g0436",
+    "A3-1_g0427",
+    "A3-1_g0091",
+    "A3-1_g0132",
+    "A3-1_g0192",
+    "A3-1_g0505",
+    "A3-1_g0288",
+    "A3-1_g0126",
+    "A3-1_g0317",
+    "A3-1_g0014",
+    "A3-1_g0373",
+    "A3-1_g0360"
+   ]
+  },
+  {
+   "job_id": "A3-1_generate_010",
+   "company": "gemini",
+   "goal_ids": [
+    "A3-1_g0296",
+    "A3-1_g0544",
+    "A3-1_g0257",
+    "A3-1_g0416",
+    "A3-1_g0153",
+    "A3-1_g0309",
+    "A3-1_g0201",
+    "A3-1_g0100",
+    "A3-1_g0203",
+    "A3-1_g0016",
+    "A3-1_g0172",
+    "A3-1_g0082",
+    "A3-1_g0502",
+    "A3-1_g0503",
+    "A3-1_g0353",
+    "A3-1_g0069",
+    "A3-1_g0188",
+    "A3-1_g0220",
+    "A3-1_g0044",
+    "A3-1_g0547",
+    "A3-1_g0222",
+    "A3-1_g0527",
+    "A3-1_g0284",
+    "A3-1_g0177",
+    "A3-1_g0186",
+    "A3-1_g0252",
+    "A3-1_g0490",
+    "A3-1_g0264",
+    "A3-1_g0486",
+    "A3-1_g0469",
+    "A3-1_g0389",
+    "A3-1_g0048",
+    "A3-1_g0248",
+    "A3-1_g0313",
+    "A3-1_g0243",
+    "A3-1_g0239",
+    "A3-1_g0537",
+    "A3-1_g0460",
+    "A3-1_g0466",
+    "A3-1_g0468",
+    "A3-1_g0334",
+    "A3-1_g0156",
+    "A3-1_g0251",
+    "A3-1_g0459",
+    "A3-1_g0457",
+    "A3-1_g0369",
+    "A3-1_g0005",
+    "A3-1_g0539",
+    "A3-1_g0259",
+    "A3-1_g0089"
+   ]
+  },
+  {
+   "job_id": "A3-1_generate_011",
+   "company": "gemini",
+   "goal_ids": [
+    "A3-1_g0205",
+    "A3-1_g0088",
+    "A3-1_g0511",
+    "A3-1_g0295",
+    "A3-1_g0367",
+    "A3-1_g0025",
+    "A3-1_g0352",
+    "A3-1_g0068",
+    "A3-1_g0290",
+    "A3-1_g0046",
+    "A3-1_g0314",
+    "A3-1_g0310",
+    "A3-1_g0261",
+    "A3-1_g0059",
+    "A3-1_g0380",
+    "A3-1_g0034",
+    "A3-1_g0467",
+    "A3-1_g0541",
+    "A3-1_g0328",
+    "A3-1_g0173",
+    "A3-1_g0529",
+    "A3-1_g0232",
+    "A3-1_g0019",
+    "A3-1_g0418",
+    "A3-1_g0357",
+    "A3-1_g0198",
+    "A3-1_g0377",
+    "A3-1_g0277",
+    "A3-1_g0303",
+    "A3-1_g0398",
+    "A3-1_g0018",
+    "A3-1_g0168",
+    "A3-1_g0233",
+    "A3-1_g0306",
+    "A3-1_g0458",
+    "A3-1_g0170",
+    "A3-1_g0190",
+    "A3-1_g0183",
+    "A3-1_g0098",
+    "A3-1_g0029",
+    "A3-1_g0202",
+    "A3-1_g0160",
+    "A3-1_g0323",
+    "A3-1_g0454",
+    "A3-1_g0407",
+    "A3-1_g0430",
+    "A3-1_g0275",
+    "A3-1_g0424",
+    "A3-1_g0021",
+    "A3-1_g0520"
+   ]
+  }
+ ],
+ "created_at": "2026-11-26T08:54:56+00:00"
+}
