@@ -1,5 +1,7 @@
 """⑥ 품질 관문 (배치 1천 개마다, 설계 7절) + 사람 검수.
 
+캘린더 지름길은 주문 유형별로 비교한 차이의 가중 평균이다 (일정이 의도를 늘린 쪽이 +).
+
 1단계 (비교가 끝나면): 자동 지표를 계산하고 사람 검수 파일을 만든다 → 상태 reviewing
   - 검수 30개: 두 라벨 일치 50% · 갈림 30% · W 유형 20%
   - review.people(U · Y · S · J)에게 나눠서 review/todo/<배치>_<이름>.csv
@@ -33,11 +35,23 @@ def metrics(batch: str) -> dict:
     n = len(cs)
     none_ratio = _rate(sum(1 for c in cs if not c["final"]), n)
 
+    # 캘린더 지름길: 관련 없는 일정이 붙은 주문이 일정 없는 주문보다 의도를 더 많이 받는지.
+    # 주문 유형(A · B · W …)마다 따로 비교하고 두 묶음 크기로 가중 평균한다.
+    # 유형 구성이 두 묶음에서 달라서 생기는 차이는 지름길이 아니므로 섞지 않는다.
     unrel = [c for c in cs if c["has_calendar"] and not c["has_related"]]
     nocal = [c for c in cs if not c["has_calendar"]]
-    p_unrel = _rate(sum(1 for c in unrel if c["final"]), len(unrel))
-    p_nocal = _rate(sum(1 for c in nocal if c["final"]), len(nocal))
-    shortcut = None if p_unrel is None or p_nocal is None else abs(p_unrel - p_nocal)
+    diff_sum = weight = 0
+    by_type = {}
+    for t in sorted({c["type"] for c in cs}):
+        u = [c for c in unrel if c["type"] == t]
+        o = [c for c in nocal if c["type"] == t]
+        if not u or not o:
+            continue
+        d = _rate(sum(1 for c in u if c["final"]), len(u)) - _rate(sum(1 for c in o if c["final"]), len(o))
+        by_type[t] = {"diff": d, "unrelated": len(u), "no_calendar": len(o)}
+        diff_sum += d * (len(u) + len(o))
+        weight += len(u) + len(o)
+    shortcut = None if weight == 0 else diff_sum / weight
 
     agreement = _rate(sum(1 for c in cs if c["agree"]), n)
     bs = [c for c in cs if c["type"] == "B"]
@@ -72,7 +86,8 @@ def metrics(batch: str) -> dict:
         "items": {
             "none_ratio": {"value": none_ratio, "target": cfg["none_ratio"], "ok": between(none_ratio, cfg["none_ratio"])},
             "calendar_shortcut": {"value": shortcut, "target": [0, cfg["calendar_shortcut_max"]],
-                                  "ok": None if shortcut is None else shortcut <= cfg["calendar_shortcut_max"]},
+                                  "ok": None if shortcut is None else shortcut <= cfg["calendar_shortcut_max"],
+                                  "by_type": by_type},
             "label_agreement": {"value": agreement, "target": cfg["label_agreement"],
                                 "ok": between(agreement, cfg["label_agreement"])},
             "b_recall": {"value": b_recall, "target": [cfg["b_recall_min"], 1], "ok": between(b_recall, [cfg["b_recall_min"], 1])},
