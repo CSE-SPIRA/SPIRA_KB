@@ -24,6 +24,12 @@ from spira.steps import assemble_orders, compare_labels, merge_item_pool, qualit
 DONE_ENOUGH = {"reviewing", "passed", "loaded"}
 
 
+def _gate_log(b: str) -> str:
+    if quality_gate.review_on():
+        return "자동 지표 · 검수 파일 만듦"
+    return f"자동 지표로 판정 → {B.state(b)}"
+
+
 def tick(today: date | None = None) -> dict:
     today = today or date.today()
     changed: list = []
@@ -58,10 +64,10 @@ def tick(today: date | None = None) -> dict:
                 continue
             changed += compare_labels.compare(b)
             changed += quality_gate.step1(b)
-            log.append(f"{b}: 두 라벨 비교 · 자동 지표 · 검수 파일 만듦")
+            log.append(f"{b}: 두 라벨 비교 · " + _gate_log(b))
         elif st == "compared":
             changed += quality_gate.step1(b)
-            log.append(f"{b}: 자동 지표 · 검수 파일 만듦")
+            log.append(f"{b}: " + _gate_log(b))
         elif st == "reviewing" and quality_gate.review_done(b):
             changed += quality_gate.step2(b)
             log.append(f"{b}: 품질 관문 판정 → {B.state(b)}")
