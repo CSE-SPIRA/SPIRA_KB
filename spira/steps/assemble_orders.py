@@ -27,6 +27,8 @@
 
 from __future__ import annotations
 
+from collections import Counter
+
 import json
 
 from spira import batches as B
@@ -51,12 +53,18 @@ def ready(batch: str) -> bool:
 def _bundles(batch: str) -> dict[str, list[str]]:
     plan = B.read(batch, "plan.json")
     cycle, _, _ = B.parse(batch)
-    out = {}
+    raw = {}
     for j in plan["generate_jobs"]:
         for b in B.job_result(cycle, j["job_id"])["bundles"]:
-            items = list(dict.fromkeys(" ".join(x.split()) for x in b["items"] if x.strip()))
-            out[b["goal_id"]] = items
-    return out
+            raw[b["goal_id"]] = [" ".join(x.split()) for x in b["items"] if x.strip()]
+    # 띄어쓰기만 다른 이름(생일 초 / 생일초)은 배치 안에서 가장 많이 쓴 표기 하나로 맞춘다
+    seen = Counter(x for items in raw.values() for x in items)
+    best = {}
+    for name, n in seen.items():
+        key = name.replace(" ", "")
+        if key not in best or (n, name.count(" ")) > (seen[best[key]], best[key].count(" ")):
+            best[key] = name
+    return {g: list(dict.fromkeys(best[x.replace(" ", "")] for x in items)) for g, items in raw.items()}
 
 
 def _tag_count_dists(cfg, r: float) -> tuple[dict, dict]:
