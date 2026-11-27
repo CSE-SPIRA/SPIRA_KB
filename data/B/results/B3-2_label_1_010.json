@@ -1,0 +1,875 @@
+{
+ "job_id": "B3-2_label_1_010",
+ "labels": [
+  {
+   "case_ref": "0116f849",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "3104bf54",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "abf019df",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "de39f4d7",
+   "intents": [
+    {
+     "intent_id": "christmas_party",
+     "intent_text": "크리스마스 리스와 리스 걸이로 집을 꾸미고, 케이크와 케이크 초를 준비해 크리스마스 분위기의 파티를 연다",
+     "bundle_items": [
+      "크리스마스 리스",
+      "리스 걸이",
+      "케이크",
+      "케이크 초",
+      "접시"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "집을 장식하고 케이크를 먹는다",
+    "theme": "크리스마스"
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b2f23cbf",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "af689be7",
+   "intents": [
+    {
+     "intent_id": "closet_change",
+     "intent_text": "옷장 정리함, 옷걸이, 압축팩, 방충제로 옷장 속 옷을 정리하고 계절에 맞춰 교체한다",
+     "bundle_items": [
+      "옷장 정리함",
+      "옷걸이",
+      "압축팩",
+      "방충제"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "옷장 정리와 옷 보관",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "d653a21b",
+   "intents": [
+    {
+     "intent_id": "camping_trip",
+     "intent_text": "도착 8일 뒤 토요일 캠핑 일정에 맞춰, 코펠과 버너, 부탄가스, 라면 등 캠핑 장비와 음식을 챙긴다",
+     "bundle_items": [
+      "캠핑 코펠",
+      "캠핑 버너",
+      "부탄가스",
+      "라면",
+      "돗자리"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "캠핑",
+    "guests": null,
+    "activity": "캠핑에서 조리해 먹는다",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "3a467772",
+   "intents": [
+    {
+     "intent_id": "rainy_season",
+     "intent_text": "곰팡이 제거제와 제습제, 제습제 리필로 집의 습기와 곰팡이에 대비한다",
+     "bundle_items": [
+      "곰팡이 제거제",
+      "제습제",
+      "제습제 리필"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "곰팡이 제거와 제습",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "63905c47",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "3cf46cc5",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "62a6e311",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "277257ab",
+   "intents": [
+    {
+     "intent_id": "adult_birthday",
+     "intent_text": "도착 2일 뒤 토요일 생일 일정에 맞춰, 부부가 케이크와 생일 초, 꽃다발, 와인으로 집에서 생일을 축하한다",
+     "bundle_items": [
+      "케이크",
+      "생일 초",
+      "꽃다발",
+      "와인"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "케이크와 와인으로 생일을 축하한다",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b28cd90d",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "3394585c",
+   "intents": [
+    {
+     "intent_id": "kid_birthday_party",
+     "intent_text": "생일 가랜드로 집을 꾸미고, 장난감 블록을 포장지와 리본으로 포장해 자녀의 생일을 축하한다",
+     "bundle_items": [
+      "생일 가랜드",
+      "장난감 블록",
+      "포장지",
+      "리본"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "장난감 선물을 포장하고 집을 장식한다",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "bb25b033",
+   "intents": [
+    {
+     "intent_id": "camping_trip",
+     "intent_text": "도착 2일 뒤 토요일 캠핑 일정에 맞춰, 부부가 텐트와 버너, 부탄가스, 캠핑 의자, 라면 등 캠핑 장비와 음식을 챙긴다",
+     "bundle_items": [
+      "텐트",
+      "버너",
+      "부탄가스",
+      "캠핑 의자",
+      "라면"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "캠핑",
+    "guests": null,
+    "activity": "캠핑에서 조리해 먹는다",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "0f18f2f2",
+   "intents": [
+    {
+     "intent_id": "trip_away",
+     "intent_text": "도착 2일 뒤 토요일 여행 일정에 맞춰, 부부가 여행용 파우치와 캐리어 벨트, 휴대용 칫솔, 목베개 등 여행용품을 챙긴다",
+     "bundle_items": [
+      "여행용 파우치",
+      "캐리어 벨트",
+      "휴대용 칫솔",
+      "목베개"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "여행",
+    "guests": null,
+    "activity": "여행 짐을 꾸린다",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a6527041",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "d6b62c06",
+   "intents": [
+    {
+     "intent_id": "camping_trip",
+     "intent_text": "침낭과 캠핑 매트, 에어펌프, 베개로 캠핑 잠자리 장비를 갖춘다",
+     "bundle_items": [
+      "침낭",
+      "캠핑 매트",
+      "에어펌프",
+      "베개"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "캠핑",
+    "guests": null,
+    "activity": "캠핑에서 잠자리를 마련한다",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "269af42b",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "8bf1c676",
+   "intents": [
+    {
+     "intent_id": "camping_trip",
+     "intent_text": "텐트와 텐트 팩, 망치, 캠핑 랜턴, 건전지, 돗자리로 캠핑 장비를 챙기고 김밥김 등 먹거리를 준비한다",
+     "bundle_items": [
+      "텐트",
+      "텐트 팩",
+      "망치",
+      "캠핑 랜턴",
+      "건전지",
+      "돗자리",
+      "김밥김"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "캠핑",
+    "guests": null,
+    "activity": "텐트를 치고 캠핑한다",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "ca7b77bb",
+   "intents": [
+    {
+     "intent_id": "rainy_season",
+     "intent_text": "곰팡이 제거제와 제습제, 제습제 보관함, 청소솔로 집의 습기와 곰팡이에 대비한다",
+     "bundle_items": [
+      "곰팡이 제거제",
+      "제습제",
+      "제습제 보관함",
+      "청소솔"
+     ]
+    },
+    {
+     "intent_id": "family_gathering",
+     "intent_text": "도착 1일 뒤 목요일 가족 모임에 맞춰, 당면·시금치·표고버섯으로 잡채 등 손님상을 차리고 한과 세트를 보자기에 싸 선물한다",
+     "bundle_items": [
+      "당면",
+      "시금치",
+      "표고버섯",
+      "한과 세트",
+      "선물 보자기"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "가족 모임",
+    "guests": "가족",
+    "activity": "집에서 식사를 대접하고 선물을 드린다",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "ad6c8b08",
+   "intents": [
+    {
+     "intent_id": "holiday_feast",
+     "intent_text": "도착 6일 뒤 화요일 추석을 앞두고, 동태포·부침가루·달걀·식용유로 전을 부칠 재료를 준비한다",
+     "bundle_items": [
+      "동태포",
+      "부침가루",
+      "달걀",
+      "식용유"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "추석",
+    "guests": null,
+    "activity": "전을 부친다",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "0eefa870",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "eb0b4353",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "a975c155",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "c87f7ff1",
+   "intents": [
+    {
+     "intent_id": "rainy_season",
+     "intent_text": "곰팡이 제거제와 제습기 필터, 청소솔로 집의 습기와 곰팡이에 대비한다",
+     "bundle_items": [
+      "곰팡이 제거제",
+      "제습기 필터",
+      "청소솔"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "곰팡이 제거와 제습",
+    "theme": null
+   },
+   "alternatives": [
+    "summer_heat"
+   ]
+  },
+  {
+   "case_ref": "b5135b3a",
+   "intents": [
+    {
+     "intent_id": "adult_birthday",
+     "intent_text": "레터링 케이크와 생일초, 케이크 접시, 성냥으로 어른 생일을 축하한다",
+     "bundle_items": [
+      "레터링 케이크",
+      "생일초",
+      "케이크 접시",
+      "성냥"
+     ]
+    },
+    {
+     "intent_id": "guest_overnight",
+     "intent_text": "도착 10일 뒤 토요일 손님 방문에 맞춰, 요와 요 커버, 목욕 수건, 샴푸로 손님이 묵을 잠자리와 세면용품을 마련한다",
+     "bundle_items": [
+      "요",
+      "요 커버",
+      "목욕 수건",
+      "샴푸"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "손님 방문",
+    "guests": "손님",
+    "activity": "생일 케이크로 축하하고 손님을 재운다",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "921d42da",
+   "intents": [
+    {
+     "intent_id": "adult_birthday",
+     "intent_text": "도착 3일 뒤 화요일 생일 일정에 맞춰, 생일 케이크와 생일초, 꽃다발을 꽃병에 꽂아 집에서 생일을 축하한다",
+     "bundle_items": [
+      "생일 케이크",
+      "생일초",
+      "꽃다발",
+      "화병"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "케이크와 꽃으로 생일을 축하한다",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b970b9f7",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "8256d1cf",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "24429e40",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "806c548f",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "59315cbc",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "kimjang"
+   ]
+  },
+  {
+   "case_ref": "1896625f",
+   "intents": [
+    {
+     "intent_id": "adult_birthday",
+     "intent_text": "케이크와 숫자초, 성냥, 꽃다발을 꽃병에 꽂아 부부가 집에서 어른 생일을 축하한다",
+     "bundle_items": [
+      "케이크",
+      "숫자초",
+      "성냥",
+      "꽃다발",
+      "꽃병"
+     ]
+    },
+    {
+     "intent_id": "home_baking",
+     "intent_text": "이스트와 식빵틀로 집에서 식빵을 직접 굽는다",
+     "bundle_items": [
+      "이스트",
+      "식빵틀"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "케이크로 축하하고 식빵을 굽는다",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "8e06ca6b",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e629eede",
+   "intents": [
+    {
+     "intent_id": "winter_dry_cold",
+     "intent_text": "문풍지와 가습기, 정제수로 겨울철 찬바람과 건조함에 대비한다",
+     "bundle_items": [
+      "문풍지",
+      "가습기",
+      "정제수"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "겨울 추위와 건조 대비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "23e1e701",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "7fb178c0",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "54531795",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "kid_birthday_party"
+   ]
+  },
+  {
+   "case_ref": "4ba76a48",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "holiday_feast"
+   ]
+  },
+  {
+   "case_ref": "45b916b0",
+   "intents": [
+    {
+     "intent_id": "winter_dry_cold",
+     "intent_text": "문풍지와 전기요, 요 커버로 겨울철 방의 찬바람과 추위에 대비한다",
+     "bundle_items": [
+      "문풍지",
+      "전기요",
+      "요 커버"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "겨울 추위 대비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b6368bd7",
+   "intents": [
+    {
+     "intent_id": "trip_away",
+     "intent_text": "도착 10일 뒤 월요일 여행 일정에 맞춰, 압축 펌프와 여행용 압축팩으로 여행 짐을 꾸린다",
+     "bundle_items": [
+      "압축 펌프",
+      "여행용 압축팩"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "여행",
+    "guests": null,
+    "activity": "여행 짐을 압축해 꾸린다",
+    "theme": null
+   },
+   "alternatives": [
+    "closet_change"
+   ]
+  },
+  {
+   "case_ref": "41e107e9",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "camping_trip",
+    "trip_away"
+   ]
+  },
+  {
+   "case_ref": "af419089",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "de971c96",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "559c1f37",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "39f433e4",
+   "intents": [
+    {
+     "intent_id": "anniversary_dinner",
+     "intent_text": "도착 5일 뒤 화요일 기념일에 맞춰, 부부가 꽃다발과 꽃바구니를 꽃병에 꽂고 와인잔에 와인을 마시며 집에서 기념일을 보낸다",
+     "bundle_items": [
+      "꽃다발",
+      "꽃바구니",
+      "와인",
+      "꽃병",
+      "와인잔"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "기념일",
+    "guests": null,
+    "activity": "집에서 와인과 꽃으로 기념한다",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "085c53a6",
+   "intents": [
+    {
+     "intent_id": "summer_heat",
+     "intent_text": "선풍기와 쿨매트로 여름 더위에 대비한다",
+     "bundle_items": [
+      "선풍기",
+      "쿨매트"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "여름 더위 대비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "878ab411",
+   "intents": [
+    {
+     "intent_id": "new_dog",
+     "intent_text": "강아지 사료와 배변패드, 배변판, 사료 그릇, 물그릇을 갖춰 강아지를 맞이한다",
+     "bundle_items": [
+      "강아지 사료",
+      "배변패드",
+      "배변판",
+      "사료 그릇",
+      "물그릇"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "강아지를 맞이한다",
+    "theme": null
+   },
+   "alternatives": [
+    "new_cat"
+   ]
+  },
+  {
+   "case_ref": "130c6490",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "39984bec",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b47427f6",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "87770c95",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  }
+ ]
+}
