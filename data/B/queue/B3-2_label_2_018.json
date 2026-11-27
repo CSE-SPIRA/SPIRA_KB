@@ -1,0 +1,1308 @@
+{
+ "job_id": "B3-2_label_2_018",
+ "batch": "B3-2",
+ "role": "label_2",
+ "company": "gemini",
+ "prompt_version": "label@v2",
+ "intents": [
+  {
+   "id": "kid_birthday_party",
+   "name": "아이 생일 파티",
+   "definition": "아이 생일을 집에서 축하. 아이용 파티 장식·소품(풍선·생일 현수막·고깔모자·답례품) + 집에서 만드는 생일 케이크 재료(케이크 시트·생크림·딸기) 또는 아이 장난감 선물"
+  },
+  {
+   "id": "adult_birthday",
+   "name": "어른 생일 축하",
+   "definition": "어른 생일. 케이크·초·꽃. 아이용 파티 소품 없음"
+  },
+  {
+   "id": "home_party",
+   "name": "지인 초대 홈파티 (집들이 포함)",
+   "definition": "친구·동료를 불러 대접. 술·안주·핑거푸드 + 일회용 접시·컵. 생일 소품·응원 용품 없음"
+  },
+  {
+   "id": "family_gathering",
+   "name": "가족 모임·식사 대접",
+   "definition": "부모님·친척과 집에서 식사. 갈비찜·잡채 같은 손님상 재료 + 과일 바구니·선물세트. 제수용품·명절 음식 재료 없음"
+  },
+  {
+   "id": "guest_overnight",
+   "name": "손님 숙박",
+   "definition": "손님이 하룻밤 이상 묵음. 여분 침구·수건·세면도구"
+  },
+  {
+   "id": "kids_playdate",
+   "name": "아이 친구 놀러 옴",
+   "definition": "생일이 아닌 아이 친구 방문. 과자·주스 여러 개 + 보드게임·클레이 같은 놀이 용품. 케이크·학습지 없음"
+  },
+  {
+   "id": "watch_party",
+   "name": "경기·영화 함께 보기",
+   "definition": "여럿이 화면 앞에 모임. 응원 용품·야식·맥주"
+  },
+  {
+   "id": "holiday_feast",
+   "name": "명절 상차림",
+   "definition": "설·추석 음식. 전 재료·제수용품"
+  },
+  {
+   "id": "christmas_party",
+   "name": "크리스마스·연말 파티",
+   "definition": "트리·장식 + 파티 음식"
+  },
+  {
+   "id": "anniversary_dinner",
+   "name": "기념일 홈 디너",
+   "definition": "결혼·연애 기념일에 둘이 집에서 저녁. 스테이크·와인·꽃·초"
+  },
+  {
+   "id": "kimjang",
+   "name": "김장",
+   "definition": "절임배추·고춧가루·김장 매트·대용량 통"
+  },
+  {
+   "id": "trip_away",
+   "name": "여행으로 집 비움",
+   "definition": "여행용품·짐 꾸리기. 캠핑 장비 없음"
+  },
+  {
+   "id": "camping_trip",
+   "name": "캠핑 준비",
+   "definition": "캠핑 장비·연료·캠핑 음식"
+  },
+  {
+   "id": "picnic_lunchbox",
+   "name": "나들이 도시락",
+   "definition": "당일 나들이. 도시락 재료·돗자리"
+  },
+  {
+   "id": "moving_in",
+   "name": "이사·새집 입주 (첫 자취 포함)",
+   "definition": "새 공간 세팅. 수납·기본 살림살이 + 청소"
+  },
+  {
+   "id": "new_dog",
+   "name": "강아지 맞이",
+   "definition": "강아지 사료·배변패드·켄넬"
+  },
+  {
+   "id": "new_cat",
+   "name": "고양이 맞이",
+   "definition": "고양이 모래·화장실·스크래처"
+  },
+  {
+   "id": "school_start",
+   "name": "입학·새 학기 (초중고·대학)",
+   "definition": "가방·필기구·실내화"
+  },
+  {
+   "id": "kids_vacation",
+   "name": "아이 방학 시작",
+   "definition": "방학 동안 집에 있는 아이 준비. 방학 학습지·아이 간식 대량·물놀이용품·만들기 키트 중 2개 이상"
+  },
+  {
+   "id": "exam_focus",
+   "name": "시험·수험 기간",
+   "definition": "집중 환경. 독서대·스탠드·간편식"
+  },
+  {
+   "id": "wfh_start",
+   "name": "재택근무 시작",
+   "definition": "홈오피스 세팅. 모니터암·의자 쿠션·책상 조명"
+  },
+  {
+   "id": "rainy_season",
+   "name": "장마·습기 대비",
+   "definition": "제습제·제습기 필터·곰팡이 제거제 중 2개 이상"
+  },
+  {
+   "id": "summer_heat",
+   "name": "여름 더위 대비",
+   "definition": "선풍기·쿨매트·에어컨 필터 중 2개 이상"
+  },
+  {
+   "id": "winter_dry_cold",
+   "name": "겨울 추위·건조 대비",
+   "definition": "가습기·전기요·문풍지 중 2개 이상"
+  },
+  {
+   "id": "fine_dust",
+   "name": "미세먼지 대비",
+   "definition": "공기청정기 필터·대용량 마스크 등 2개 이상"
+  },
+  {
+   "id": "deep_cleaning",
+   "name": "대청소",
+   "definition": "청소 도구·세제 여러 종류를 한꺼번에"
+  },
+  {
+   "id": "closet_change",
+   "name": "옷·이불 교체",
+   "definition": "압축팩·이불 커버·옷걸이 중 2개 이상"
+  },
+  {
+   "id": "home_baking",
+   "name": "홈베이킹",
+   "definition": "밀가루·버터·베이킹 도구. 초·파티 소품 없음"
+  },
+  {
+   "id": "home_workout_start",
+   "name": "홈트레이닝 시작",
+   "definition": "요가매트·덤벨·폼롤러"
+  },
+  {
+   "id": "meal_prep",
+   "name": "밀프렙",
+   "definition": "도시락 용기 여러 개 + 닭가슴살·채소 대량"
+  }
+ ],
+ "cases": [
+  {
+   "case_ref": "039497f2",
+   "items": [
+    "욕실 선반",
+    "카나페",
+    "냅킨",
+    "종이 접시",
+    "빨래비누",
+    "슬리퍼",
+    "크래커"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려묘"
+   ],
+   "arrival_weekday": "화",
+   "calendar": []
+  },
+  {
+   "case_ref": "2d26fd2f",
+   "items": [
+    "낚싯대 장난감",
+    "강아지 져키",
+    "스텝퍼",
+    "양말 선물세트"
+   ],
+   "household_types": [
+    "5인 이상",
+    "부부·커플",
+    "고등학생 자녀",
+    "부모 + 성인 자녀",
+    "직장인"
+   ],
+   "arrival_weekday": "월",
+   "calendar": []
+  },
+  {
+   "case_ref": "2b636c2e",
+   "items": [
+    "팝콘",
+    "맥주",
+    "팝콘 통",
+    "족발",
+    "오프너"
+   ],
+   "household_types": [
+    "3~4인",
+    "부모 + 성인 자녀",
+    "직장인"
+   ],
+   "arrival_weekday": "화",
+   "calendar": [
+    {
+     "tag": "경기 관람",
+     "days_from_arrival": 12,
+     "weekday": "일"
+    }
+   ]
+  },
+  {
+   "case_ref": "3e857614",
+   "items": [
+    "오징어튀김",
+    "운동 매트",
+    "운동 장갑",
+    "포크",
+    "운동복",
+    "아령",
+    "초콜릿 케이크",
+    "케이크 칼",
+    "꽃병",
+    "장미 꽃다발"
+   ],
+   "household_types": null,
+   "arrival_weekday": "화",
+   "calendar": [
+    {
+     "tag": "반려동물 입양",
+     "days_from_arrival": 10,
+     "weekday": "금"
+    }
+   ]
+  },
+  {
+   "case_ref": "e9de5710",
+   "items": [
+    "치킨",
+    "치킨 소스",
+    "우럭",
+    "굴소스",
+    "코너 선반",
+    "파일 정리함",
+    "흰다리새우"
+   ],
+   "household_types": [
+    "3~4인",
+    "3대 함께",
+    "대학생"
+   ],
+   "arrival_weekday": "화",
+   "calendar": []
+  },
+  {
+   "case_ref": "2e9a5511",
+   "items": [
+    "압축 펌프",
+    "실내화 주머니",
+    "이불 커버",
+    "이불 압축팩",
+    "색연필",
+    "스케치북",
+    "이불",
+    "안경 거치대",
+    "실내화"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인",
+    "맞벌이"
+   ],
+   "arrival_weekday": "토",
+   "calendar": []
+  },
+  {
+   "case_ref": "1bd270b7",
+   "items": [
+    "공기청정기 필터",
+    "방진 마스크",
+    "공기청정기",
+    "마스크 보관함",
+    "딱풀"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년",
+    "그 밖의 반려동물"
+   ],
+   "arrival_weekday": "월",
+   "calendar": []
+  },
+  {
+   "case_ref": "e67c15d4",
+   "items": [
+    "캠핑 버너",
+    "청소포",
+    "플라스틱 서랍장",
+    "군고구마",
+    "양파",
+    "라면"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려묘"
+   ],
+   "arrival_weekday": "금",
+   "calendar": [
+    {
+     "tag": "캠핑",
+     "days_from_arrival": 13,
+     "weekday": "목"
+    },
+    {
+     "tag": "출장",
+     "days_from_arrival": 7,
+     "weekday": "금"
+    }
+   ]
+  },
+  {
+   "case_ref": "8f70c31d",
+   "items": [
+    "펀치",
+    "콘돔",
+    "목욕가운",
+    "전자레인지 용기",
+    "복사지"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ],
+   "arrival_weekday": "목",
+   "calendar": [
+    {
+     "tag": "기념일",
+     "days_from_arrival": 13,
+     "weekday": "수"
+    }
+   ]
+  },
+  {
+   "case_ref": "a673705f",
+   "items": [
+    "세탁망",
+    "뚝배기받침",
+    "손톱깎이",
+    "스퀴지",
+    "탈취제",
+    "욕실 매트",
+    "카펫 세정제"
+   ],
+   "household_types": [
+    "2인",
+    "직장인"
+   ],
+   "arrival_weekday": "목",
+   "calendar": []
+  },
+  {
+   "case_ref": "524dfe92",
+   "items": [
+    "소혀",
+    "아와모리",
+    "네일 리무버",
+    "허브차",
+    "미니 핫바"
+   ],
+   "household_types": [
+    "2인",
+    "직장인"
+   ],
+   "arrival_weekday": "화",
+   "calendar": [
+    {
+     "tag": "회의",
+     "days_from_arrival": 0,
+     "weekday": "화"
+    },
+    {
+     "tag": "기념일",
+     "days_from_arrival": 10,
+     "weekday": "금"
+    },
+    {
+     "tag": "공연·영화",
+     "days_from_arrival": 5,
+     "weekday": "일"
+    }
+   ]
+  },
+  {
+   "case_ref": "f1162c8b",
+   "items": [
+    "제습제 리필",
+    "고무장갑",
+    "꼬치",
+    "곰팡이 제거제",
+    "칠리소스",
+    "포크",
+    "제습제",
+    "새우",
+    "일회용 접시",
+    "청소솔"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ],
+   "arrival_weekday": "화",
+   "calendar": [
+    {
+     "tag": "학원·수업",
+     "days_from_arrival": 13,
+     "weekday": "월"
+    }
+   ]
+  },
+  {
+   "case_ref": "5382c6ff",
+   "items": [
+    "수세미",
+    "고무장갑",
+    "베갯잇",
+    "손님 베개",
+    "유아 치실",
+    "손님 칫솔",
+    "욕실 세제",
+    "먼지받이",
+    "치약",
+    "틈새 솔"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ],
+   "arrival_weekday": "수",
+   "calendar": []
+  },
+  {
+   "case_ref": "f83cee31",
+   "items": [
+    "아이섀도우",
+    "벽 스티커",
+    "배낭",
+    "낮잠이불",
+    "김장 생새우",
+    "등산 배낭"
+   ],
+   "household_types": null,
+   "arrival_weekday": "수",
+   "calendar": []
+  },
+  {
+   "case_ref": "2dfb44c4",
+   "items": [
+    "과도",
+    "소갈비",
+    "갈비 양념",
+    "과일 바구니",
+    "소고기 안심",
+    "나무젓가락"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ],
+   "arrival_weekday": "목",
+   "calendar": [
+    {
+     "tag": "회의",
+     "days_from_arrival": 4,
+     "weekday": "월"
+    }
+   ]
+  },
+  {
+   "case_ref": "cb4437e0",
+   "items": [
+    "주방가위",
+    "주걱",
+    "잉크"
+   ],
+   "household_types": null,
+   "arrival_weekday": "목",
+   "calendar": []
+  },
+  {
+   "case_ref": "1f4122cc",
+   "items": [
+    "연어",
+    "리모컨",
+    "면도기",
+    "탁상거울",
+    "멜론",
+    "복사지",
+    "오리고기",
+    "청소기 먼지봉투",
+    "샤워 선반"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년",
+    "반려견"
+   ],
+   "arrival_weekday": "일",
+   "calendar": []
+  },
+  {
+   "case_ref": "e1441cbb",
+   "items": [
+    "주먹밥 틀",
+    "밥",
+    "김가루",
+    "도시락통",
+    "화분"
+   ],
+   "household_types": [
+    "3~4인",
+    "영유아 자녀",
+    "초등 자녀",
+    "직장인"
+   ],
+   "arrival_weekday": "토",
+   "calendar": [
+    {
+     "tag": "나들이·소풍",
+     "days_from_arrival": 2,
+     "weekday": "월"
+    }
+   ]
+  },
+  {
+   "case_ref": "5e809ecb",
+   "items": [
+    "소주",
+    "울세제",
+    "참깨",
+    "탄산수",
+    "튀김가루",
+    "곡물차",
+    "먼지떨이"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "중학생 자녀",
+    "직장인",
+    "맞벌이"
+   ],
+   "arrival_weekday": "수",
+   "calendar": [
+    {
+     "tag": "경기 관람",
+     "days_from_arrival": 11,
+     "weekday": "일"
+    }
+   ]
+  },
+  {
+   "case_ref": "efc045b3",
+   "items": [
+    "토마토소스",
+    "정장",
+    "데오도란트",
+    "신발 탈취제",
+    "물엿"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ],
+   "arrival_weekday": "금",
+   "calendar": []
+  },
+  {
+   "case_ref": "8822a7c4",
+   "items": [
+    "연필깎이",
+    "삼각김밥",
+    "김",
+    "북스탠드"
+   ],
+   "household_types": [
+    "3~4인",
+    "부모 + 성인 자녀",
+    "직장인",
+    "반려견"
+   ],
+   "arrival_weekday": "목",
+   "calendar": [
+    {
+     "tag": "시험",
+     "days_from_arrival": 13,
+     "weekday": "수"
+    }
+   ]
+  },
+  {
+   "case_ref": "be029dd4",
+   "items": [
+    "독서대",
+    "샤워 선반",
+    "책상 스탠드",
+    "오일병",
+    "채칼",
+    "굴소스"
+   ],
+   "household_types": null,
+   "arrival_weekday": "목",
+   "calendar": [
+    {
+     "tag": "입학·개학",
+     "days_from_arrival": 8,
+     "weekday": "금"
+    },
+    {
+     "tag": "약속·외식",
+     "days_from_arrival": 11,
+     "weekday": "월"
+    }
+   ]
+  },
+  {
+   "case_ref": "cc539e31",
+   "items": [
+    "오미자주",
+    "곰탕",
+    "젓가락",
+    "아이스티",
+    "제육볶음",
+    "프라이팬 정리대",
+    "일회용 컵",
+    "귀리"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "고등학생 자녀",
+    "3대 함께",
+    "직장인"
+   ],
+   "arrival_weekday": "목",
+   "calendar": [
+    {
+     "tag": "공연·영화",
+     "days_from_arrival": 13,
+     "weekday": "수"
+    }
+   ]
+  },
+  {
+   "case_ref": "0860dbe7",
+   "items": [
+    "아이스팩",
+    "식기세척기 세제",
+    "세탁기 선반",
+    "약주",
+    "아기 주스",
+    "도시락 가방",
+    "스테이크 소스",
+    "닭가슴살"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ],
+   "arrival_weekday": "토",
+   "calendar": [
+    {
+     "tag": "학원·수업",
+     "days_from_arrival": -1,
+     "weekday": "금"
+    },
+    {
+     "tag": "회의",
+     "days_from_arrival": 0,
+     "weekday": "토"
+    },
+    {
+     "tag": "손님 방문",
+     "days_from_arrival": 0,
+     "weekday": "토"
+    }
+   ]
+  },
+  {
+   "case_ref": "6ee876b6",
+   "items": [
+    "점퍼",
+    "운동화",
+    "옥수수",
+    "거품기",
+    "대추차",
+    "늙은호박",
+    "소고기 우둔"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인"
+   ],
+   "arrival_weekday": "수",
+   "calendar": []
+  },
+  {
+   "case_ref": "50bedba9",
+   "items": [
+    "장판 클리너",
+    "차렵이불",
+    "조리용 솔",
+    "냉동짜장면",
+    "조리용 젓가락"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ],
+   "arrival_weekday": "목",
+   "calendar": [
+    {
+     "tag": "입학·개학",
+     "days_from_arrival": 8,
+     "weekday": "금"
+    },
+    {
+     "tag": "약속·외식",
+     "days_from_arrival": -1,
+     "weekday": "수"
+    },
+    {
+     "tag": "운동",
+     "days_from_arrival": 7,
+     "weekday": "목"
+    }
+   ]
+  },
+  {
+   "case_ref": "d152ac75",
+   "items": [
+    "캡슐커피",
+    "양갈비",
+    "국간장",
+    "블록",
+    "아기 목욕 용품",
+    "토끼 건초"
+   ],
+   "household_types": [
+    "1인",
+    "직장인"
+   ],
+   "arrival_weekday": "화",
+   "calendar": []
+  },
+  {
+   "case_ref": "3b9dcf17",
+   "items": [
+    "매트리스 커버",
+    "문배주",
+    "수분크림",
+    "티스푼",
+    "김말이튀김"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ],
+   "arrival_weekday": "토",
+   "calendar": [
+    {
+     "tag": "입학·개학",
+     "days_from_arrival": 13,
+     "weekday": "금"
+    },
+    {
+     "tag": "약속·외식",
+     "days_from_arrival": 10,
+     "weekday": "화"
+    },
+    {
+     "tag": "공연·영화",
+     "days_from_arrival": 9,
+     "weekday": "월"
+    }
+   ]
+  },
+  {
+   "case_ref": "3263f303",
+   "items": [
+    "꿀떡",
+    "의자 쿠션",
+    "춘권",
+    "운동화세제",
+    "모니터암",
+    "쿠션 커버"
+   ],
+   "household_types": [
+    "2인",
+    "초등 자녀",
+    "직장인",
+    "반려견"
+   ],
+   "arrival_weekday": "목",
+   "calendar": []
+  },
+  {
+   "case_ref": "0a98ef41",
+   "items": [
+    "가위",
+    "복사용지",
+    "가습기",
+    "당근",
+    "문풍지",
+    "가습기 세정제"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인",
+    "맞벌이"
+   ],
+   "arrival_weekday": "금",
+   "calendar": [
+    {
+     "tag": "회의",
+     "days_from_arrival": 2,
+     "weekday": "일"
+    }
+   ]
+  },
+  {
+   "case_ref": "06601a5d",
+   "items": [
+    "소갈비",
+    "보자기",
+    "과일 바구니",
+    "수저받침",
+    "갈비 양념",
+    "파파야",
+    "배"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ],
+   "arrival_weekday": "월",
+   "calendar": [
+    {
+     "tag": "어버이날",
+     "days_from_arrival": -1,
+     "weekday": "일"
+    }
+   ]
+  },
+  {
+   "case_ref": "30b50aed",
+   "items": [
+    "차돌박이",
+    "수분크림",
+    "주방장갑",
+    "멀티탭",
+    "야채탈수기",
+    "가습기",
+    "달걀 틀"
+   ],
+   "household_types": null,
+   "arrival_weekday": "금",
+   "calendar": []
+  },
+  {
+   "case_ref": "8a273ef4",
+   "items": [
+    "인덱스",
+    "사인펜",
+    "문걸이 훅",
+    "당근"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "부모 + 성인 자녀",
+    "직장인",
+    "맞벌이"
+   ],
+   "arrival_weekday": "일",
+   "calendar": []
+  },
+  {
+   "case_ref": "7c571671",
+   "items": [
+    "셀러리",
+    "소고기 안심",
+    "양념통",
+    "라면",
+    "냉동파스타"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려견"
+   ],
+   "arrival_weekday": "수",
+   "calendar": []
+  },
+  {
+   "case_ref": "71b3e74e",
+   "items": [
+    "이온음료",
+    "걸레",
+    "수납 바구니",
+    "이불커버",
+    "락토프리우유",
+    "바닥 세제",
+    "수납장"
+   ],
+   "household_types": [
+    "2인",
+    "직장인"
+   ],
+   "arrival_weekday": "수",
+   "calendar": [
+    {
+     "tag": "공연·영화",
+     "days_from_arrival": 14,
+     "weekday": "수"
+    },
+    {
+     "tag": "캠핑",
+     "days_from_arrival": 13,
+     "weekday": "화"
+    }
+   ]
+  },
+  {
+   "case_ref": "28191798",
+   "items": [
+    "마른안주",
+    "잡곡",
+    "전기밥솥",
+    "맥주",
+    "냅킨",
+    "일회용 컵"
+   ],
+   "household_types": [
+    "1인",
+    "직장인",
+    "반려견"
+   ],
+   "arrival_weekday": "월",
+   "calendar": [
+    {
+     "tag": "운동",
+     "days_from_arrival": 10,
+     "weekday": "목"
+    },
+    {
+     "tag": "경기 관람",
+     "days_from_arrival": 13,
+     "weekday": "일"
+    },
+    {
+     "tag": "회의",
+     "days_from_arrival": 10,
+     "weekday": "목"
+    }
+   ]
+  },
+  {
+   "case_ref": "cf642a50",
+   "items": [
+    "세면대야",
+    "오미자원액",
+    "유아 내의",
+    "펀치",
+    "돈가스",
+    "샴푸캡"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년",
+    "반려견",
+    "그 밖의 반려동물"
+   ],
+   "arrival_weekday": "목",
+   "calendar": [
+    {
+     "tag": "대청소",
+     "days_from_arrival": 1,
+     "weekday": "금"
+    }
+   ]
+  },
+  {
+   "case_ref": "1f0f53de",
+   "items": [
+    "스프",
+    "티스푼",
+    "샌드위치",
+    "니트",
+    "물걸레청소포"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "영유아 자녀",
+    "직장인",
+    "맞벌이",
+    "반려묘"
+   ],
+   "arrival_weekday": "월",
+   "calendar": [
+    {
+     "tag": "약속·외식",
+     "days_from_arrival": 6,
+     "weekday": "일"
+    }
+   ]
+  },
+  {
+   "case_ref": "057e9f94",
+   "items": [
+    "브로콜리",
+    "클립",
+    "우유",
+    "운동 양말",
+    "벨트 정리함",
+    "클레이"
+   ],
+   "household_types": null,
+   "arrival_weekday": "금",
+   "calendar": [
+    {
+     "tag": "회의",
+     "days_from_arrival": -1,
+     "weekday": "목"
+    }
+   ]
+  },
+  {
+   "case_ref": "e4c13db4",
+   "items": [
+    "종이호일",
+    "티스푼",
+    "소파커버",
+    "소독약",
+    "죽순",
+    "카펫 세정제",
+    "망고스틴"
+   ],
+   "household_types": null,
+   "arrival_weekday": "일",
+   "calendar": [
+    {
+     "tag": "집들이",
+     "days_from_arrival": 13,
+     "weekday": "토"
+    },
+    {
+     "tag": "반려동물 입양",
+     "days_from_arrival": 14,
+     "weekday": "일"
+    }
+   ]
+  },
+  {
+   "case_ref": "d0958a71",
+   "items": [
+    "전구",
+    "칠리소스",
+    "비닐장갑",
+    "야채탈수기",
+    "컵 걸이",
+    "차돌박이",
+    "믹싱볼"
+   ],
+   "household_types": [
+    "3~4인",
+    "초등 자녀",
+    "직장인",
+    "그 밖의 반려동물"
+   ],
+   "arrival_weekday": "화",
+   "calendar": []
+  },
+  {
+   "case_ref": "beda0f43",
+   "items": [
+    "사골",
+    "일회용 수저",
+    "스테이크 소스",
+    "옥수수 과자",
+    "테이프클리너",
+    "파르메산 치즈"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "부모 + 성인 자녀",
+    "대학생"
+   ],
+   "arrival_weekday": "목",
+   "calendar": []
+  },
+  {
+   "case_ref": "b31282ea",
+   "items": [
+    "아기 선크림",
+    "바디워시",
+    "운동 양말",
+    "양배추즙",
+    "자몽주스",
+    "목욕가운",
+    "턱받이"
+   ],
+   "household_types": null,
+   "arrival_weekday": "수",
+   "calendar": []
+  },
+  {
+   "case_ref": "df5edbfa",
+   "items": [
+    "파파야",
+    "포도씨유",
+    "산양유",
+    "볶음용 멸치",
+    "명란젓",
+    "고르곤졸라",
+    "커튼"
+   ],
+   "household_types": [
+    "1인",
+    "은퇴·노년"
+   ],
+   "arrival_weekday": "수",
+   "calendar": []
+  },
+  {
+   "case_ref": "3118f8ad",
+   "items": [
+    "상추",
+    "불고기감",
+    "주방가위",
+    "구운란",
+    "기름종이",
+    "발사믹 식초",
+    "햄버거빵"
+   ],
+   "household_types": null,
+   "arrival_weekday": "토",
+   "calendar": []
+  },
+  {
+   "case_ref": "84390120",
+   "items": [
+    "텀블러 세척솔",
+    "전자레인지",
+    "새송이버섯",
+    "육수"
+   ],
+   "household_types": null,
+   "arrival_weekday": "화",
+   "calendar": []
+  },
+  {
+   "case_ref": "1166423c",
+   "items": [
+    "쌀",
+    "김치",
+    "라면",
+    "휴지",
+    "세제"
+   ],
+   "household_types": [
+    "5인 이상",
+    "3대 함께",
+    "직장인"
+   ],
+   "arrival_weekday": "수",
+   "calendar": [
+    {
+     "tag": "설날",
+     "days_from_arrival": 10,
+     "weekday": "토"
+    }
+   ]
+  },
+  {
+   "case_ref": "4ce630d9",
+   "items": [
+    "텐트",
+    "버너",
+    "부탄가스",
+    "캠핑 의자",
+    "라면"
+   ],
+   "household_types": [
+    "2인",
+    "부부·커플",
+    "직장인"
+   ],
+   "arrival_weekday": "목",
+   "calendar": [
+    {
+     "tag": "캠핑",
+     "days_from_arrival": 2,
+     "weekday": "토"
+    }
+   ]
+  },
+  {
+   "case_ref": "d1b0bde8",
+   "items": [
+    "제습제",
+    "곰팡이 제거제",
+    "제습기 필터",
+    "휴지"
+   ],
+   "household_types": null,
+   "arrival_weekday": "월",
+   "calendar": []
+  },
+  {
+   "case_ref": "b0c410ca",
+   "items": [
+    "작업복",
+    "미트볼",
+    "보석 십자수",
+    "넥워머",
+    "낚시 바늘"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "초등 자녀",
+    "직장인"
+   ],
+   "arrival_weekday": "목",
+   "calendar": []
+  },
+  {
+   "case_ref": "5f30c0cb",
+   "items": [
+    "세탁망",
+    "누룽지",
+    "주방가위"
+   ],
+   "household_types": [
+    "1인",
+    "대학생",
+    "반려견"
+   ],
+   "arrival_weekday": "금",
+   "calendar": []
+  },
+  {
+   "case_ref": "c2dde35f",
+   "items": [
+    "칼꽂이",
+    "구두",
+    "취나물"
+   ],
+   "household_types": null,
+   "arrival_weekday": "월",
+   "calendar": []
+  },
+  {
+   "case_ref": "1a4027f0",
+   "items": [
+    "키친타월",
+    "먼지 필터",
+    "서큘레이터",
+    "냉감 매트",
+    "매트 커버",
+    "샌드 과자",
+    "김부각"
+   ],
+   "household_types": [
+    "3~4인",
+    "부부·커플",
+    "대학생",
+    "반려견",
+    "반려묘"
+   ],
+   "arrival_weekday": "월",
+   "calendar": []
+  }
+ ]
+}
