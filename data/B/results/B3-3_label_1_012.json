@@ -1,0 +1,921 @@
+{
+ "job_id": "B3-3_label_1_012",
+ "labels": [
+  {
+   "case_ref": "3a15d9af",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5372fa04",
+   "intents": [
+    {
+     "intent_id": "exam_focus",
+     "intent_text": "시험 및 학습 집중 환경을 만들기 위해 스탠드, 독서대, 형광펜, 전구, 멀티탭을 준비한다.",
+     "bundle_items": [
+      "스탠드",
+      "독서대",
+      "형광펜",
+      "전구",
+      "멀티탭"
+     ]
+    },
+    {
+     "intent_id": "home_baking",
+     "intent_text": "집에서 머핀을 굽기 위해 머핀틀, 베이킹파우더, 박력분, 머핀 컵 등 홈베이킹 재료와 도구를 준비한다.",
+     "bundle_items": [
+      "머핀틀",
+      "베이킹파우더",
+      "박력분",
+      "머핀 컵"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "학습 및 홈베이킹",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "030ccd78",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "meal_prep"
+   ]
+  },
+  {
+   "case_ref": "3e33b672",
+   "intents": [
+    {
+     "intent_id": "winter_dry_cold",
+     "intent_text": "겨울철 추위와 건조함에 대비하여 전기요와 전기요 커버, 가습기와 가습기 세정제를 구비한다.",
+     "bundle_items": [
+      "전기요",
+      "가습기",
+      "전기요 커버",
+      "가습기 세정제"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e30efa1a",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "7ed5dae0",
+   "intents": [],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "생일 축하",
+    "theme": null
+   },
+   "alternatives": [
+    "kid_birthday_party",
+    "adult_birthday"
+   ]
+  },
+  {
+   "case_ref": "30bba126",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "50bb031a",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "39f12166",
+   "intents": [
+    {
+     "intent_id": "adult_birthday",
+     "intent_text": "도착 9일 뒤 수요일 생일 일정에 맞춰 조각 케이크와 디저트 포크, 꽃다발과 꽃병, 애프터셰이브를 준비하여 어른 생일을 축하한다.",
+     "bundle_items": [
+      "꽃다발",
+      "조각 케이크",
+      "애프터셰이브",
+      "꽃병",
+      "디저트 포크"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "생일 축하",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "72209c98",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "1f675536",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "3c11451d",
+   "intents": [
+    {
+     "intent_id": "closet_change",
+     "intent_text": "계절 옷과 이불을 정리하고 교체하기 위해 압축팩, 옷걸이, 옷 커버, 제습제를 준비한다.",
+     "bundle_items": [
+      "옷걸이",
+      "압축팩",
+      "옷 커버",
+      "제습제"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "옷장 정리",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "f65fadd3",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "closet_change"
+   ]
+  },
+  {
+   "case_ref": "ccf35893",
+   "intents": [
+    {
+     "intent_id": "family_gathering",
+     "intent_text": "도착 5일 뒤 수요일 가족 모임 일정에 맞춰 손님상 갈비찜을 위한 소갈비, 밤, 무와 선물용 과일 바구니 및 쇼핑백을 준비하여 식사를 대접한다.",
+     "bundle_items": [
+      "소갈비",
+      "밤",
+      "무",
+      "과일 바구니",
+      "쇼핑백"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "가족 모임",
+    "guests": "가족",
+    "activity": "식사 대접",
+    "theme": null
+   },
+   "alternatives": [
+    "home_party"
+   ]
+  },
+  {
+   "case_ref": "59e3c3d9",
+   "intents": [
+    {
+     "intent_id": "kid_birthday_party",
+     "intent_text": "도착 1일 뒤 토요일 자녀의 생일 일정에 맞춰 케이크, 생일 초, 고깔모자, 풍선, 답례품 봉투를 준비하여 집에서 아이 생일 파티를 연다.",
+     "bundle_items": [
+      "케이크",
+      "생일 초",
+      "고깔모자",
+      "풍선",
+      "답례품 봉투"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": "아이 친구들",
+    "activity": "생일 파티",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "f3e7e85f",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "88057fee",
+   "intents": [
+    {
+     "intent_id": "guest_overnight",
+     "intent_text": "손님 방문에 맞춰 손님이 하룻밤 묵을 수 있도록 여분 이불, 베개 커버, 일회용 칫솔, 샤워 타월을 준비한다.",
+     "bundle_items": [
+      "여분 이불",
+      "베개 커버",
+      "일회용 칫솔",
+      "샤워 타월"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "손님 방문",
+    "guests": "손님",
+    "activity": "숙박",
+    "theme": null
+   },
+   "alternatives": [
+    "home_party"
+   ]
+  },
+  {
+   "case_ref": "66222b06",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "holiday_feast",
+    "kimjang",
+    "new_dog",
+    "guest_overnight"
+   ]
+  },
+  {
+   "case_ref": "e641a173",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "801798d6",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "family_gathering"
+   ]
+  },
+  {
+   "case_ref": "966f8ddb",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "kids_playdate"
+   ]
+  },
+  {
+   "case_ref": "b6b91923",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "집에서 빵이나 과자를 굽기 위해 박력분, 베이킹파우더, 설탕과 함께 믹싱볼, 핸드믹서 등 베이킹 도구를 준비한다.",
+     "bundle_items": [
+      "믹싱볼",
+      "핸드믹서",
+      "베이킹파우더",
+      "박력분",
+      "설탕"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "홈베이킹",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "94b2fe7f",
+   "intents": [
+    {
+     "intent_id": "home_workout_start",
+     "intent_text": "도착 1일 뒤 화요일 운동 일정에 맞춰 홈트레이닝을 시작하기 위해 요가매트, 덤벨, 줄넘기, 생수를 구비한다.",
+     "bundle_items": [
+      "줄넘기",
+      "요가매트",
+      "덤벨",
+      "생수"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "운동",
+    "guests": null,
+    "activity": "홈트레이닝",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "70d19e9b",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "ba74c1da",
+   "intents": [
+    {
+     "intent_id": "meal_prep",
+     "intent_text": "식단 관리 및 도시락 준비를 위해 닭가슴살, 후추, 유리 용기, 도시락 가방, 물통을 준비한다.",
+     "bundle_items": [
+      "도시락 가방",
+      "물통",
+      "닭가슴살",
+      "후추",
+      "유리 용기"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "도시락 준비",
+    "theme": null
+   },
+   "alternatives": [
+    "picnic_lunchbox"
+   ]
+  },
+  {
+   "case_ref": "c713003c",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4ae11a85",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "new_dog"
+   ]
+  },
+  {
+   "case_ref": "6123b2aa",
+   "intents": [
+    {
+     "intent_id": "adult_birthday",
+     "intent_text": "생일을 축하하기 위해 꽃다발과 꽃병, 생일초, 캔들, 라이터를 준비한다.",
+     "bundle_items": [
+      "꽃다발",
+      "꽃병",
+      "생일초",
+      "캔들",
+      "라이터"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "생일 축하",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "57b32ab0",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "집에서 머핀 등의 제과를 위해 무염버터, 바닐라 에센스, 머핀틀을 준비한다.",
+     "bundle_items": [
+      "바닐라 에센스",
+      "무염버터",
+      "머핀틀"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "홈베이킹",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "aef4cf1c",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "2411fbda",
+   "intents": [
+    {
+     "intent_id": "adult_birthday",
+     "intent_text": "생일을 축하하기 위해 케이크와 초, 라이터, 포크를 준비한다.",
+     "bundle_items": [
+      "케이크",
+      "초",
+      "라이터",
+      "포크"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "생일 축하",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "bd642681",
+   "intents": [
+    {
+     "intent_id": "winter_dry_cold",
+     "intent_text": "겨울철 실내 건조함과 외풍 추위에 대비하기 위해 가습기 필터와 문풍지를 구비한다.",
+     "bundle_items": [
+      "문풍지",
+      "가습기 필터"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "95339d89",
+   "intents": [
+    {
+     "intent_id": "christmas_party",
+     "intent_text": "도착 1일 뒤 일요일 연말 모임 일정에 맞춰 미니 트리로 분위기를 내고 크래커와 훈제 연어 등 파티 음식을 준비하여 크리스마스·연말 파티를 즐긴다.",
+     "bundle_items": [
+      "미니 트리",
+      "크래커",
+      "훈제 연어"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "연말 모임",
+    "guests": null,
+    "activity": "파티",
+    "theme": "크리스마스·연말"
+   },
+   "alternatives": [
+    "home_party"
+   ]
+  },
+  {
+   "case_ref": "02070d9f",
+   "intents": [
+    {
+     "intent_id": "meal_prep",
+     "intent_text": "식단 관리 및 식사 준비를 위해 닭가슴살과 브로콜리를 조리해 도시락 용기에 소분하고 라벨 스티커로 정리하는 밀프렙을 준비한다.",
+     "bundle_items": [
+      "도시락 용기",
+      "브로콜리",
+      "닭가슴살",
+      "라벨 스티커"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "밀프렙",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "c972a905",
+   "intents": [
+    {
+     "intent_id": "new_dog",
+     "intent_text": "새로운 강아지를 맞이하기 위해 강아지 사료와 배변패드, 사료 그릇, 탈취제를 준비한다.",
+     "bundle_items": [
+      "강아지 사료",
+      "배변패드",
+      "사료 그릇",
+      "탈취제"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "강아지 맞이",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "c881872c",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "472de06d",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "52568104",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "98055ce2",
+   "intents": [
+    {
+     "intent_id": "winter_dry_cold",
+     "intent_text": "겨울철 추위와 건조함에 대비하여 전기요와 전기요 커버, 가습기와 가습기 필터를 구비한다.",
+     "bundle_items": [
+      "전기요",
+      "전기요 커버",
+      "가습기",
+      "가습기 필터"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "ac8593fd",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "집에서 쿠키를 굽기 위해 박력분, 베이킹파우더, 쿠키 커터를 준비한다.",
+     "bundle_items": [
+      "박력분",
+      "베이킹파우더",
+      "쿠키 커터"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "홈베이킹",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "cc0fd988",
+   "intents": [
+    {
+     "intent_id": "camping_trip",
+     "intent_text": "캠핑을 위해 침낭, 캠핑 매트와 함께 바비큐용 숯, 착화제, 돼지고기 등심을 준비한다.",
+     "bundle_items": [
+      "침낭",
+      "캠핑 매트",
+      "숯",
+      "착화제",
+      "돼지고기 등심"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "캠핑",
+    "guests": null,
+    "activity": "캠핑",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "28f365e1",
+   "intents": [
+    {
+     "intent_id": "camping_trip",
+     "intent_text": "도착 9일 뒤 수요일 캠핑 일정에 맞춰 침낭, 캠핑 매트, 코펠, 버너, 부탄가스 등 캠핑 장비와 취사도구를 준비한다.",
+     "bundle_items": [
+      "버너",
+      "부탄가스",
+      "캠핑 매트",
+      "침낭",
+      "코펠"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "캠핑",
+    "guests": null,
+    "activity": "캠핑",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "bd743e13",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "holiday_feast"
+   ]
+  },
+  {
+   "case_ref": "cbe58089",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "christmas_party",
+    "home_party"
+   ]
+  },
+  {
+   "case_ref": "3b2c1fc4",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b97fe889",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "daa380bc",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "home_party",
+    "school_start"
+   ]
+  },
+  {
+   "case_ref": "0c6245b4",
+   "intents": [
+    {
+     "intent_id": "new_dog",
+     "intent_text": "도착 2일 뒤 화요일 반려동물 입양 일정에 맞춰 새로운 강아지를 맞이하기 위해 켄넬, 강아지 방석, 배변패드, 배변판을 준비한다.",
+     "bundle_items": [
+      "배변패드",
+      "강아지 방석",
+      "배변판",
+      "켄넬"
+     ]
+    },
+    {
+     "intent_id": "home_workout_start",
+     "intent_text": "집에서 홈트레이닝을 시작하기 위해 요가매트, 요가 타월, 덤벨, 덤벨 랙을 준비한다.",
+     "bundle_items": [
+      "요가 타월",
+      "요가매트",
+      "덤벨 랙",
+      "덤벨"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "반려동물 입양",
+    "guests": null,
+    "activity": "강아지 맞이 및 홈트레이닝",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "58b6f8a1",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "moving_in"
+   ]
+  },
+  {
+   "case_ref": "9f0e8fcd",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "20780fe6",
+   "intents": [
+    {
+     "intent_id": "summer_heat",
+     "intent_text": "여름철 더위에 대비하기 위해 선풍기와 에어컨 필터, 필터 세정제를 구비한다.",
+     "bundle_items": [
+      "에어컨 필터",
+      "선풍기",
+      "필터 세정제"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "0f7b243e",
+   "intents": [
+    {
+     "intent_id": "fine_dust",
+     "intent_text": "미세먼지와 실내 공기 질 관리에 대비하기 위해 공기청정기 필터와 마스크를 구비한다.",
+     "bundle_items": [
+      "공기청정기 필터",
+      "덴탈 마스크"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "16d86d42",
+   "intents": [
+    {
+     "intent_id": "camping_trip",
+     "intent_text": "도착 5일 뒤 수요일 캠핑 일정에 맞춰 타프, 로프, 장작, 착화제, 방수 장갑 등 캠핑 장비와 화로용품을 준비한다.",
+     "bundle_items": [
+      "타프",
+      "로프",
+      "장작",
+      "착화제",
+      "방수 장갑"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "캠핑",
+    "guests": null,
+    "activity": "캠핑",
+    "theme": null
+   },
+   "alternatives": []
+  }
+ ]
+}
