@@ -7,25 +7,24 @@
  "person": "S",
  "prompt_version": "label@v2",
  "model_config": "claude-sonnet-5-5",
- "models_seen": [],
- "usage": {
-  "input_tokens": 0,
-  "cache_creation_input_tokens": 0,
-  "cache_read_input_tokens": 0,
-  "output_tokens": 0,
-  "total_cost_usd": 0
- },
- "total_tokens": 0,
- "quota": null,
- "attempts": 2,
- "ok": false,
- "errors": [
-  "[1회] 에이전트 실행 실패: You've hit your session limit · resets 7am (Asia/Seoul)",
-  "[2회] 에이전트 실행 실패: You've hit your session limit · resets 7am (Asia/Seoul)"
+ "models_seen": [
+  "claude-sonnet-5-5"
  ],
- "started_at": "2026-11-28T03:10:24+09:00",
- "finished_at": "2026-11-28T03:10:32+09:00",
- "seconds": 8,
+ "usage": {
+  "input_tokens": 20,
+  "cache_creation_input_tokens": 53085,
+  "cache_read_input_tokens": 431185,
+  "output_tokens": 15547,
+  "total_cost_usd": 0.41096850000000007
+ },
+ "total_tokens": 499837,
+ "quota": null,
+ "attempts": 1,
+ "ok": true,
+ "errors": [],
+ "started_at": "2026-11-28T10:54:25+09:00",
+ "finished_at": "2026-11-28T10:56:01+09:00",
+ "seconds": 96,
  "local_date": "2026-11-28",
  "fake": false
 }
