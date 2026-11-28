@@ -42,15 +42,47 @@ def _cos(a, b):
     return sum(x * y for x, y in zip(a, b))
 
 
+def apply_review(batch: str, rows: list[dict]) -> tuple[list[dict], list[str], list[dict]]:
+    """사람 검수에서 X를 받은 사례를 고친다.
+    - '맞는 의도 id'를 적었으면 그 의도로 줄을 다시 만든다 (의도 문장은 그 의도를 단 라벨러의 것, 없으면 의도 이름)
+    - 안 적었거나 모르는 id면 넣지 않는다
+    (넣지 않은 case_id 목록, 고친 사례 목록)을 같이 돌려준다."""
+    from spira.steps import compare_labels
+    from spira.steps.quality_gate import review_corrections
+    fixes = review_corrections(batch)
+    if not fixes:
+        return rows, [], []
+    by_role, _, _ = compare_labels._labels(batch)
+    names = {i["id"]: i["name"] for i in B.intents()}
+    out, excluded, fixed, done = [], [], [], set()
+    for r in rows:
+        ref = r["order_ref"]
+        if ref not in fixes:
+            out.append(r)
+            continue
+        if fixes[ref] is None:
+            excluded.append(r["case_id"])
+            continue
+        if ref in done:   # 의도가 2개였던 주문의 두 번째 줄: 첫 줄에서 이미 다시 만들었다
+            continue
+        done.add(ref)
+        labs = [by_role[role].get(ref) or {} for role in ("label_1", "label_2")]
+        for k, iid in enumerate(fixes[ref]):
+            text = next((a["intent_text"] for lab in labs for a in lab.get("intents", [])
+                         if a["intent_id"] == iid and a.get("intent_text")), None)
+            out.append(r | {"case_id": r["case_id"] if k == 0 else f"{r['case_id']}-{k + 1}",
+                            "intent_id": iid,
+                            "intent_text": None if iid == "none" else (text or names.get(iid)),
+                            "situation": {} if iid == "none" else r["situation"]})
+        fixed.append({"order_ref": ref, "intents": fixes[ref]})
+    return out, excluded, fixed
+
+
 def load(batch: str, dry_run: bool | None = None) -> list:
     cfg = B.pipeline()
     _, round_no, _ = B.parse(batch)
     kb_version = f"kb-v{round_no}"
-    rows = B.read(batch, "compared.json")["rows"]
-    from spira.steps.quality_gate import review_rejected
-    rejected = review_rejected(batch)   # 사람 검수에서 X를 받은 사례는 넣지 않는다
-    review_out = [r["case_id"] for r in rows if r["order_ref"] in rejected]
-    rows = [r for r in rows if r["order_ref"] not in rejected]
+    rows, review_out, review_fixed = apply_review(batch, B.read(batch, "compared.json")["rows"])
     vecs = _embed([r["items"] for r in rows])
     thr = cfg["dedup_similarity"]
 
@@ -68,7 +100,7 @@ def load(batch: str, dry_run: bool | None = None) -> list:
     dry = (not url) if dry_run is None else dry_run
     if dry:
         preview = {"kb_version": kb_version, "would_load": len(keep), "dropped": dropped,
-                   "review_excluded": review_out, "model": MODEL_NAME,
+                   "review_excluded": review_out, "review_fixed": review_fixed, "model": MODEL_NAME,
                    "sample": [rows[i] for i in keep[:3]], "at": B.now_iso()}
         return [B.write(batch, "load_preview.json", preview)]
 
@@ -124,6 +156,7 @@ def load(batch: str, dry_run: bool | None = None) -> list:
         in_db = cur.fetchone()[0]
     written = [B.write(batch, "loaded.json", {"kb_version": kb_version, "loaded": loaded, "in_db": in_db,
                                               "dropped": dropped, "review_excluded": review_out,
+                                              "review_fixed": review_fixed,
                                               "model": MODEL_NAME, "at": B.now_iso()})]
     B.set_state(batch, "loaded")
     written.append(B.bdir(batch) / "state.json")
