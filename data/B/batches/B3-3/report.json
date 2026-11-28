@@ -1,0 +1,172 @@
+{
+ "metrics": {
+  "cases": 1000,
+  "items": {
+   "none_ratio": {
+    "value": 0.655,
+    "target": [
+     0.6,
+     0.75
+    ],
+    "ok": true
+   },
+   "calendar_shortcut": {
+    "value": -0.010757070645167975,
+    "target": [
+     0,
+     0.05
+    ],
+    "ok": true,
+    "by_type": {
+     "A": {
+      "diff": 0.0,
+      "unrelated": 145,
+      "no_calendar": 305
+     },
+     "B": {
+      "diff": 0.005189255189255171,
+      "unrelated": 63,
+      "no_calendar": 104
+     },
+     "C": {
+      "diff": 0.19999999999999996,
+      "unrelated": 14,
+      "no_calendar": 20
+     },
+     "D": {
+      "diff": 0.01336898395721925,
+      "unrelated": 34,
+      "no_calendar": 66
+     },
+     "E": {
+      "diff": -0.24456521739130432,
+      "unrelated": 8,
+      "no_calendar": 23
+     },
+     "W": {
+      "diff": -0.15537488708220415,
+      "unrelated": 27,
+      "no_calendar": 41
+     }
+    }
+   },
+   "label_agreement": {
+    "value": 0.916,
+    "target": [
+     0.85,
+     0.97
+    ],
+    "ok": true
+   },
+   "b_recall": {
+    "value": 0.82,
+    "target": [
+     0.85,
+     1
+    ],
+    "ok": false
+   },
+   "w_seen": {
+    "value": 0.78,
+    "target": [
+     0.3,
+     0.7
+    ],
+    "ok": false
+   },
+   "per_intent": {
+    "value": 4,
+    "low": [
+     "kids_playdate",
+     "anniversary_dinner",
+     "kids_vacation",
+     "meal_prep"
+    ],
+    "ok": false
+   },
+   "checks": {
+    "value": 0,
+    "total": 120,
+    "ok": true
+   }
+  },
+  "unseen_intent": 142,
+  "unclassified": 4,
+  "frequent_splits": [
+   [
+    "none ↔ unclassified",
+    8
+   ],
+   [
+    "adult_birthday ↔ none",
+    7
+   ],
+   [
+    "home_party ↔ none",
+    6
+   ],
+   [
+    "moving_in ↔ none",
+    6
+   ],
+   [
+    "family_gathering ↔ none",
+    5
+   ],
+   [
+    "guest_overnight ↔ none",
+    4
+   ],
+   [
+    "kids_playdate ↔ none",
+    3
+   ],
+   [
+    "adult_birthday ↔ unclassified",
+    3
+   ],
+   [
+    "deep_cleaning ↔ none",
+    3
+   ],
+   [
+    "kid_birthday_party ↔ none",
+    2
+   ]
+  ],
+  "intent_counts": {
+   "summer_heat": 22,
+   "trip_away": 21,
+   "winter_dry_cold": 21,
+   "rainy_season": 20,
+   "deep_cleaning": 18,
+   "adult_birthday": 17,
+   "home_party": 17,
+   "christmas_party": 17,
+   "kid_birthday_party": 16,
+   "school_start": 16,
+   "new_cat": 16,
+   "home_baking": 15,
+   "family_gathering": 15,
+   "closet_change": 14,
+   "holiday_feast": 13,
+   "fine_dust": 12,
+   "camping_trip": 12,
+   "guest_overnight": 11,
+   "picnic_lunchbox": 11,
+   "new_dog": 11,
+   "watch_party": 10,
+   "exam_focus": 9,
+   "home_workout_start": 8,
+   "kimjang": 7,
+   "wfh_start": 6,
+   "anniversary_dinner": 4,
+   "meal_prep": 4,
+   "kids_playdate": 4,
+   "moving_in": 3
+  }
+ },
+ "review": null,
+ "verdict": "failed",
+ "judged_at": "2026-11-28T08:00:36+00:00"
+}
