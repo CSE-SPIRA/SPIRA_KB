@@ -180,6 +180,32 @@ def review_result(batch: str) -> dict:
     return {"judged": judged, "wrong": wrong, "wrong_ratio": _rate(wrong, judged), "fixes": fixes}
 
 
+def review_rejected(batch: str) -> set[str]:
+    """사람 검수에서 X를 받은 사례(case_ref). 적재에서 뺀다."""
+    plan = B.read(batch, "review_plan.json")
+    out = set()
+    for p in (plan or {}).get("people", []):
+        for row in _read_csv(REVIEW / "done" / f"{batch}_{p}.csv"):
+            v = next((row[k] for k in row if k and k.startswith("판정")), "").strip().upper()
+            if v == "X" and row.get("review_id"):
+                out.add(row["review_id"].strip())
+    return out
+
+
+def add_review(batch: str) -> list:
+    """이미 판정이 난 배치에 사람 검수를 붙인다: 검수 파일을 만들고 reviewing으로 되돌린다.
+    검수가 다 모이면 자동 지표 + 사람 검수로 다시 판정한다."""
+    rep = B.read(batch, "report.json")
+    rep.update(review=None, verdict=None)
+    rep.pop("judged_at", None)
+    written = [B.write(batch, "report.json", rep)]
+    written += make_review(batch)
+    written.append(_write_md(batch))
+    B.set_state(batch, "reviewing", note="사람 검수 추가")
+    written.append(B.bdir(batch) / "state.json")
+    return written
+
+
 def review_on() -> bool:
     return B.pipeline()["review"]["per_batch"] > 0
 

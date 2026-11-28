@@ -168,6 +168,27 @@ def review() -> None:
     typer.echo("다 했으면 `uv run spira review-done`")
 
 
+@app.command("add-review")
+def add_review(batch: list[str]) -> None:
+    """(U) 이미 판정이 난 배치(passed · failed)에 사람 검수를 붙인다. 적재된 배치는 안 된다."""
+    from spira import batches as B
+    from spira import queue
+    from spira.steps import quality_gate as Q
+    queue.sync()
+    changed = []
+    for b in batch:
+        st = B.state(b)
+        if st not in ("passed", "failed"):
+            typer.echo(f"✗ {b}: {st} 상태라 검수를 붙일 수 없습니다 (passed · failed만)")
+            raise typer.Exit(1)
+        if not Q.review_on():
+            typer.echo("✗ config/pipeline.yaml의 review.per_batch가 0입니다")
+            raise typer.Exit(1)
+        changed += Q.add_review(b)
+    queue._commit_and_push(f"사람 검수 추가: {', '.join(batch)}", changed)
+    typer.echo(f"✓ {', '.join(batch)} → 검수 파일을 만들었습니다. `uv run spira review`로 확인하세요")
+
+
 @app.command("review-done")
 def review_done() -> None:
     """판정을 다 적은 내 검수 파일을 review/done/으로 옮기고 올린다."""
