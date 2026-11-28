@@ -13,6 +13,7 @@
 from __future__ import annotations
 
 import csv
+import re
 from collections import Counter
 
 from spira import batches as B
@@ -180,15 +181,22 @@ def review_result(batch: str) -> dict:
     return {"judged": judged, "wrong": wrong, "wrong_ratio": _rate(wrong, judged), "fixes": fixes}
 
 
-def review_rejected(batch: str) -> set[str]:
-    """사람 검수에서 X를 받은 사례(case_ref). 적재에서 뺀다."""
+def review_corrections(batch: str) -> dict[str, list[str] | None]:
+    """사람 검수에서 X를 받은 사례 → 고친 의도 목록.
+    '맞는 의도 id' 칸을 쉼표 · + · 공백으로 나눠 읽는다. none이면 의도 없음.
+    칸이 비었거나 모르는 id가 있으면 None (그 사례는 적재하지 않는다)."""
     plan = B.read(batch, "review_plan.json")
-    out = set()
+    known = {i["id"] for i in B.intents()} | {"none"}
+    out: dict[str, list[str] | None] = {}
     for p in (plan or {}).get("people", []):
         for row in _read_csv(REVIEW / "done" / f"{batch}_{p}.csv"):
             v = next((row[k] for k in row if k and k.startswith("판정")), "").strip().upper()
-            if v == "X" and row.get("review_id"):
-                out.add(row["review_id"].strip())
+            ref = (row.get("review_id") or "").strip()
+            if v != "X" or not ref:
+                continue
+            raw = next((row[k] for k in row if k and k.startswith("맞는 의도")), "")
+            ids = [x for x in re.split(r"[\s,+/]+", raw.strip().lower()) if x]
+            out[ref] = sorted(set(ids)) if ids and all(x in known for x in ids) else None
     return out
 
 
