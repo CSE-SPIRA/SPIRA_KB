@@ -47,6 +47,10 @@ def load(batch: str, dry_run: bool | None = None) -> list:
     _, round_no, _ = B.parse(batch)
     kb_version = f"kb-v{round_no}"
     rows = B.read(batch, "compared.json")["rows"]
+    from spira.steps.quality_gate import review_rejected
+    rejected = review_rejected(batch)   # 사람 검수에서 X를 받은 사례는 넣지 않는다
+    review_out = [r["case_id"] for r in rows if r["order_ref"] in rejected]
+    rows = [r for r in rows if r["order_ref"] not in rejected]
     vecs = _embed([r["items"] for r in rows])
     thr = cfg["dedup_similarity"]
 
@@ -63,7 +67,8 @@ def load(batch: str, dry_run: bool | None = None) -> list:
     url = os.environ.get("DATABASE_URL")
     dry = (not url) if dry_run is None else dry_run
     if dry:
-        preview = {"kb_version": kb_version, "would_load": len(keep), "dropped": dropped, "model": MODEL_NAME,
+        preview = {"kb_version": kb_version, "would_load": len(keep), "dropped": dropped,
+                   "review_excluded": review_out, "model": MODEL_NAME,
                    "sample": [rows[i] for i in keep[:3]], "at": B.now_iso()}
         return [B.write(batch, "load_preview.json", preview)]
 
@@ -118,7 +123,7 @@ def load(batch: str, dry_run: bool | None = None) -> list:
         cur.execute("select count(*) from cases where case_id like %s", (f"syn_{batch}_%",))
         in_db = cur.fetchone()[0]
     written = [B.write(batch, "loaded.json", {"kb_version": kb_version, "loaded": loaded, "in_db": in_db,
-                                              "dropped": dropped,
+                                              "dropped": dropped, "review_excluded": review_out,
                                               "model": MODEL_NAME, "at": B.now_iso()})]
     B.set_state(batch, "loaded")
     written.append(B.bdir(batch) / "state.json")
