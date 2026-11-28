@@ -1,0 +1,874 @@
+{
+ "job_id": "B3-2_label_2_005",
+ "labels": [
+  {
+   "case_ref": "ece00692",
+   "intents": [
+    {
+     "intent_id": "kid_birthday_party",
+     "intent_text": "금요일에 도착하는 어린이 생일상 세트와 생일 케이크로 집에서 아이의 생일 파티를 준비한다",
+     "bundle_items": [
+      "어린이 생일상 세트",
+      "생일 케이크"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "생일 파티",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b2fea9f3",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "75ea9c51",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "6f6b136c",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "6ac20ccf",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "2cd243cf",
+   "intents": [
+    {
+     "intent_id": "kids_vacation",
+     "intent_text": "아이의 방학을 맞아 집에서 공부하고 놀 수 있도록 목요일에 방학 학습지, 보드게임, 아쿠아비트, 팝콘, 탄산음료를 준비한다",
+     "bundle_items": [
+      "방학 학습지",
+      "보드게임",
+      "아쿠아비트",
+      "팝콘",
+      "탄산음료"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "방학",
+    "guests": null,
+    "activity": "방학 학습 및 놀이",
+    "theme": null
+   },
+   "alternatives": [
+    "kids_playdate"
+   ]
+  },
+  {
+   "case_ref": "8f07e212",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "6af36ebd",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "885329f0",
+   "intents": [
+    {
+     "intent_id": "holiday_feast",
+     "intent_text": "도착 2일 뒤 토요일 설날을 맞아 제사상, 제기, 찜솥, 송편, 과일 바구니를 주문하여 차례와 명절 상차림을 준비한다",
+     "bundle_items": [
+      "제기",
+      "찜솥",
+      "제사상",
+      "과일 바구니",
+      "송편"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "설날",
+    "guests": "가족",
+    "activity": "차례 및 명절 상차림",
+    "theme": null
+   },
+   "alternatives": [
+    "family_gathering"
+   ]
+  },
+  {
+   "case_ref": "23e8f25b",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "1f0e9e54",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "328d64ff",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "cb1e36dd",
+   "intents": [
+    {
+     "intent_id": "picnic_lunchbox",
+     "intent_text": "일요일에 도시락통과 돗자리를 배송받아 야외 나들이를 준비한다",
+     "bundle_items": [
+      "도시락통",
+      "돗자리"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "나들이",
+    "guests": null,
+    "activity": "나들이 도시락 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "f3bccba6",
+   "intents": [
+    {
+     "intent_id": "summer_heat",
+     "intent_text": "목요일에 선풍기, 냉감 방석, 선풍기 커버를 배송받아 여름철 더위에 대비한다",
+     "bundle_items": [
+      "선풍기",
+      "냉감 방석",
+      "선풍기 커버"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "더위 대비",
+    "guests": null,
+    "activity": "여름 더위 대비",
+    "theme": null
+   },
+   "alternatives": [
+    "winter_dry_cold"
+   ]
+  },
+  {
+   "case_ref": "8d0651ae",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "cf4af88f",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b873f47c",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "44e04ae2",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "토요일에 박력분, 버터, 설탕, 밀대, 쿠키 커터를 배송받아 집에서 쿠키 홈베이킹을 한다",
+     "bundle_items": [
+      "박력분",
+      "밀대",
+      "쿠키 커터",
+      "설탕",
+      "버터"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "홈베이킹",
+    "theme": null
+   },
+   "alternatives": [
+    "adult_birthday"
+   ]
+  },
+  {
+   "case_ref": "e1b3af3a",
+   "intents": [
+    {
+     "intent_id": "trip_away",
+     "intent_text": "수요일에 세면도구, 여행용 파우치, 여권 지갑을 배송받아 여행을 떠나기 위한 짐을 꾸린다",
+     "bundle_items": [
+      "세면도구",
+      "여행용 파우치",
+      "여권 지갑"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "여행",
+    "guests": null,
+    "activity": "여행 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "70300bcd",
+   "intents": [
+    {
+     "intent_id": "fine_dust",
+     "intent_text": "월요일에 공기청정기 필터, 방진 마스크, 마스크 보관함을 배송받아 미세먼지에 대비한다",
+     "bundle_items": [
+      "방진 마스크",
+      "마스크 보관함",
+      "공기청정기 필터"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "미세먼지 대비",
+    "guests": null,
+    "activity": "미세먼지 대비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "c0e1ceea",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "f5cafecb",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "384b2499",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "d08ca475",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "1b32d704",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b1457f6e",
+   "intents": [
+    {
+     "intent_id": "christmas_party",
+     "intent_text": "다가오는 크리스마스에 맞춰 집을 꾸미고 파티를 즐기기 위해 금요일에 크리스마스 트리, 전구 장식, 오너먼트와 치킨을 준비한다",
+     "bundle_items": [
+      "크리스마스 트리",
+      "전구 장식",
+      "오너먼트",
+      "치킨"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "크리스마스",
+    "guests": "가족",
+    "activity": "크리스마스 트리 꾸미기 및 파티",
+    "theme": "크리스마스"
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "c549c3c2",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "5일 뒤 금요일 생일 일정에 맞춰 일요일에 밀가루, 버터, 휘핑크림, 짤주머니, 우유를 배송받아 직접 케이크 홈베이킹을 한다",
+     "bundle_items": [
+      "밀가루",
+      "버터",
+      "휘핑크림",
+      "짤주머니",
+      "우유"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "홈베이킹",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "405c68ab",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "금요일에 박력분, 버터, 스콘틀, 우유를 배송받아 집에서 스콘 홈베이킹을 한다",
+     "bundle_items": [
+      "우유",
+      "버터",
+      "스콘틀",
+      "박력분"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "홈베이킹",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "429ac2fa",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "51bf7759",
+   "intents": [
+    {
+     "intent_id": "home_party",
+     "intent_text": "수요일에 와인, 매실주, 치즈 안주와 종이컵, 컵 받침을 배송받아 지인들을 초대해 홈파티를 연다",
+     "bundle_items": [
+      "치즈",
+      "컵 받침",
+      "매실주",
+      "종이컵",
+      "와인"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "홈파티",
+    "guests": "지인",
+    "activity": "홈파티",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "167d8681",
+   "intents": [
+    {
+     "intent_id": "holiday_feast",
+     "intent_text": "도착 5일 뒤 화요일 설날 명절을 앞두고 떡국과 산적 요리를 위해 떡국떡, 소고기, 산적 꼬치, 달걀, 국간장을 준비한다",
+     "bundle_items": [
+      "떡국떡",
+      "소고기",
+      "산적 꼬치",
+      "달걀",
+      "국간장"
+     ]
+    },
+    {
+     "intent_id": "winter_dry_cold",
+     "intent_text": "겨울철 추위에 대비하여 목요일에 전기요와 문풍지를 배송받아 방한을 준비한다",
+     "bundle_items": [
+      "전기요",
+      "문풍지"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "설날",
+    "guests": "가족",
+    "activity": "명절 상차림 및 방한 대비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "bfbcfd00",
+   "intents": [
+    {
+     "intent_id": "holiday_feast",
+     "intent_text": "도착 3일 뒤 토요일 추석 명절에 맞춰 가족들과 차례를 지내고 음식을 차리기 위해 수요일에 부침가루, 동태포, 산적 꼬치, 제기, 식혜를 준비한다",
+     "bundle_items": [
+      "부침가루",
+      "동태포",
+      "산적 꼬치",
+      "제기",
+      "식혜"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "추석",
+    "guests": "가족",
+    "activity": "차례 및 명절 상차림",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "d28ea492",
+   "intents": [
+    {
+     "intent_id": "trip_away",
+     "intent_text": "도착 3일 뒤 월요일 여행 일정에 맞춰 여행용 파우치, 여권 케이스, 여권, 세면도구를 주문하여 짐을 꾸린다",
+     "bundle_items": [
+      "여행용 파우치",
+      "여권 케이스",
+      "여권",
+      "세면도구"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "여행",
+    "guests": null,
+    "activity": "여행 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "f319fe94",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "6b69e907",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "51a8fb66",
+   "intents": [
+    {
+     "intent_id": "school_start",
+     "intent_text": "10일 뒤 일요일 입학·개학 일정에 맞춰 목요일에 책가방, 실내화, 실내화 주머니, 필통을 배송받아 학교 입학 및 새 학기를 준비한다",
+     "bundle_items": [
+      "필통",
+      "실내화",
+      "실내화 주머니",
+      "책가방"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "입학·개학",
+    "guests": null,
+    "activity": "새 학기 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e61337b9",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "bb455258",
+   "intents": [
+    {
+     "intent_id": "home_party",
+     "intent_text": "11일 뒤 일요일 손님 방문 일정에 맞춰 수요일에 와인, 와인잔, 치즈, 쿠키, 종이 접시, 냅킨을 준비하여 지인들과의 홈파티를 연다",
+     "bundle_items": [
+      "종이 접시",
+      "냅킨",
+      "와인",
+      "치즈",
+      "와인잔",
+      "쿠키"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "손님 방문",
+    "guests": "지인",
+    "activity": "홈파티",
+    "theme": "크리스마스"
+   },
+   "alternatives": [
+    "christmas_party"
+   ]
+  },
+  {
+   "case_ref": "78ffe709",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "824bc987",
+   "intents": [
+    {
+     "intent_id": "home_baking",
+     "intent_text": "일요일에 밀가루, 버터, 베이킹파우더, 베이킹 틀, 유산지를 배송받아 집에서 홈베이킹을 한다",
+     "bundle_items": [
+      "베이킹파우더",
+      "베이킹 틀",
+      "유산지",
+      "버터",
+      "밀가루"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "홈베이킹",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "6c08483e",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b7646329",
+   "intents": [
+    {
+     "intent_id": "anniversary_dinner",
+     "intent_text": "수요일에 소고기 안심, 로즈마리, 리소토, 와인, 와인잔을 배송받아 집에서 부부 둘만의 기념일 스테이크 디너를 준비한다",
+     "bundle_items": [
+      "와인",
+      "리소토",
+      "와인잔",
+      "소고기 안심",
+      "로즈마리"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "기념일",
+    "guests": null,
+    "activity": "기념일 저녁 식사",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "4a2652ff",
+   "intents": [
+    {
+     "intent_id": "fine_dust",
+     "intent_text": "수요일에 공기청정기 필터, 황사 마스크, 마스크 보관함을 배송받아 황사와 미세먼지에 대비한다",
+     "bundle_items": [
+      "공기청정기 필터",
+      "마스크 보관함",
+      "황사 마스크"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "황사 및 미세먼지 대비",
+    "guests": null,
+    "activity": "미세먼지 대비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "fc6d8f70",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "b10b9a4c",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "239fe60d",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "6ccdebb1",
+   "intents": [
+    {
+     "intent_id": "holiday_feast",
+     "intent_text": "다가오는 추석 명절 상차림을 위해 월요일에 동태포, 산적 꼬치, 부침가루, 달걀, 소고기 등 명절 전 요리 재료를 준비한다",
+     "bundle_items": [
+      "동태포",
+      "산적 꼬치",
+      "부침가루",
+      "달걀",
+      "소고기"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "추석",
+    "guests": "가족",
+    "activity": "명절 상차림 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "e985faa3",
+   "intents": [
+    {
+     "intent_id": "adult_birthday",
+     "intent_text": "월요일에 치즈케이크, 숫자초, 꽃다발, 꽃병, 스파클링 와인, 와인잔을 배송받아 어른 생일을 집에서 축하한다",
+     "bundle_items": [
+      "스파클링 와인",
+      "와인잔",
+      "꽃다발",
+      "치즈케이크",
+      "숫자초",
+      "꽃병"
+     ]
+    }
+   ],
+   "situation": {
+    "event": "생일",
+    "guests": null,
+    "activity": "생일 축하",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5e8815f7",
+   "intents": [
+    {
+     "intent_id": "meal_prep",
+     "intent_text": "금요일에 도시락 용기와 도시락 가방, 닭가슴살, 브로콜리, 현미, 샐러드 드레싱을 배송받아 다이어트 및 건강 식단 밀프렙을 준비한다",
+     "bundle_items": [
+      "현미",
+      "브로콜리",
+      "도시락 용기",
+      "닭가슴살",
+      "도시락 가방",
+      "샐러드 드레싱"
+     ]
+    }
+   ],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": "밀프렙 도시락 준비",
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "5cd4cfc8",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "holiday_feast"
+   ]
+  },
+  {
+   "case_ref": "cb78fa83",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": []
+  },
+  {
+   "case_ref": "225ce820",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "family_gathering",
+    "holiday_feast"
+   ]
+  },
+  {
+   "case_ref": "1d683bb2",
+   "intents": [],
+   "situation": {
+    "event": null,
+    "guests": null,
+    "activity": null,
+    "theme": null
+   },
+   "alternatives": [
+    "summer_heat"
+   ]
+  }
+ ]
+}
